@@ -3,7 +3,7 @@ import { DEFAULT_SCALING_RULES, MODULE_ID, SETTING_KEYS, TEMPLATE_PATHS } from "
 import { scalingRuleService } from "./services/scaling-rule-service.js";
 import { classItemScalingService } from "./services/class-item-scaling-service.js";
 import { playerActionsService } from "./services/player-actions-service.js";
-import { migrateLegacyFlags } from "../ld-legacy-migrate.js";
+import { migrateLegacyAssetPaths, migrateLegacyFlags } from "../ld-legacy-migrate.js";
 
 const ROLL_FALLBACK_HOOK_FLAG = "__rnkCrimsonScalerRollFallbackHooked";
 
@@ -267,7 +267,17 @@ Hooks.once("init", async () => {
 });
 
 Hooks.once("ready", async () => {
-  migrateLegacyFlags("ld-crimson-scaler", "rnk-crimson-scaler").catch(() => {});
+  if (game.user?.isGM) {
+    try {
+      const flagsMoved = await migrateLegacyFlags("ld-crimson-scaler", "rnk-crimson-scaler");
+      const assetsMoved = await migrateLegacyAssetPaths();
+      if (flagsMoved || assetsMoved) {
+        console.log(`${MODULE_ID} | legacy migrate flags=${flagsMoved} assets=${assetsMoved}`);
+      }
+    } catch (err) {
+      console.warn(`${MODULE_ID} | legacy migrate failed`, err);
+    }
+  }
 
   playerActionsService.registerSocketListener();
 

@@ -2,10 +2,10 @@
 
 ## [Unreleased]
 
-- Rebrand to Lisa's Dungeon (`ld-*` module ids).
-- Copy actor flags from the retired `rnk-*` id on first ready.
-- Add LICENSE, package.json, syntax and validate checks.
-- Keep existing worlds working via `ld-legacy-migrate.js`.
+## [1.0.6] - 2026-08-20
+
+- Remap stored `modules/rnk-*` portrait and token paths to `modules/ld-*` on GM ready.
+- Replace removed `icons/svg/damage/*.svg` placeholders with Foundry icon library art.
 
 
 ## [1.0.5] - 2026-07-20

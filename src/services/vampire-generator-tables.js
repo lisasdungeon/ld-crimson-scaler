@@ -138,8 +138,8 @@ export const ARMOR_TEMPLATES = {
 
 export const FOCUS_TEMPLATES = {
   mark:    { name: "Sanguine Heart Mark", img: "icons/magic/symbols/rune-sigil-red-orange.webp" },
-  sigil:   { name: "Blood Sigil Stone", img: "icons/svg/damage/necrotic.svg" },
-  amulet:  { name: "Crimson Amulet", img: "icons/svg/items/equipment.svg" },
+  sigil:   { name: "Blood Sigil Stone", img: "icons/magic/death/skull-energy-white.webp" },
+  amulet:  { name: "Crimson Amulet", img: "icons/equipment/neck/amulet-round-engraved-gold.webp" },
   orb:     { name: "Shadow Orb", img: "icons/magic/light/orb-shadow-blue.webp" },
   tome:    { name: "Forbidden Codex", img: "icons/sundries/books/book-embossed-gold-red.webp" },
   censer:  { name: "Wraith Censer", img: "icons/sundries/lights/lantern-iron-rusty.webp" },

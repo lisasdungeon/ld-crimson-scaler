@@ -189,7 +189,7 @@ export class VampireGeneratorService {
       items.push({
         name: feat,
         type: "feat",
-        img: "icons/svg/damage/psychic.svg",
+        img: "icons/magic/control/hypnosis-mesmerism-eye.webp",
         system: {}
       });
     }
@@ -201,7 +201,7 @@ export class VampireGeneratorService {
         items.push({
           name: spellName,
           type: "spell",
-          img: "icons/svg/damage/necrotic.svg",
+          img: "icons/magic/death/skull-energy-white.webp",
           system: { level: lvl }
         });
       }
