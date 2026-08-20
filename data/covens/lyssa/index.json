@@ -40,5 +40,8 @@
     { "name": "Nyssa \"Shadelet\" Vale", "rank": "Recruit", "level": 2, "file": "characters/recruit-nyssa-shadelet-vale.json" },
     { "name": "Kael \"Ghostling\" Ryn", "rank": "Recruit", "level": 1, "file": "characters/recruit-kael-ghostling-ryn.json" }
   ],
+  "genericPool": {
+    "file": "generic/index.json"
+  },
   "status": "phase-2-fighters-and-recruits-complete"
 }

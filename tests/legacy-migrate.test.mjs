@@ -9,11 +9,27 @@ test('rewriteLegacyAssetPath remaps rnk module portraits and dead svg icons', ()
   );
   assert.equal(
     rewriteLegacyAssetPath('icons/svg/damage/psychic.svg'),
-    'icons/magic/control/hypnosis-mesmerism-eye.webp'
+    'systems/dnd5e/icons/svg/damage/psychic.svg'
   );
   assert.equal(
     rewriteLegacyAssetPath('icons/svg/damage/necrotic.svg'),
-    'icons/magic/death/skull-energy-white.webp'
+    'systems/dnd5e/icons/svg/damage/necrotic.svg'
+  );
+  assert.equal(
+    rewriteLegacyAssetPath('icons/magic/death/skull-energy-white.webp'),
+    'systems/dnd5e/icons/svg/damage/necrotic.svg'
+  );
+  assert.equal(
+    rewriteLegacyAssetPath('modules/ld-crimson-scaler/assets/portraits/outdated_01.png'),
+    'modules/ld-crimson-scaler/assets/portraits/outdated_01.png'
+  );
+  assert.equal(
+    rewriteLegacyAssetPath('modules/ld-crimson-scaler/assets/portraits/outdated_102.png'),
+    'modules/ld-crimson-scaler/assets/portraits/outdated_08.png'
+  );
+  assert.equal(
+    rewriteLegacyAssetPath('systems/dnd5e/icons/svg/damage/psychic.svg'),
+    'systems/dnd5e/icons/svg/damage/psychic.svg'
   );
 });
 
@@ -51,7 +67,7 @@ test('migrateLegacyAssetPaths rewrites actor and token image paths', async () =>
       'modules/ld-crimson-scaler/assets/portraits/highpriest_human_man_02.png'
     );
     assert.equal(itemUpdates[0].type, 'Item');
-    assert.equal(itemUpdates[0].docs[0].img, 'icons/magic/control/hypnosis-mesmerism-eye.webp');
+    assert.equal(itemUpdates[0].docs[0].img, 'systems/dnd5e/icons/svg/damage/psychic.svg');
     assert.equal(tokenUpdates[0].type, 'Token');
     assert.equal(
       tokenUpdates[0].docs[0]['texture.src'],

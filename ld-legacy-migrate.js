@@ -5,18 +5,34 @@
  */
 const PATH_REWRITES = [
   ["modules/rnk-", "modules/ld-"],
-  ["icons/svg/damage/psychic.svg", "icons/magic/control/hypnosis-mesmerism-eye.webp"],
-  ["icons/svg/damage/necrotic.svg", "icons/magic/death/skull-energy-white.webp"],
-  ["icons/svg/items/equipment.svg", "icons/equipment/neck/amulet-round-engraved-gold.webp"]
+  ["icons/svg/damage/psychic.svg", "systems/dnd5e/icons/svg/damage/psychic.svg"],
+  ["icons/svg/damage/necrotic.svg", "systems/dnd5e/icons/svg/damage/necrotic.svg"],
+  ["icons/svg/items/equipment.svg", "systems/dnd5e/icons/svg/items/weapon.svg"],
+  ["icons/magic/death/skull-energy-white.webp", "systems/dnd5e/icons/svg/damage/necrotic.svg"],
+  ["icons/containers/chest/chest-wooden-brown-red.webp", "icons/svg/chest.svg"]
 ];
+
+const EXISTING_OUTDATED = [1, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25];
+const EXISTING_OUTDATED_SET = new Set(EXISTING_OUTDATED);
+
+function rewriteMissingScalerPortrait(value) {
+  const match = /modules\/ld-crimson-scaler\/assets\/portraits\/outdated_(\d+)\.png/.exec(value);
+  if (!match) return value;
+  const n = Number(match[1]);
+  if (EXISTING_OUTDATED_SET.has(n)) return value;
+  const mapped = EXISTING_OUTDATED[n % EXISTING_OUTDATED.length];
+  return value.replace(/outdated_\d+\.png/, `outdated_${String(mapped).padStart(2, "0")}.png`);
+}
 
 export function rewriteLegacyAssetPath(value) {
   if (typeof value !== "string" || !value) return value;
   let next = value;
+  if (next.includes("modules/rnk-")) next = next.split("modules/rnk-").join("modules/ld-");
   for (const [from, to] of PATH_REWRITES) {
-    if (next.includes(from)) next = next.split(from).join(to);
+    if (from === "modules/rnk-") continue;
+    if (next === from || next.startsWith(from)) next = `${to}${next.slice(from.length)}`;
   }
-  return next;
+  return rewriteMissingScalerPortrait(next);
 }
 
 function imgPatch(doc) {

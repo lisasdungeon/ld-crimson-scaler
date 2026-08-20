@@ -46,7 +46,7 @@
     "focus": [
       {
         "name": "Blood Oath Chalk",
-        "img": "icons/magic/death/skull-energy-white.webp"
+        "img": "systems/dnd5e/icons/svg/damage/necrotic.svg"
       },
       {
         "name": "Creed Script",

@@ -138,7 +138,7 @@ export const ARMOR_TEMPLATES = {
 
 export const FOCUS_TEMPLATES = {
   mark:    { name: "Sanguine Heart Mark", img: "icons/magic/symbols/rune-sigil-red-orange.webp" },
-  sigil:   { name: "Blood Sigil Stone", img: "icons/magic/death/skull-energy-white.webp" },
+  sigil:   { name: "Blood Sigil Stone", img: "systems/dnd5e/icons/svg/damage/necrotic.svg" },
   amulet:  { name: "Crimson Amulet", img: "icons/equipment/neck/amulet-round-engraved-gold.webp" },
   orb:     { name: "Shadow Orb", img: "icons/magic/light/orb-shadow-blue.webp" },
   tome:    { name: "Forbidden Codex", img: "icons/sundries/books/book-embossed-gold-red.webp" },
@@ -208,13 +208,48 @@ export const AI_STYLES = [
   "predatory-controller", "defensive-anchor", "hit-and-run"
 ];
 
-// ── AVAILABLE PORTRAITS (unused outdated images for generated vampires) ──
-export const GENERATED_PORTRAITS = [];
-for (let i = 26; i <= 104; i++) {
-  // Skip gaps in the outdated numbering
-  if (i === 35 || i === 2) continue;
-  GENERATED_PORTRAITS.push(`modules/ld-crimson-scaler/assets/portraits/outdated_${String(i).padStart(2, "0")}.png`);
-}
+// Packaged portraits that are not already assigned to coven generics.
+const GENERATED_PORTRAIT_FILES = [
+  "deity_man_01.png", "deity_man_02.png", "deity_man_03.png",
+  "deity_woman_01.png", "deity_woman_02.png",
+  "demon_cyclope_woman_01.png", "demon_darkelve_woman_02.png", "demon_elve_man_01.png",
+  "demon_halfelin_woman_01.png", "demon_human_man_01.png",
+  "highpriest_human_man_01.png", "highpriest_human_man_02.png",
+  "highwizard_darkelve_man_01.png", "highwizard_elve_man_01.png", "highwizard_elve_woman_01.png",
+  "highwizard_human_man_03.png", "highwizard_human_woman_01.png", "highwizard_stellar_woman_01.png",
+  "knight_human_man_01.png", "knight_human_man_02.png", "knight_human_man_03.png",
+  "knight_human_man_04.png", "knight_human_man_05.png", "knight_human_man_06.png",
+  "knight_raceless_man_01.png",
+  "noble_elve_man_01.png", "noble_human_man_01.png", "noble_human_man_02.png",
+  "noble_human_woman_01.png", "noble_human_woman_02.png", "noble_human_woman_03.png",
+  "noble_human_woman_05.png",
+  "priest_elve_woman_01.png", "priest_human_woman_01.png",
+  "ranger_elve_man_01.png", "ranger_elve_woman_01.png",
+  "resident_cyclope_man_01.png", "resident_darkelve_man_01.png",
+  "resident_darkelve_woman_01.png", "resident_darkelve_woman_02.png", "resident_darkelve_woman_03.png",
+  "resident_goblin_woman_01.png", "resident_halfelin_woman_01.png",
+  "resident_human_man_01.png", "resident_human_man_02.png", "resident_human_man_03.png",
+  "resident_human_man_04.png", "resident_human_man_05.png",
+  "resident_human_woman_01.png", "resident_human_woman_02.png", "resident_human_woman_03.png",
+  "resident_human_woman_04.png", "resident_human_woman_05.png", "resident_human_woman_06.png",
+  "scholar_human_woman_01.png", "unknow_darkelve_boy_01.png",
+  "warrior_cyclope_woman_01.png", "warrior_darkelve_man_01.png", "warrior_darkelve_woman_01.png",
+  "warrior_dwarf_man_01.png", "warrior_elve_woman_01.png", "warrior_elve_woman_02.png",
+  "warrior_halfork_woman_01.png", "warrior_human_girl_01.png",
+  "warrior_human_man_01.png", "warrior_human_man_02.png", "warrior_human_man_03.png",
+  "warrior_human_man_04.png", "warrior_human_man_05.png",
+  "warrior_human_woman_01.png", "warrior_human_woman_02.png", "warrior_human_woman_03.png",
+  "warrior_human_woman_04.png", "warrior_human_woman_05.png", "warrior_human_woman_06.png",
+  "wizard_darkelve_man_01.png", "wizard_elve_man_01.png", "wizard_elve_woman_01.png",
+  "wizard_elve_woman_02.png", "wizard_goblin_woman_01.png",
+  "wizard_human_man_01.png", "wizard_human_man_02.png", "wizard_human_man_03.png",
+  "wizard_human_man_04.png", "wizard_human_woman_01.png", "wizard_human_woman_02.png",
+  "wizard_human_woman_03.png", "wizard_human_woman_04.png"
+];
+
+export const GENERATED_PORTRAITS = GENERATED_PORTRAIT_FILES.map(
+  (file) => `modules/ld-crimson-scaler/assets/portraits/${file}`
+);
 
 // ── UTILITY ────────────────────────────────────────────────────────────
 

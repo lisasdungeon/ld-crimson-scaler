@@ -42,5 +42,8 @@
     { "name": "Yna \"Chain\" Merr", "rank": "Recruit", "level": 2, "file": "characters/recruit-yna-chain-merr.json" },
     { "name": "Brak \"Runt\" Holt", "rank": "Recruit", "level": 1, "file": "characters/recruit-brak-runt-holt.json" }
   ],
+  "genericPool": {
+    "file": "generic/index.json"
+  },
   "status": "phase-2-fighters-and-recruits-built"
 }

@@ -36,25 +36,31 @@ export class CovenDataService {
         }
 
         const generics = [];
-        try {
-          const genericIndexResp = await fetch(`${COVEN_BASE}/${covenDir}/generic/index.json`);
-          if (genericIndexResp.ok) {
-            const genericIndex = await genericIndexResp.json();
-            const listed = genericIndex.templates || genericIndex.variants || [];
-            for (const variant of listed) {
-              if (!variant?.file) continue;
-              try {
-                const gResp = await fetch(`${COVEN_BASE}/${covenDir}/generic/${variant.file}`);
-                if (!gResp.ok) continue;
-                const gData = await gResp.json();
-                gData._covenId = index.covenId;
-                gData._covenName = index.covenName;
-                gData._isGeneric = true;
-                generics.push(gData);
-              } catch (_err) { /* skip missing listed file */ }
+        const genericIndexFile = index.genericPool?.file || index.genericIndex;
+        if (genericIndexFile) {
+          try {
+            const genericIndexResp = await fetch(`${COVEN_BASE}/${covenDir}/${genericIndexFile}`);
+            if (genericIndexResp.ok) {
+              const genericIndex = await genericIndexResp.json();
+              const listed = genericIndex.templates || genericIndex.variants || [];
+              const genericDir = genericIndexFile.includes("/")
+                ? genericIndexFile.slice(0, genericIndexFile.lastIndexOf("/") + 1)
+                : "generic/";
+              for (const variant of listed) {
+                if (!variant?.file) continue;
+                try {
+                  const gResp = await fetch(`${COVEN_BASE}/${covenDir}/${genericDir}${variant.file}`);
+                  if (!gResp.ok) continue;
+                  const gData = await gResp.json();
+                  gData._covenId = index.covenId;
+                  gData._covenName = index.covenName;
+                  gData._isGeneric = true;
+                  generics.push(gData);
+                } catch (_err) { /* skip missing listed file */ }
+              }
             }
-          }
-        } catch (_err) { /* coven has no generic pool */ }
+          } catch (_err) { /* listed generic pool failed to load */ }
+        }
 
         this._covens.push({
           ...index,

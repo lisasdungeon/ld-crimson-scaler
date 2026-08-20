@@ -2,6 +2,13 @@
 
 ## [Unreleased]
 
+## [1.0.10] - 2026-08-20
+
+- Fetch coven generic pools only when the coven index lists `genericPool` (Vespera/Yelena no longer 404).
+- Generate vampires from packaged portraits instead of missing `outdated_26.png`–`outdated_104.png`.
+- Rewrite missing `outdated_*` portraits and dead Foundry icon paths onto files that exist.
+
+
 ## [1.0.9] - 2026-08-20
 
 - Load coven generics only from index `templates`/`variants` instead of guessing filenames (stops 404 storms).
