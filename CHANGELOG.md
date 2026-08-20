@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+## [1.0.9] - 2026-08-20
+
+- Load coven generics only from index `templates`/`variants` instead of guessing filenames (stops 404 storms).
+- Rewrite dead `icons/svg/damage` paths in chat cards.
+
 ## [1.0.8] - 2026-08-20
 
 - Load a new crimson override stylesheet so cached purple hub CSS cannot keep winning.

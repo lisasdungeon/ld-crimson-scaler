@@ -1,6 +1,6 @@
 {
   "name": "ld-crimson-scaler",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "GM hub for monitoring and validating item scaling rules, with editable scaling profiles for weapons and armor.",
   "type": "module",
   "scripts": {

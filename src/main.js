@@ -3,7 +3,7 @@ import { DEFAULT_SCALING_RULES, MODULE_ID, SETTING_KEYS, TEMPLATE_PATHS } from "
 import { scalingRuleService } from "./services/scaling-rule-service.js";
 import { classItemScalingService } from "./services/class-item-scaling-service.js";
 import { playerActionsService } from "./services/player-actions-service.js";
-import { migrateLegacyAssetPaths, migrateLegacyFlags } from "../ld-legacy-migrate.js";
+import { migrateLegacyAssetPaths, migrateLegacyFlags, rewriteLegacyAssetPath } from "../ld-legacy-migrate.js";
 
 const ROLL_FALLBACK_HOOK_FLAG = "__rnkCrimsonScalerRollFallbackHooked";
 
@@ -303,6 +303,19 @@ Hooks.once("ready", async () => {
   }
   console.log("LD Crimson Scaler | Ready");
 });
+
+function rewriteDeadIconNodes(root) {
+  const node = root instanceof HTMLElement ? root : root?.[0];
+  if (!node?.querySelectorAll) return;
+  for (const img of node.querySelectorAll("img")) {
+    const src = img.getAttribute("src") || "";
+    const next = rewriteLegacyAssetPath(src);
+    if (next && next !== src) img.setAttribute("src", next);
+  }
+}
+
+Hooks.on("renderChatMessage", (_message, html) => rewriteDeadIconNodes(html));
+Hooks.on("renderChatMessageHTML", (_message, html) => rewriteDeadIconNodes(html));
 
 Hooks.on("updateActor", async (actor, changed) => {
   if (!game.user.isGM) return;

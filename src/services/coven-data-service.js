@@ -35,13 +35,14 @@ export class CovenDataService {
           }
         }
 
-        // Load generics if they exist
         const generics = [];
         try {
           const genericIndexResp = await fetch(`${COVEN_BASE}/${covenDir}/generic/index.json`);
           if (genericIndexResp.ok) {
             const genericIndex = await genericIndexResp.json();
-            for (const variant of (genericIndex.variants || [])) {
+            const listed = genericIndex.templates || genericIndex.variants || [];
+            for (const variant of listed) {
+              if (!variant?.file) continue;
               try {
                 const gResp = await fetch(`${COVEN_BASE}/${covenDir}/generic/${variant.file}`);
                 if (!gResp.ok) continue;
@@ -50,42 +51,10 @@ export class CovenDataService {
                 gData._covenName = index.covenName;
                 gData._isGeneric = true;
                 generics.push(gData);
-              } catch (e) { /* skip */ }
+              } catch (_err) { /* skip missing listed file */ }
             }
           }
-        } catch (e) { /* no generics */ }
-
-        // Also try loading generic files by scanning known patterns
-        if (generics.length === 0) {
-          const genericPatterns = [];
-          for (let i = 1; i <= 10; i++) {
-            genericPatterns.push(`generic-fighter-${String(i).padStart(2, "0")}.json`);
-            genericPatterns.push(`generic-recruit-${String(i).padStart(2, "0")}.json`);
-            genericPatterns.push(`generic-fighter-v${i}-*.json`);
-          }
-          // Try numbered generics
-          for (let i = 1; i <= 5; i++) {
-            for (const prefix of ["generic-fighter", "generic-recruit"]) {
-              for (const suffix of [
-                `${prefix}-${String(i).padStart(2, "0")}.json`,
-                `${prefix}-v${i}`,
-              ]) {
-                try {
-                  const gResp = await fetch(`${COVEN_BASE}/${covenDir}/generic/${suffix}`);
-                  if (gResp.ok) {
-                    const gData = await gResp.json();
-                    if (!generics.some(g => g.id === gData.id)) {
-                      gData._covenId = index.covenId;
-                      gData._covenName = index.covenName;
-                      gData._isGeneric = true;
-                      generics.push(gData);
-                    }
-                  }
-                } catch (e) { /* skip */ }
-              }
-            }
-          }
-        }
+        } catch (_err) { /* coven has no generic pool */ }
 
         this._covens.push({
           ...index,
