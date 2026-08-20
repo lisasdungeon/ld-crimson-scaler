@@ -1,4 +1,4 @@
-# RNK Crimson Scaler - Build Plan (Items First)
+# LD Crimson Scaler - Build Plan (Items First)
 
 ## Timeline / Milestones
 

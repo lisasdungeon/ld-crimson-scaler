@@ -12,7 +12,7 @@ export class CrimsonScalerClassDetailApp extends HandlebarsApplicationMixin(Appl
       height: 860
     },
     window: {
-      title: "RNK Crimson Scaler - Class Detail",
+      title: "LD Crimson Scaler - Class Detail",
       icon: "fa-solid fa-book-open",
       resizable: true
     }

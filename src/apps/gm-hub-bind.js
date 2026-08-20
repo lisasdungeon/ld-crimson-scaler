@@ -45,24 +45,24 @@ export function bindUiEvents(signal) {
 
   root.querySelector("[data-action='refresh-items']")?.addEventListener("click", async () => {
     await this.render({ force: true });
-    ui.notifications.info("RNK Crimson Scaler: item snapshot refreshed.");
+    ui.notifications.info("LD Crimson Scaler: item snapshot refreshed.");
   }, opts);
 
   root.querySelector("[data-action='deploy-dataset']")?.addEventListener("click", async () => {
     if (!game.user.isGM) return;
 
-    ui.notifications.info("RNK Crimson Scaler: syncing archetype datasets (update-only, UUID-preserving mode)...");
+    ui.notifications.info("LD Crimson Scaler: syncing archetype datasets (update-only, UUID-preserving mode)...");
     try {
       const result = await deployDatasetService.deployAll({ allowCreate: true });
       await this.render({ force: true });
       ui.notifications.info(
-        `RNK Crimson Scaler: sync complete | ` +
+        `LD Crimson Scaler: sync complete | ` +
         `archetypes updated ${result.archetypes.updated}, skipped ${result.archetypes.skipped}, created ${result.archetypes.created} | ` +
         `subclasses ${result.archetypes.subclass}, feats ${result.archetypes.feat}.`
       );
     } catch (error) {
       console.error(`${MODULE_ID} | Dataset deployment failed`, error);
-      ui.notifications.error("RNK Crimson Scaler: dataset deployment failed. Check console.");
+      ui.notifications.error("LD Crimson Scaler: dataset deployment failed. Check console.");
     }
   }, opts);
 
@@ -71,7 +71,7 @@ export function bindUiEvents(signal) {
 
     const confirmed = typeof Dialog?.confirm === "function"
       ? await Dialog.confirm({
-        title: "RNK Crimson Scaler",
+        title: "LD Crimson Scaler",
         content: "<p>Cleanup duplicate archetype subclass/feat items created by prior deployments?</p>",
         yes: () => true,
         no: () => false,
@@ -81,24 +81,24 @@ export function bindUiEvents(signal) {
 
     if (!confirmed) return;
 
-    ui.notifications.info("RNK Crimson Scaler: cleaning duplicate archetype items...");
+    ui.notifications.info("LD Crimson Scaler: cleaning duplicate archetype items...");
     try {
       const result = await deployDatasetService.purgeDatasetDuplicates();
       await this.render({ force: true });
       if (result.deletedTotal > 0) {
         ui.notifications.info(
-          `RNK Crimson Scaler: duplicate cleanup complete | ` +
+          `LD Crimson Scaler: duplicate cleanup complete | ` +
           `archetype groups ${result.archetypes.duplicateGroups}, deleted ${result.archetypes.deleted} | ` +
           `total deleted ${result.deletedTotal}.`
         );
       } else {
         ui.notifications.warn(
-          "RNK Crimson Scaler: cleanup ran but deleted 0 archetype items. If duplicates remain, run Sync first, then Cleanup again."
+          "LD Crimson Scaler: cleanup ran but deleted 0 archetype items. If duplicates remain, run Sync first, then Cleanup again."
         );
       }
     } catch (error) {
       console.error(`${MODULE_ID} | Duplicate cleanup failed`, error);
-      ui.notifications.error("RNK Crimson Scaler: duplicate cleanup failed. Check console.");
+      ui.notifications.error("LD Crimson Scaler: duplicate cleanup failed. Check console.");
     }
   }, opts);
 
@@ -131,13 +131,13 @@ export function bindUiEvents(signal) {
   root.querySelector("[data-action='send-popup-to-player']")?.addEventListener("click", async () => {
     if (!game.user.isGM) return;
     if (!this.selectedUserId || !this.selectedItemId) {
-      ui.notifications.warn("RNK Crimson Scaler: select a player and item first.");
+      ui.notifications.warn("LD Crimson Scaler: select a player and item first.");
       return;
     }
 
     const item = game.items?.get(this.selectedItemId);
     if (!item) {
-      ui.notifications.error("RNK Crimson Scaler: selected item not found.");
+      ui.notifications.error("LD Crimson Scaler: selected item not found.");
       return;
     }
 
@@ -146,7 +146,7 @@ export function bindUiEvents(signal) {
     const targetUserIds = selectedTarget?.ownerUserIds ?? [];
 
     if (!targetUserIds.length) {
-      ui.notifications.warn("RNK Crimson Scaler: selected player has no owning user accounts.");
+      ui.notifications.warn("LD Crimson Scaler: selected player has no owning user accounts.");
       return;
     }
 
@@ -157,13 +157,13 @@ export function bindUiEvents(signal) {
       });
     }
 
-    ui.notifications.info(`RNK Crimson Scaler: sent ${item.name} popup to ${selectedTarget?.name || "selected player"}.`);
+    ui.notifications.info(`LD Crimson Scaler: sent ${item.name} popup to ${selectedTarget?.name || "selected player"}.`);
   }, opts);
 
   root.querySelector("[data-action='add-item-to-actor']")?.addEventListener("click", async () => {
     if (!game.user.isGM) return;
     if (!this.selectedActorId || !this.selectedItemId) {
-      ui.notifications.warn("RNK Crimson Scaler: select an actor and item first.");
+      ui.notifications.warn("LD Crimson Scaler: select an actor and item first.");
       return;
     }
 
@@ -172,10 +172,10 @@ export function bindUiEvents(signal) {
         actorId: this.selectedActorId,
         itemId: this.selectedItemId
       });
-      ui.notifications.info(`RNK Crimson Scaler: added ${result.itemName} to ${result.actorName}.`);
+      ui.notifications.info(`LD Crimson Scaler: added ${result.itemName} to ${result.actorName}.`);
     } catch (error) {
       console.error(`${MODULE_ID} | Add item to actor failed`, error);
-      ui.notifications.error("RNK Crimson Scaler: failed adding item to actor sheet.");
+      ui.notifications.error("LD Crimson Scaler: failed adding item to actor sheet.");
     }
   }, opts);
 
@@ -194,10 +194,10 @@ export function bindUiEvents(signal) {
       await scalingRuleService.saveRulesFromJson(jsonText);
       this.rulesJsonDraft = scalingRuleService.getRulesAsJson();
       this.lastValidation = { valid: true, errors: [] };
-      ui.notifications.info("RNK Crimson Scaler: scaling rules saved.");
+      ui.notifications.info("LD Crimson Scaler: scaling rules saved.");
       await this.render({ force: true });
     } catch (error) {
-      ui.notifications.error("RNK Crimson Scaler: failed to save rules. Check console.");
+      ui.notifications.error("LD Crimson Scaler: failed to save rules. Check console.");
       console.error(`${MODULE_ID} | Failed to save scaling rules`, error);
     }
   }, opts);
@@ -205,7 +205,7 @@ export function bindUiEvents(signal) {
   root.querySelector("[data-action='reset-rules']")?.addEventListener("click", async () => {
     this.rulesJsonDraft = null;
     await this.render({ force: true });
-    ui.notifications.info("RNK Crimson Scaler: rules reset to defaults.");
+    ui.notifications.info("LD Crimson Scaler: rules reset to defaults.");
   }, opts);
 
   // Archetype inline expand toggle

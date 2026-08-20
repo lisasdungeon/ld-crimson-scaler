@@ -58,7 +58,7 @@ export function bindCovenEvents(root, opts) {
       if (!member) return;
       try {
         const actor = await vampireGeneratorService.deployToWorld(member);
-        ui.notifications.info(`RNK Crimson Scaler: deployed ${actor.name} to world.`);
+        ui.notifications.info(`LD Crimson Scaler: deployed ${actor.name} to world.`);
       } catch (e) {
         console.error(`${MODULE_ID} | Deploy coven member failed`, e);
         ui.notifications.error("Deploy failed. Check console.");
@@ -73,7 +73,7 @@ export function bindCovenEvents(root, opts) {
       if (!member) return;
       try {
         const actor = await vampireGeneratorService.deployToCanvas(member);
-        ui.notifications.info(`RNK Crimson Scaler: deployed ${actor.name} to canvas.`);
+        ui.notifications.info(`LD Crimson Scaler: deployed ${actor.name} to canvas.`);
       } catch (e) {
         console.error(`${MODULE_ID} | Deploy to canvas failed`, e);
         ui.notifications.error("Deploy to canvas failed. Check console.");
@@ -120,7 +120,7 @@ export function syncGeneratorInputs() {
 export function buildRulesData(rules) {
   return {
     metadata: {
-      name: rules?.metadata?.name ?? "RNK Crimson Baseline",
+      name: rules?.metadata?.name ?? "LD Crimson Baseline",
       version: rules?.metadata?.version ?? 1
     },
     weapons: {
@@ -162,7 +162,7 @@ export function collectRulesFromInputs(root) {
 
   return {
     metadata: {
-      name: val("metadata.name", "RNK Crimson Baseline"),
+      name: val("metadata.name", "LD Crimson Baseline"),
       version: val("metadata.version", 1)
     },
     weapons: {

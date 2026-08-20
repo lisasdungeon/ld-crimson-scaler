@@ -1,8 +1,24 @@
 /* ═══════════ FOUNDRY WINDOW SHELL ═══════════ */
 
-.ld-crimson-scaler .window-content {
-  background: #131217;
-  color: #eee8f3;
+.ld-crimson-scaler.application,
+.ld-crimson-scaler-detail.application {
+  background: #120606;
+  border: 2px solid rgba(139, 0, 0, 0.7);
+  box-shadow: 0 0 22px rgba(185, 28, 28, 0.45);
+  font-family: Cinzel, Signika, "Palatino Linotype", serif;
+}
+
+.ld-crimson-scaler .window-header,
+.ld-crimson-scaler-detail .window-header {
+  background: linear-gradient(90deg, #1a0808, #2a1010);
+  border-bottom: 1px solid rgba(212, 165, 116, 0.35);
+  color: #d4a574;
+}
+
+.ld-crimson-scaler .window-content,
+.ld-crimson-scaler-detail .window-content {
+  background: linear-gradient(135deg, #1a0000 0%, #2d0000 50%, #1a0000 100%);
+  color: #f0e6dc;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -35,8 +51,12 @@
 
 .cs-header h1 {
   margin: 0;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   white-space: nowrap;
+  color: #d4a574;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-shadow: 0 0 12px rgba(139, 0, 0, 0.6);
 }
 
 .cs-toolbar {
@@ -61,18 +81,29 @@
 .cs-item-sections button,
 .cs-rule-actions button,
 .cs-toolbar button {
-  border: 1px solid #6b2343;
-  background: #24121b;
-  color: #f7dbe7;
+  border: 1px solid #8b0000;
+  background: #2a1010;
+  color: #f0e6dc;
   border-radius: 4px;
   padding: 0.3rem 0.65rem;
   cursor: pointer;
   font-size: 0.82rem;
 }
 
+.cs-tabs button:hover,
+.cs-item-sections button:hover,
+.cs-rule-actions button:hover,
+.cs-toolbar button:hover,
+.cs-dispatch-actions button:hover {
+  background: rgba(185, 28, 28, 0.55);
+  box-shadow: 0 0 10px rgba(185, 28, 28, 0.45);
+}
+
 .cs-tabs button.active,
 .cs-item-sections button.active {
-  background: #702640;
+  background: #b91c1c;
+  border-color: #d4a574;
+  color: #fff;
 }
 
 /* ── THE ONE AND ONLY SCROLL REGION ── */
@@ -97,8 +128,8 @@
 }
 
 .cs-card {
-  border: 1px solid #422334;
-  background: #1e1720;
+  border: 1px solid #5c1f1f;
+  background: #1e1414;
   padding: 0.4rem 0.5rem;
   border-radius: 4px;
 }
@@ -114,8 +145,8 @@
 }
 
 .cs-panel {
-  border: 1px solid #422334;
-  background: #1a141e;
+  border: 1px solid #5c1f1f;
+  background: #1a0a0a;
   border-radius: 6px;
   padding: 0.75rem;
   flex: 0 0 auto;
@@ -142,7 +173,7 @@
 
 .cs-dispatch-panel h2 .cs-dispatch-toggle {
   font-size: 0.7rem;
-  color: #8a6a7e;
+  color: #9a8070;
   margin-left: 0.5rem;
 }
 
@@ -164,9 +195,9 @@
 }
 
 .cs-dispatch-grid select {
-  background: #1e1720;
-  border: 1px solid #6b2343;
-  color: #eee8f3;
+  background: #1e1414;
+  border: 1px solid #8b0000;
+  color: #f0e6dc;
   border-radius: 4px;
   box-sizing: border-box;
   height: var(--input-height, 2rem);
@@ -186,9 +217,9 @@
 }
 
 .cs-dispatch-actions button {
-  border: 1px solid #6b2343;
-  background: #24121b;
-  color: #f7dbe7;
+  border: 1px solid #8b0000;
+  background: #2a1010;
+  color: #f0e6dc;
   border-radius: 4px;
   padding: 0.25rem 0.55rem;
   font-size: 0.78rem;
@@ -204,9 +235,9 @@
 }
 
 .cs-class-card {
-  border: 1px solid #5e3244;
-  background: #231723;
-  color: #f2dce8;
+  border: 1px solid #5c1f1f;
+  background: #1e1414;
+  color: #f0e6dc;
   border-radius: 6px;
   padding: 0.75rem;
   text-align: left;
@@ -214,8 +245,8 @@
 }
 
 .cs-class-card.active {
-  border-color: #d35f88;
-  box-shadow: 0 0 0 1px #d35f88 inset;
+  border-color: #ff6b6b;
+  box-shadow: 0 0 0 1px #ff6b6b inset;
 }
 
 .cs-class-card .name {
@@ -225,7 +256,7 @@
 
 .cs-class-card .subname {
   font-size: 0.78rem;
-  color: #ddb8ca;
+  color: #d4a574;
   margin-bottom: 0.2rem;
 }
 
@@ -247,7 +278,7 @@
 
 .cs-table th,
 .cs-table td {
-  border-bottom: 1px solid #3d2a35;
+  border-bottom: 1px solid #3a2020;
   padding: 0.35rem;
   text-align: left;
   vertical-align: top;
@@ -260,14 +291,14 @@
 
 .cs-grid-table th,
 .cs-grid-table td {
-  border-bottom: 1px solid #3d2a35;
+  border-bottom: 1px solid #3a2020;
   padding: 0.4rem;
   text-align: left;
 }
 
 /* ── Issue / validation badges ── */
 
-.cs-issue { color: #ff98b7; }
+.cs-issue { color: #ff6b6b; }
 .cs-valid { color: #90ed90; }
 .cs-invalid { color: #ff8080; }
 
@@ -292,7 +323,7 @@
 
 .cs-class-subname {
   margin-top: -0.25rem;
-  color: #ddb8ca;
+  color: #d4a574;
   font-style: italic;
 }
 
@@ -331,9 +362,9 @@
 }
 
 .cs-back-button {
-  border: 1px solid #6b2343;
-  background: #24121b;
-  color: #f7dbe7;
+  border: 1px solid #8b0000;
+  background: #2a1010;
+  color: #f0e6dc;
   border-radius: 4px;
   padding: 0.35rem 0.75rem;
 }

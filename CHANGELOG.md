@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+## [1.0.7] - 2026-08-20
+
+- Restyle the GM Hub to the crimson palette used by the other LD Crimson modules.
+- Replace leftover RNK labels in hub chrome, scene controls, and notifications.
+
 ## [1.0.6] - 2026-08-20
 
 - Remap stored `modules/rnk-*` portrait and token paths to `modules/ld-*` on GM ready.

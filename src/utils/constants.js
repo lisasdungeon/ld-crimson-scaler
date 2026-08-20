@@ -29,7 +29,7 @@ export const ITEM_SECTIONS = {
 
 export const DEFAULT_SCALING_RULES = {
   metadata: {
-    name: "RNK Crimson Baseline",
+    name: "LD Crimson Baseline",
     version: 1
   },
   weapons: {

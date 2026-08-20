@@ -23,7 +23,7 @@ export class CrimsonScalerHubApp extends HandlebarsApplicationMixin(ApplicationV
       height: 780
     },
     window: {
-      title: "RNK Crimson Scaler - GM Hub",
+      title: "LD Crimson Scaler - GM Hub",
       icon: "fa-solid fa-scale-balanced",
       resizable: true
     },
@@ -273,7 +273,7 @@ export class CrimsonScalerHubApp extends HandlebarsApplicationMixin(ApplicationV
   async handleActorLevelAdjust(delta) {
     if (!game.user.isGM) return;
     if (!this.selectedActorId) {
-      ui.notifications.warn("RNK Crimson Scaler: select an actor first.");
+      ui.notifications.warn("LD Crimson Scaler: select an actor first.");
       return;
     }
 
@@ -284,7 +284,7 @@ export class CrimsonScalerHubApp extends HandlebarsApplicationMixin(ApplicationV
       });
 
       ui.notifications.info(
-        `RNK Crimson Scaler: ${result.actorName} level adjusted. ` +
+        `LD Crimson Scaler: ${result.actorName} level adjusted. ` +
         `Current level ${result.level}, HP max ${result.hpMax}. ` +
         `ASI ${result.asiApplied}/${result.asiEarned} applied. ` +
         `${result.nextAsiLevel ? `Next ASI at level ${result.nextAsiLevel}. ` : "No further ASI milestones. "}` +
@@ -293,7 +293,7 @@ export class CrimsonScalerHubApp extends HandlebarsApplicationMixin(ApplicationV
       await this.render({ force: true });
     } catch (error) {
       console.error(`${MODULE_ID} | Level adjustment failed`, error);
-      ui.notifications.error("RNK Crimson Scaler: failed to adjust level.");
+      ui.notifications.error("LD Crimson Scaler: failed to adjust level.");
     }
   }
 
@@ -372,7 +372,7 @@ export class CrimsonScalerHubApp extends HandlebarsApplicationMixin(ApplicationV
     const summary = this.getArchetypeSummary(this.searchText);
     const group = summary.rows.find((r) => r.classIdentifier === classIdentifier);
     if (!group) {
-      ui.notifications.warn("RNK Crimson Scaler: archetype group not found.");
+      ui.notifications.warn("LD Crimson Scaler: archetype group not found.");
       return;
     }
 
@@ -383,7 +383,7 @@ export class CrimsonScalerHubApp extends HandlebarsApplicationMixin(ApplicationV
     const classes = this.snapshot?.classes ?? [];
     const selected = classes.find((cls) => cls.classKey === classKey);
     if (!selected) {
-      ui.notifications.warn("RNK Crimson Scaler: class data not found.");
+      ui.notifications.warn("LD Crimson Scaler: class data not found.");
       return;
     }
 
@@ -406,7 +406,7 @@ export class CrimsonScalerHubApp extends HandlebarsApplicationMixin(ApplicationV
       this.render({ force: true });
     } catch (error) {
       console.error(`${MODULE_ID} | Generate vampire failed`, error);
-      ui.notifications.error("RNK Crimson Scaler: generate failed. Check console.");
+      ui.notifications.error("LD Crimson Scaler: generate failed. Check console.");
     }
   }
 
@@ -415,7 +415,7 @@ export class CrimsonScalerHubApp extends HandlebarsApplicationMixin(ApplicationV
     if (!this.genResult) return;
     try {
       const actor = await vampireGeneratorService.deployToWorld(this.genResult);
-      ui.notifications.info(`RNK Crimson Scaler: ${actor.name} created in world as NPC.`);
+      ui.notifications.info(`LD Crimson Scaler: ${actor.name} created in world as NPC.`);
     } catch (error) {
       console.error(`${MODULE_ID} | Deploy generated vampire failed`, error);
       ui.notifications.error("Deploy failed. Check console.");
@@ -427,7 +427,7 @@ export class CrimsonScalerHubApp extends HandlebarsApplicationMixin(ApplicationV
     if (!this.genResult) return;
     try {
       const actor = await vampireGeneratorService.deployToCanvas(this.genResult);
-      ui.notifications.info(`RNK Crimson Scaler: ${actor.name} deployed to canvas.`);
+      ui.notifications.info(`LD Crimson Scaler: ${actor.name} deployed to canvas.`);
     } catch (error) {
       console.error(`${MODULE_ID} | Deploy to canvas failed`, error);
       ui.notifications.error("Deploy to canvas failed. Check console.");

@@ -12,7 +12,7 @@ export class CrimsonScalerArchetypeDetailApp extends HandlebarsApplicationMixin(
       height: 820
     },
     window: {
-      title: "RNK Crimson Scaler - Archetype Detail",
+      title: "LD Crimson Scaler - Archetype Detail",
       icon: "fa-solid fa-shield-halved",
       resizable: true
     }

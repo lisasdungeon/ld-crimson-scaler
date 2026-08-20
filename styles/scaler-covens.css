@@ -16,9 +16,9 @@
 
 .cs-coven-filters select,
 .cs-coven-filters input {
-  background: #1e1720;
-  border: 1px solid #6b2343;
-  color: #eee8f3;
+  background: #1e1414;
+  border: 1px solid #8b0000;
+  color: #f0e6dc;
   border-radius: 4px;
   box-sizing: border-box;
   padding: 0.3rem 0.5rem;
@@ -43,15 +43,15 @@
 .cs-coven-card {
   display: flex;
   gap: 0.65rem;
-  border: 1px solid #5e3244;
-  background: #231723;
+  border: 1px solid #5c1f1f;
+  background: #1e1414;
   border-radius: 6px;
   padding: 0.65rem;
   transition: border-color 0.15s;
 }
 
 .cs-coven-card:hover {
-  border-color: #d35f88;
+  border-color: #ff6b6b;
 }
 
 .cs-coven-portrait {
@@ -60,7 +60,7 @@
   height: 64px;
   border-radius: 4px;
   overflow: hidden;
-  border: 1px solid #422334;
+  border: 1px solid #5c1f1f;
 }
 
 .cs-coven-portrait img {
@@ -92,8 +92,8 @@
 }
 
 .cs-coven-rank {
-  background: #702640;
-  color: #f7dbe7;
+  background: #b91c1c;
+  color: #f0e6dc;
   padding: 0.1rem 0.4rem;
   border-radius: 3px;
   font-size: 0.72rem;
@@ -103,18 +103,18 @@
 }
 
 .cs-coven-level {
-  color: #ddb8ca;
+  color: #d4a574;
   font-weight: 600;
 }
 
 .cs-coven-role {
   font-size: 0.78rem;
-  color: #c9a4b8;
+  color: #c4a484;
 }
 
 .cs-coven-build {
   font-size: 0.75rem;
-  color: #a08a98;
+  color: #9a8070;
   font-style: italic;
 }
 
@@ -122,7 +122,7 @@
   display: flex;
   gap: 0.5rem;
   font-size: 0.75rem;
-  color: #ddb8ca;
+  color: #d4a574;
   font-weight: 600;
 }
 
@@ -130,13 +130,13 @@
   display: flex;
   gap: 0.35rem;
   font-size: 0.68rem;
-  color: #a08a98;
+  color: #9a8070;
   flex-wrap: wrap;
 }
 
 .cs-coven-faction {
   font-size: 0.72rem;
-  color: #8a6a7e;
+  color: #9a8070;
   margin-top: 0.1rem;
 }
 
@@ -147,9 +147,9 @@
 }
 
 .cs-coven-actions button {
-  border: 1px solid #6b2343;
-  background: #24121b;
-  color: #f7dbe7;
+  border: 1px solid #8b0000;
+  background: #2a1010;
+  color: #f0e6dc;
   border-radius: 4px;
   padding: 0.2rem 0.5rem;
   font-size: 0.72rem;
@@ -158,5 +158,5 @@
 }
 
 .cs-coven-actions button:hover {
-  background: #702640;
+  background: #b91c1c;
 }

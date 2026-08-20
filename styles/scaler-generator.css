@@ -17,9 +17,9 @@
 
 .cs-gen-controls select,
 .cs-gen-controls input {
-  background: #1e1720;
-  border: 1px solid #6b2343;
-  color: #eee8f3;
+  background: #1e1414;
+  border: 1px solid #8b0000;
+  color: #f0e6dc;
   border-radius: 4px;
   box-sizing: border-box;
   padding: 0.3rem 0.5rem;
@@ -41,8 +41,8 @@
 }
 
 .cs-gen-btn {
-  border: 1px solid #d35f88 !important;
-  background: #702640 !important;
+  border: 1px solid #ff6b6b !important;
+  background: #b91c1c !important;
   color: #fff !important;
   border-radius: 4px;
   padding: 0.4rem 1rem;
@@ -54,7 +54,7 @@
 }
 
 .cs-gen-btn:hover {
-  background: #8b3050 !important;
+  background: #8b0000 !important;
   box-shadow: 0 0 8px rgba(211, 95, 136, 0.4);
 }
 
@@ -71,7 +71,7 @@
   height: 96px;
   border-radius: 6px;
   overflow: hidden;
-  border: 2px solid #6b2343;
+  border: 2px solid #8b0000;
 }
 
 .cs-gen-portrait img {
@@ -99,7 +99,7 @@
 
 .cs-gen-result-build {
   font-size: 0.82rem;
-  color: #a08a98;
+  color: #9a8070;
   font-style: italic;
   margin-top: 0.15rem;
 }
@@ -108,8 +108,8 @@
   display: flex;
   gap: 0.5rem;
   justify-content: space-between;
-  background: #1e1720;
-  border: 1px solid #422334;
+  background: #1e1414;
+  border: 1px solid #5c1f1f;
   border-radius: 4px;
   padding: 0.5rem 0.75rem;
   margin-bottom: 0.5rem;
@@ -124,7 +124,7 @@
 
 .cs-gen-stat .lbl {
   font-size: 0.68rem;
-  color: #8a6a7e;
+  color: #9a8070;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
@@ -132,14 +132,14 @@
 .cs-gen-stat .val {
   font-size: 1rem;
   font-weight: 700;
-  color: #eee8f3;
+  color: #f0e6dc;
 }
 
 .cs-gen-vitals {
   display: flex;
   gap: 1rem;
   font-size: 0.85rem;
-  color: #ddb8ca;
+  color: #d4a574;
   font-weight: 600;
   margin-bottom: 0.5rem;
 }
@@ -151,8 +151,8 @@
 .cs-gen-section h3 {
   font-size: 0.85rem;
   margin: 0 0 0.3rem;
-  color: #d35f88;
-  border-bottom: 1px solid #422334;
+  color: #ff6b6b;
+  border-bottom: 1px solid #5c1f1f;
   padding-bottom: 0.2rem;
 }
 
@@ -163,12 +163,12 @@
 }
 
 .cs-gen-tag {
-  background: #2a1a24;
-  border: 1px solid #5e3244;
+  background: #2a1010;
+  border: 1px solid #5c1f1f;
   border-radius: 3px;
   padding: 0.15rem 0.4rem;
   font-size: 0.75rem;
-  color: #ddb8ca;
+  color: #d4a574;
 }
 
 .cs-gen-equip-list {
@@ -188,16 +188,16 @@
   width: 20px;
   height: 20px;
   border-radius: 2px;
-  border: 1px solid #422334;
+  border: 1px solid #5c1f1f;
   object-fit: contain;
-  background: #1e1720;
+  background: #1e1414;
 }
 
 .cs-gen-feature-list {
   margin: 0;
   padding-left: 1.2rem;
   font-size: 0.82rem;
-  color: #ddb8ca;
+  color: #d4a574;
 }
 
 .cs-gen-feature-list li {
@@ -206,12 +206,12 @@
 
 .cs-gen-spell-row {
   font-size: 0.8rem;
-  color: #c9a4b8;
+  color: #c4a484;
   margin-bottom: 0.2rem;
 }
 
 .cs-gen-spell-row strong {
-  color: #eee8f3;
+  color: #f0e6dc;
   text-transform: capitalize;
 }
 
@@ -220,13 +220,13 @@
   gap: 0.5rem;
   margin-top: 0.75rem;
   padding-top: 0.5rem;
-  border-top: 1px solid #422334;
+  border-top: 1px solid #5c1f1f;
 }
 
 .cs-gen-result-actions button {
-  border: 1px solid #6b2343;
-  background: #24121b;
-  color: #f7dbe7;
+  border: 1px solid #8b0000;
+  background: #2a1010;
+  color: #f0e6dc;
   border-radius: 4px;
   padding: 0.35rem 0.75rem;
   font-size: 0.82rem;
@@ -235,19 +235,19 @@
 }
 
 .cs-gen-result-actions button:hover {
-  background: #702640;
+  background: #b91c1c;
 }
 
 .cs-gen-empty {
   text-align: center;
   padding: 2rem 1rem;
-  color: #8a6a7e;
+  color: #9a8070;
 }
 
 .cs-gen-empty-icon {
   font-size: 2.5rem;
   margin-bottom: 0.75rem;
-  color: #5e3244;
+  color: #5c1f1f;
 }
 
 .cs-gen-history {
@@ -260,19 +260,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid #422334;
-  background: #1e1720;
+  border: 1px solid #5c1f1f;
+  background: #1e1414;
   border-radius: 4px;
   padding: 0.4rem 0.65rem;
   cursor: pointer;
   transition: border-color 0.15s;
-  color: #eee8f3;
+  color: #f0e6dc;
   width: 100%;
   text-align: left;
 }
 
 .cs-gen-history-item:hover {
-  border-color: #d35f88;
+  border-color: #ff6b6b;
 }
 
 .cs-gen-history-item .name {
@@ -282,7 +282,7 @@
 
 .cs-gen-history-item .meta {
   font-size: 0.75rem;
-  color: #a08a98;
+  color: #9a8070;
 }
 
 /* ═══════════ CLICKABLE CARD + CLASS ICON ═══════════ */
@@ -295,8 +295,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #2a1a24;
-  color: #d35f88;
+  background: #2a1010;
+  color: #ff6b6b;
   font-size: 1.4rem;
 }
 
@@ -317,13 +317,13 @@
   right: 0.65rem;
   top: 50%;
   transform: translateY(-50%);
-  color: #8a6a7e;
+  color: #9a8070;
   font-size: 0.75rem;
 }
 
 .cs-archetype-detail {
-  border: 1px solid #422334;
-  background: #1a141e;
+  border: 1px solid #5c1f1f;
+  background: #1a0a0a;
   border-radius: 0 0 6px 6px;
   padding: 0.5rem 0.75rem;
   margin-top: -0.35rem;
@@ -332,8 +332,8 @@
 .cs-archetype-detail h3 {
   font-size: 0.82rem;
   margin: 0.5rem 0 0.3rem;
-  color: #d35f88;
-  border-bottom: 1px solid #422334;
+  color: #ff6b6b;
+  border-bottom: 1px solid #5c1f1f;
   padding-bottom: 0.15rem;
 }
 
@@ -346,7 +346,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0.3rem 0;
-  border-bottom: 1px solid #2a1a24;
+  border-bottom: 1px solid #2a1010;
 }
 
 .cs-archetype-item:last-child {
@@ -368,7 +368,7 @@
 
 .cs-archetype-item-meta {
   font-size: 0.72rem;
-  color: #a08a98;
+  color: #9a8070;
 }
 
 .cs-archetype-item-actions {
@@ -378,9 +378,9 @@
 }
 
 .cs-archetype-item-actions button {
-  border: 1px solid #6b2343;
-  background: #24121b;
-  color: #f7dbe7;
+  border: 1px solid #8b0000;
+  background: #2a1010;
+  color: #f0e6dc;
   border-radius: 4px;
   padding: 0.25rem 0.45rem;
   font-size: 0.75rem;
@@ -389,7 +389,7 @@
 }
 
 .cs-archetype-item-actions button:hover {
-  background: #702640;
+  background: #b91c1c;
 }
 
 /* ═══════════ SCALING RULES INPUT FIELDS ═══════════ */
@@ -406,14 +406,14 @@
   flex-direction: column;
   gap: 0.2rem;
   font-size: 0.78rem;
-  color: #ddb8ca;
+  color: #d4a574;
 }
 
 .cs-rules-fields input[type="text"],
 .cs-rules-fields input[type="number"] {
-  background: #1e1720;
-  border: 1px solid #6b2343;
-  color: #eee8f3;
+  background: #1e1414;
+  border: 1px solid #8b0000;
+  color: #f0e6dc;
   border-radius: 4px;
   padding: 0.3rem 0.5rem;
   font-size: 0.82rem;
@@ -426,7 +426,7 @@
 }
 
 .cs-rules-check input[type="checkbox"] {
-  accent-color: #702640;
+  accent-color: #b91c1c;
   width: 16px;
   height: 16px;
 }

@@ -1,8 +1,8 @@
-# RNK Crimson Scaler - Feature Scope
+# LD Crimson Scaler - Feature Scope
 
 ## Module Identity
 
-- Working name: RNK Crimson Scaler
+- Working name: LD Crimson Scaler
 - Target module id: `ld-crimson-scaler`
 - Build root: `C:\Users\thugg\Downloads\New folder\crimson scaler`
 

@@ -87,7 +87,7 @@ function forceRender(app) {
 
 function openHub() {
   if (!game.user?.isGM) {
-    ui.notifications?.warn?.("RNK Crimson Scaler: GM access only.");
+    ui.notifications?.warn?.("LD Crimson Scaler: GM access only.");
     return;
   }
   let app = null;
@@ -102,7 +102,7 @@ function openHub() {
 function createHubTool() {
   return {
     name: "ld-crimson-scaler-hub",
-    title: "RNK Crimson Scaler Hub",
+    title: "LD Crimson Scaler Hub",
     icon: "fas fa-scale-balanced",
     button: true,
     visible: true,
@@ -133,7 +133,7 @@ function ensureToolInArrayControls(controls) {
 
   controls.push({
     name: "ld-crimson-scaler",
-    title: "RNK Crimson Scaler",
+    title: "LD Crimson Scaler",
     icon: "fas fa-scale-balanced",
     layer: "token",
     order: 180,
@@ -159,7 +159,7 @@ function ensureToolInObjectControls(controls) {
 
   controls["ld-crimson-scaler"] = {
     name: "ld-crimson-scaler",
-    title: "RNK Crimson Scaler",
+    title: "LD Crimson Scaler",
     icon: "fas fa-scale-balanced",
     layer: "token",
     order: 180,
@@ -239,7 +239,7 @@ Hooks.once("init", async () => {
   // Register settings
   game.settings.register(MODULE_ID, SETTING_KEYS.RULES_JSON, {
     name: "Scaling Rules JSON",
-    hint: "GM-editable scaling rule object for RNK Crimson Scaler.",
+    hint: "GM-editable scaling rule object for LD Crimson Scaler.",
     scope: "world",
     config: false,
     type: String,
@@ -296,12 +296,12 @@ Hooks.once("ready", async () => {
     const cleanup = await playerActionsService.sanitizeWorldAndActorItemEffects();
     if (cleanup.fixes > 0) {
       console.log(`${MODULE_ID} | Sanitized unsafe AC-bonus formulas: fixes=${cleanup.fixes}, worldItems=${cleanup.worldItems}, actorItems=${cleanup.actorItems}`);
-      ui.notifications.info("RNK Crimson Scaler: sanitized legacy AC-bonus formulas. Reload once more if errors were already present.");
+      ui.notifications.info("LD Crimson Scaler: sanitized legacy AC-bonus formulas. Reload once more if errors were already present.");
     }
   } catch (error) {
     console.error(`${MODULE_ID} | Failed sanitizing legacy formulas`, error);
   }
-  console.log("RNK Crimson Scaler | Ready");
+  console.log("LD Crimson Scaler | Ready");
 });
 
 Hooks.on("updateActor", async (actor, changed) => {
