@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+## [1.0.8] - 2026-08-20
+
+- Load a new crimson override stylesheet so cached purple hub CSS cannot keep winning.
+- Paint class-card icons and rank chips in the same crimson as the other LD hubs.
+
 ## [1.0.7] - 2026-08-20
 
 - Restyle the GM Hub to the crimson palette used by the other LD Crimson modules.

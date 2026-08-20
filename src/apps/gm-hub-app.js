@@ -113,6 +113,11 @@ export class CrimsonScalerHubApp extends HandlebarsApplicationMixin(ApplicationV
 
   async _onRender(context, options) {
     await super._onRender(context, options);
+    const title = "LD Crimson Scaler - GM Hub";
+    if (this.options?.window) this.options.window.title = title;
+    const appEl = this.element?.closest?.(".application") ?? this.element;
+    const titleEl = appEl?.querySelector?.(".window-title");
+    if (titleEl) titleEl.textContent = title;
     this._domAbort?.abort();
     this._domAbort = new AbortController();
     this.bindUiEvents(this._domAbort.signal);

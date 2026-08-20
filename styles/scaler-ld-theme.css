@@ -1,0 +1,107 @@
+/* Forced LD crimson chrome. Loaded last so cached purple rules cannot win. */
+.ld-crimson-scaler.application,
+.ld-crimson-scaler-detail.application {
+  background: #120606 !important;
+  border: 2px solid rgba(139, 0, 0, 0.75) !important;
+  box-shadow: 0 0 22px rgba(185, 28, 28, 0.5) !important;
+  font-family: Cinzel, Signika, "Palatino Linotype", serif;
+}
+
+.ld-crimson-scaler .window-header,
+.ld-crimson-scaler-detail .window-header {
+  background: linear-gradient(90deg, #1a0808, #2a1010) !important;
+  border-bottom: 1px solid rgba(212, 165, 116, 0.4) !important;
+  color: #d4a574 !important;
+}
+
+.ld-crimson-scaler .window-title,
+.ld-crimson-scaler-detail .window-title {
+  color: #d4a574 !important;
+}
+
+.ld-crimson-scaler .window-content,
+.ld-crimson-scaler-detail .window-content {
+  background: linear-gradient(135deg, #1a0000 0%, #2d0000 50%, #1a0000 100%) !important;
+  color: #f0e6dc !important;
+}
+
+.ld-crimson-scaler .cs-header h1 {
+  color: #d4a574 !important;
+}
+
+.ld-crimson-scaler .cs-tabs button,
+.ld-crimson-scaler .cs-item-sections button,
+.ld-crimson-scaler .cs-rule-actions button,
+.ld-crimson-scaler .cs-toolbar button,
+.ld-crimson-scaler .cs-dispatch-actions button,
+.ld-crimson-scaler .cs-coven-actions button,
+.ld-crimson-scaler .cs-back-button {
+  border: 1px solid #8b0000 !important;
+  background: #2a1010 !important;
+  color: #f0e6dc !important;
+}
+
+.ld-crimson-scaler .cs-tabs button.active,
+.ld-crimson-scaler .cs-item-sections button.active,
+.ld-crimson-scaler .cs-tabs button:hover,
+.ld-crimson-scaler .cs-toolbar button:hover,
+.ld-crimson-scaler .cs-dispatch-actions button:hover,
+.ld-crimson-scaler .cs-coven-actions button:hover {
+  background: #b91c1c !important;
+  border-color: #d4a574 !important;
+  color: #fff !important;
+}
+
+.ld-crimson-scaler .cs-card,
+.ld-crimson-scaler .cs-panel,
+.ld-crimson-scaler .cs-coven-card,
+.ld-crimson-scaler .cs-class-card {
+  background: #1e1414 !important;
+  border-color: #5c1f1f !important;
+  color: #f0e6dc !important;
+}
+
+.ld-crimson-scaler .cs-coven-card:hover,
+.ld-crimson-scaler .cs-class-card.active {
+  border-color: #ff6b6b !important;
+}
+
+.ld-crimson-scaler .cs-coven-portrait,
+.ld-crimson-scaler .cs-class-icon {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  background: #2a1010 !important;
+  border: 1px solid #8b0000 !important;
+  color: #d4a574 !important;
+  box-shadow: inset 0 0 12px rgba(139, 0, 0, 0.45);
+}
+
+.ld-crimson-scaler .cs-class-icon i,
+.ld-crimson-scaler .cs-coven-portrait i {
+  color: #ff6b6b !important;
+  font-size: 1.35rem;
+}
+
+.ld-crimson-scaler .cs-coven-rank {
+  background: #8b0000 !important;
+  color: #f0e6dc !important;
+}
+
+.ld-crimson-scaler .cs-coven-level,
+.ld-crimson-scaler .cs-coven-stats,
+.ld-crimson-scaler .cs-coven-role,
+.ld-crimson-scaler .cs-class-card .subname {
+  color: #d4a574 !important;
+}
+
+.ld-crimson-scaler .cs-toolbar input,
+.ld-crimson-scaler .cs-dispatch-grid select,
+.ld-crimson-scaler .cs-coven-filters select,
+.ld-crimson-scaler .cs-coven-filters input,
+.ld-crimson-scaler .cs-gen-controls select,
+.ld-crimson-scaler .cs-gen-controls input {
+  background: #1a0a0a !important;
+  border: 1px solid #8b0000 !important;
+  color: #f0e6dc !important;
+}
