@@ -1,0 +1,19 @@
+{
+  "poolId": "daria-generic-fighters",
+  "faction": "daria-iron-ring-coven",
+  "usage": "reusable-generic-frontline",
+  "baseTemplate": {
+    "name": "Iron Ring Fighter Base",
+    "role": "Phalanx grunt",
+    "coreGear": ["chainmail", "spear", "shield", "iron helmet", "javelins", "short sword"],
+    "markEffect": "+1d6 rage damage (1/short rest)",
+    "discipline": "formation break equals execution"
+  },
+  "templates": [
+    { "id": "daria-generic-fighter-v1", "name": "Iron Ring Fighter - Spear Thrust", "level": 8, "file": "generic-fighter-v1-spear-thrust.json" },
+    { "id": "daria-generic-fighter-v2", "name": "Iron Ring Fighter - Shield Ram", "level": 8, "file": "generic-fighter-v2-shield-ram.json" },
+    { "id": "daria-generic-fighter-v3", "name": "Iron Ring Fighter - Chain Puller", "level": 8, "file": "generic-fighter-v3-chain-puller.json" },
+    { "id": "daria-generic-fighter-v4", "name": "Iron Ring Fighter - Berserk Roar", "level": 8, "file": "generic-fighter-v4-berserk-roar.json" },
+    { "id": "daria-generic-fighter-v5", "name": "Iron Ring Fighter - Wall Holder", "level": 8, "file": "generic-fighter-v5-wall-holder.json" }
+  ]
+}

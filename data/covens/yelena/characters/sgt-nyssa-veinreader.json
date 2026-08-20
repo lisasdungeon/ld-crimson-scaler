@@ -1,0 +1,103 @@
+{
+  "id": "sgt-nyssa-veinreader",
+  "name": "Sgt. Nyssa Veinreader",
+  "img": "modules/ld-crimson-scaler/assets/portraits/scholar_human_woman_01.png",
+  "rank": "Sergeant",
+  "level": 18,
+  "role": "Diviner Sergeant",
+  "build": {
+    "primaryClass": "Wizard",
+    "subclass": "Divination",
+    "secondaryClass": "Cleric",
+    "casterType": "full-caster"
+  },
+  "abilities": {
+    "str": 9,
+    "dex": 13,
+    "con": 16,
+    "int": 20,
+    "wis": 20,
+    "cha": 12
+  },
+  "combat": {
+    "ac": 19,
+    "hp": 212,
+    "speed": 30,
+    "initiative": 6
+  },
+  "skills": [
+    "insight",
+    "arcana",
+    "medicine",
+    "religion"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Veinseer Vestments",
+        "img": "icons/equipment/chest/robe-blue-gold.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Palm Blade",
+        "img": "icons/weapons/swords/sword-guard-steel-green.webp"
+      }
+    ],
+    "focus": [
+      {
+        "name": "Blood Future Mark",
+        "img": "icons/magic/symbols/rune-sigil-red-orange.webp"
+      }
+    ]
+  },
+  "features": [
+    "Vitae Forecasting",
+    "Blood Pool Prophecy",
+    "Operation Prevision"
+  ],
+  "spells": {
+    "cantrips": [
+      "guidance",
+      "chill touch"
+    ],
+    "level1": [
+      "detect magic",
+      "bless"
+    ],
+    "level2": [
+      "augury",
+      "hold person"
+    ],
+    "level3": [
+      "clairvoyance",
+      "bestow curse"
+    ],
+    "level4": [
+      "arcane eye",
+      "divination"
+    ]
+  },
+  "integration": {
+    "faction": "yelena-crimson-archive-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "forecast-controller"
+  },
+  "prototypeToken": {
+    "name": "Sgt. Nyssa Veinreader",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/scholar_human_woman_01.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}

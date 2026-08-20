@@ -1,0 +1,97 @@
+{
+  "id": "sgt-vesper-alkahest",
+  "name": "Sgt. Vesper Alkahest",
+  "img": "modules/ld-crimson-scaler/assets/portraits/deity_woman_02.png",
+  "rank": "Sergeant",
+  "level": 14,
+  "role": "Dissolver Sergeant",
+  "build": {
+    "primaryClass": "Artificer",
+    "subclass": "Alchemist",
+    "secondaryClass": "Rogue",
+    "casterType": "hybrid"
+  },
+  "abilities": {
+    "str": 9,
+    "dex": 16,
+    "con": 15,
+    "int": 19,
+    "wis": 13,
+    "cha": 12
+  },
+  "combat": {
+    "ac": 17,
+    "hp": 164,
+    "speed": 35,
+    "initiative": 7
+  },
+  "skills": [
+    "acrobatics",
+    "medicine",
+    "investigation",
+    "sleight-of-hand"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Acidproof Jerkin",
+        "img": "icons/equipment/chest/leather-vest-brown.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Alkahest Sprayer",
+        "img": "icons/weapons/swords/sword-guard-steel-green.webp"
+      },
+      {
+        "name": "Vial Dagger",
+        "img": "icons/weapons/daggers/dagger-serrated.webp"
+      }
+    ],
+    "focus": [
+      {
+        "name": "Corrosion-Neutral Mark",
+        "img": "icons/magic/symbols/rune-sigil-red-orange.webp"
+      }
+    ]
+  },
+  "features": [
+    "Gear Melt Jets",
+    "Skin Acid Neutralization",
+    "Shield Dissolve Protocol"
+  ],
+  "spells": {
+    "level1": [
+      "acid splash",
+      "caustic brew"
+    ],
+    "level2": [
+      "melf's acid arrow"
+    ],
+    "level3": [
+      "stinking cloud"
+    ]
+  },
+  "integration": {
+    "faction": "yelena-crimson-archive-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "gear-denial-skirmisher"
+  },
+  "prototypeToken": {
+    "name": "Sgt. Vesper Alkahest",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/deity_woman_02.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}

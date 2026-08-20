@@ -1,0 +1,102 @@
+{
+  "id": "sgt-riven-bonecarver",
+  "name": "Sgt. Riven Bonecarver",
+  "img": "modules/ld-crimson-scaler/assets/portraits/deity_man_01.png",
+  "rank": "Sergeant",
+  "level": 17,
+  "role": "Necro Sergeant",
+  "build": {
+    "primaryClass": "Wizard",
+    "subclass": "Necromancy",
+    "secondaryClass": "Bard",
+    "casterType": "full-caster"
+  },
+  "abilities": {
+    "str": 10,
+    "dex": 12,
+    "con": 16,
+    "int": 20,
+    "wis": 15,
+    "cha": 14
+  },
+  "combat": {
+    "ac": 18,
+    "hp": 196,
+    "speed": 30,
+    "initiative": 5
+  },
+  "skills": [
+    "arcana",
+    "religion",
+    "survival",
+    "performance"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Graveflute Mantle",
+        "img": "icons/equipment/back/cloak-collared-grey.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Bonecarver Knife",
+        "img": "icons/weapons/daggers/dagger-serrated.webp"
+      }
+    ],
+    "focus": [
+      {
+        "name": "Undead Bind Mark",
+        "img": "icons/magic/symbols/rune-sigil-red-orange.webp"
+      }
+    ]
+  },
+  "features": [
+    "Skeleton Guard Animation",
+    "Flute Summons",
+    "Short-Bind Necro Chains"
+  ],
+  "spells": {
+    "cantrips": [
+      "chill touch",
+      "toll the dead"
+    ],
+    "level1": [
+      "false life",
+      "ray of sickness"
+    ],
+    "level2": [
+      "blindness/deafness",
+      "gentle repose"
+    ],
+    "level3": [
+      "animate dead",
+      "bestow curse"
+    ],
+    "level4": [
+      "blight"
+    ]
+  },
+  "integration": {
+    "faction": "yelena-crimson-archive-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "undead-controller"
+  },
+  "prototypeToken": {
+    "name": "Sgt. Riven Bonecarver",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/deity_man_01.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "id": "recruit-initiate-torin-ash-merr",
+  "name": "Initiate Torin \"Ash\" Merr",
+  "img": "modules/ld-crimson-scaler/assets/portraits/resident_cyclope_man_01.png",
+  "rank": "Recruit",
+  "level": 4,
+  "role": "Boot Camp Flagellant",
+  "build": {
+    "primaryClass": "Fighter",
+    "subclass": "None",
+    "secondaryClass": "None",
+    "casterType": "martial"
+  },
+  "abilities": {
+    "str": 13,
+    "dex": 12,
+    "con": 13,
+    "int": 9,
+    "wis": 10,
+    "cha": 10
+  },
+  "combat": {
+    "ac": 14,
+    "hp": 35,
+    "speed": 30,
+    "initiative": 3
+  },
+  "skills": [
+    "athletics",
+    "intimidation",
+    "survival"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Flagellant Wraps",
+        "img": "icons/equipment/chest/cloth-simple-brown.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Training Lash",
+        "img": "icons/weapons/sickles/sickle-curved-grey.webp"
+      },
+      {
+        "name": "Bone Shiv",
+        "img": "icons/weapons/daggers/dagger-straight-grey.webp"
+      }
+    ],
+    "focus": [
+      {
+        "name": "Punishment Cord",
+        "img": "icons/sundries/survival/rope-coiled-brown.webp"
+      }
+    ]
+  },
+  "features": [
+    "Pain-Energy Build",
+    "Lash Echo Transfer (1 damage)",
+    "Promotion Through Endurance"
+  ],
+  "spells": {
+    "level1": []
+  },
+  "integration": {
+    "faction": "sofiya-dawn-chorus-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "aggressive-trainee-skirmisher"
+  },
+  "prototypeToken": {
+    "name": "Initiate Torin \"Ash\" Merr",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/resident_cyclope_man_01.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}

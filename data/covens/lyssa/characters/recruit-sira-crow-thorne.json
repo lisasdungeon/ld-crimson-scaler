@@ -1,0 +1,94 @@
+{
+  "id": "recruit-sira-crow-thorne",
+  "name": "Sira \"Crow\" Thorne",
+  "img": "modules/ld-crimson-scaler/assets/portraits/resident_human_woman_03.png",
+  "rank": "Recruit",
+  "level": 4,
+  "role": "Boot Camp Infiltrator",
+  "build": {
+    "primaryClass": "Bard",
+    "subclass": "Glamour",
+    "secondaryClass": "None",
+    "casterType": "half-caster"
+  },
+  "abilities": {
+    "str": 8,
+    "dex": 15,
+    "con": 12,
+    "int": 12,
+    "wis": 11,
+    "cha": 16
+  },
+  "combat": {
+    "ac": 14,
+    "hp": 38,
+    "speed": 30,
+    "initiative": 5
+  },
+  "skills": [
+    "deception",
+    "performance",
+    "stealth",
+    "sleight-of-hand"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Stolen Finery Layers",
+        "img": "icons/equipment/chest/clothes-noble-blue.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Dummy Knife",
+        "img": "icons/weapons/daggers/dagger-serrated.webp"
+      },
+      {
+        "name": "Signal Whistle",
+        "img": "icons/tools/instruments/flute-simple-wood.webp"
+      }
+    ],
+    "focus": [
+      {
+        "name": "Half-Formed Glamour Sigil",
+        "img": "icons/magic/symbols/rune-sigil-red-orange.webp"
+      }
+    ]
+  },
+  "features": [
+    "Message Runner",
+    "Basic Glamour Drill",
+    "Crow Burst Panic"
+  ],
+  "spells": {
+    "cantrips": [
+      "minor illusion"
+    ],
+    "level1": [
+      "disguise self",
+      "charm person"
+    ]
+  },
+  "integration": {
+    "faction": "lyssa-veil-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "support-distraction-trainee"
+  },
+  "prototypeToken": {
+    "name": "Sira \"Crow\" Thorne",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/resident_human_woman_03.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}

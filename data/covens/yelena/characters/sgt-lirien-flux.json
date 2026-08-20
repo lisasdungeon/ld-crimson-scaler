@@ -1,0 +1,97 @@
+{
+  "id": "sgt-lirien-flux",
+  "name": "Sgt. Lirien Flux",
+  "img": "modules/ld-crimson-scaler/assets/portraits/demon_cyclope_woman_01.png",
+  "rank": "Sergeant",
+  "level": 12,
+  "role": "Mutagen Sergeant",
+  "build": {
+    "primaryClass": "Artificer",
+    "subclass": "Alchemist",
+    "secondaryClass": "Barbarian",
+    "casterType": "hybrid"
+  },
+  "abilities": {
+    "str": 14,
+    "dex": 14,
+    "con": 17,
+    "int": 18,
+    "wis": 12,
+    "cha": 12
+  },
+  "combat": {
+    "ac": 17,
+    "hp": 158,
+    "speed": 35,
+    "initiative": 6
+  },
+  "skills": [
+    "medicine",
+    "nature",
+    "athletics",
+    "intimidation"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Mutagen Harness",
+        "img": "icons/equipment/chest/leather-vest-brown.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Injector Claws",
+        "img": "icons/weapons/fist/claw-gauntlet-grey.webp"
+      },
+      {
+        "name": "Sawknife",
+        "img": "icons/weapons/daggers/dagger-serrated.webp"
+      }
+    ],
+    "focus": [
+      {
+        "name": "Stabilization Mark Ampoule",
+        "img": "icons/consumables/potions/potion-flask-corked-red.webp"
+      }
+    ]
+  },
+  "features": [
+    "Shock Mutation Injection",
+    "Bone Spur Stabilization",
+    "Temporary Morph Protocol"
+  ],
+  "spells": {
+    "level1": [
+      "enhance ability",
+      "false life"
+    ],
+    "level2": [
+      "alter self"
+    ],
+    "level3": [
+      "haste"
+    ]
+  },
+  "integration": {
+    "faction": "yelena-crimson-archive-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "mutation-buffer"
+  },
+  "prototypeToken": {
+    "name": "Sgt. Lirien Flux",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/demon_cyclope_woman_01.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}

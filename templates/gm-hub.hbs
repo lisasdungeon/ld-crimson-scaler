@@ -1,0 +1,521 @@
+<section class="cs-root">
+  <header class="cs-header">
+    <h1>RNK Crimson Scaler - GM Hub</h1>
+    <div class="cs-toolbar">
+      <input
+        type="text"
+        placeholder="Search classes or linked items..."
+        value="{{searchText}}"
+        data-action="search-items"
+      />
+      <button type="button" data-action="deploy-dataset">Deploy Archetypes</button>
+      <button type="button" data-action="cleanup-duplicates">Cleanup Duplicates</button>
+      <button type="button" data-action="refresh-items">Refresh</button>
+    </div>
+  </header>
+
+  <nav class="cs-tabs">
+    <button type="button" data-action="switch-tab" data-tab="classes" class="{{#if (eq activeTab tabs.CLASSES)}}active{{/if}}">Classes</button>
+    <button type="button" data-action="switch-tab" data-tab="archetypes" class="{{#if (eq activeTab tabs.ARCHETYPES)}}active{{/if}}">Archetypes</button>
+    <button type="button" data-action="switch-tab" data-tab="covens" class="{{#if (eq activeTab tabs.COVENS)}}active{{/if}}">Covens</button>
+    <button type="button" data-action="switch-tab" data-tab="generator" class="{{#if (eq activeTab tabs.GENERATOR)}}active{{/if}}">Generator</button>
+    <button type="button" data-action="switch-tab" data-tab="spells" class="{{#if (eq activeTab tabs.SPELLS)}}active{{/if}}">Spells</button>
+    <button type="button" data-action="switch-tab" data-tab="settings" class="{{#if (eq activeTab tabs.SETTINGS)}}active{{/if}}">Scaling Rules</button>
+  </nav>
+
+  <section class="cs-body">
+    <section class="cs-panel cs-dispatch-panel">
+      <h2 data-action="toggle-dispatch">Player Dispatch & Sheet Control <span class="cs-dispatch-toggle"><i class="fas fa-chevron-down"></i></span></h2>
+      <div class="cs-dispatch-body">
+        <div class="cs-dispatch-grid">
+          <label>
+            Player
+            <select data-action="select-player">
+              {{#each playerControls.players as |p|}}
+                <option value="{{p.id}}" {{#if (eq ../playerControls.selectedUserId p.id)}}selected{{/if}}>{{p.name}}</option>
+              {{/each}}
+            </select>
+          </label>
+
+          <label>
+            Actor Sheet
+            <select data-action="select-actor">
+              {{#each playerControls.actors as |a|}}
+                <option value="{{a.id}}" {{#if (eq ../playerControls.selectedActorId a.id)}}selected{{/if}}>{{a.name}}</option>
+              {{/each}}
+            </select>
+          </label>
+
+          <label>
+            Content Type
+            <select data-action="select-content-type">
+              {{#each playerControls.contentTypes as |ct|}}
+                <option value="{{ct.id}}" {{#if (eq ../playerControls.selectedContentType ct.id)}}selected{{/if}}>{{ct.label}}</option>
+              {{/each}}
+            </select>
+          </label>
+
+          <label>
+            Content Item
+            <select data-action="select-content-item">
+              {{#each playerControls.items as |it|}}
+                <option value="{{it.id}}" {{#if (eq ../playerControls.selectedItemId it.id)}}selected{{/if}}>{{it.name}}</option>
+              {{/each}}
+            </select>
+          </label>
+        </div>
+
+        <div class="cs-dispatch-actions">
+          <button type="button" data-action="send-popup-to-player">Send Popup</button>
+          <button type="button" data-action="add-item-to-actor">Add Item</button>
+          <button type="button" data-action="level-up-actor">Level Up</button>
+          <button type="button" data-action="level-down-actor">Level Down</button>
+        </div>
+      </div>
+    </section>
+
+    {{! ═══════════ CLASSES TAB ═══════════ }}
+    {{#if (eq activeTab tabs.CLASSES)}}
+      <div class="cs-summary-row">
+        <div class="cs-card">
+          <div class="label">World Class-Linked Items</div>
+          <div class="value">{{snapshot.source.worldItems}}</div>
+        </div>
+        <div class="cs-card">
+          <div class="label">Compendium Class-Linked Items</div>
+          <div class="value">{{snapshot.source.compendiumItems}}</div>
+        </div>
+        <div class="cs-card">
+          <div class="label">Class Cards</div>
+          <div class="value">{{snapshot.classes.length}}</div>
+        </div>
+      </div>
+
+      <section class="cs-panel">
+        <h2>Class Grid</h2>
+        <p>Click a class card to open a dedicated detail page with full linked data.</p>
+        <div class="cs-coven-grid">
+          {{#each snapshot.classes as |cls|}}
+            <div class="cs-coven-card cs-clickable" data-action="select-class" data-class-key="{{cls.classKey}}">
+              <div class="cs-coven-portrait cs-class-icon">
+                <i class="fas fa-book-open"></i>
+              </div>
+              <div class="cs-coven-info">
+                <div class="cs-coven-name">{{cls.classLabel}}</div>
+                {{#if cls.classSubName}}
+                  <div class="cs-coven-role">{{cls.classSubName}}</div>
+                {{/if}}
+                <div class="cs-coven-meta">
+                  <span class="cs-coven-rank">{{cls.summary.total}} Linked</span>
+                  <span class="cs-coven-level">{{cls.summary.healthy}} Healthy</span>
+                </div>
+                <div class="cs-coven-stats">
+                  <span>Weapons: {{cls.weapons.summary.total}}</span>
+                  <span>Armor: {{cls.armor.summary.total}}</span>
+                </div>
+                {{#if cls.summary.withIssues}}
+                  <div class="cs-coven-build cs-issue">{{cls.summary.withIssues}} Issues</div>
+                {{/if}}
+              </div>
+            </div>
+          {{/each}}
+        </div>
+      </section>
+    {{/if}}
+
+    {{! ═══════════ ARCHETYPES TAB ═══════════ }}
+    {{#if (eq activeTab tabs.ARCHETYPES)}}
+      <div class="cs-summary-row">
+        <div class="cs-card">
+          <div class="label">Subclass Items</div>
+          <div class="value">{{archetypeSummary.totals.subclasses}}</div>
+        </div>
+        <div class="cs-card">
+          <div class="label">Archetype Feature Items</div>
+          <div class="value">{{archetypeSummary.totals.feats}}</div>
+        </div>
+        <div class="cs-card">
+          <div class="label">Class Identifier Buckets</div>
+          <div class="value">{{archetypeSummary.totals.classBuckets}}</div>
+        </div>
+      </div>
+
+      <section class="cs-panel">
+        <h2>Archetype Groups</h2>
+        <p>Click a group to expand it. From there you can view subclasses and feats, send popups to players, or assign them directly.</p>
+        <div class="cs-archetype-list">
+          {{#each archetypeSummary.rows as |row|}}
+            <div class="cs-archetype-group" data-class-identifier="{{row.classIdentifier}}">
+              <div class="cs-coven-card cs-clickable cs-archetype-header" data-action="toggle-archetype" data-class-identifier="{{row.classIdentifier}}">
+                <div class="cs-coven-portrait cs-class-icon">
+                  <i class="fas fa-hat-wizard"></i>
+                </div>
+                <div class="cs-coven-info">
+                  <div class="cs-coven-name">{{row.classIdentifier}}</div>
+                  <div class="cs-coven-meta">
+                    <span class="cs-coven-rank">{{row.subclassCount}} Subclasses</span>
+                    <span class="cs-coven-level">{{row.featCount}} Feats</span>
+                  </div>
+                </div>
+                <span class="cs-archetype-chevron"><i class="fas fa-chevron-right"></i></span>
+              </div>
+
+              <div class="cs-archetype-detail" style="display:none;">
+                {{#if row.subclasses.length}}
+                  <h3>Subclasses</h3>
+                  {{#each row.subclasses as |sub|}}
+                    <div class="cs-archetype-item">
+                      <div class="cs-archetype-item-info">
+                        <span class="cs-archetype-item-name">{{sub.name}}</span>
+                        <span class="cs-archetype-item-meta">{{sub.identifier}} &middot; Gates: {{sub.levelGates}}</span>
+                      </div>
+                      <div class="cs-archetype-item-actions">
+                        <button type="button" data-action="arch-popup" data-item-id="{{sub.id}}" title="Send popup to player"><i class="fas fa-eye"></i></button>
+                        <button type="button" data-action="arch-assign" data-item-id="{{sub.id}}" title="Assign to actor"><i class="fas fa-user-plus"></i></button>
+                      </div>
+                    </div>
+                  {{/each}}
+                {{/if}}
+
+                {{#if row.feats.length}}
+                  <h3>Archetype Feats</h3>
+                  {{#each row.feats as |feat|}}
+                    <div class="cs-archetype-item">
+                      <div class="cs-archetype-item-info">
+                        <span class="cs-archetype-item-name">{{feat.name}}</span>
+                        <span class="cs-archetype-item-meta">{{feat.identifier}} &middot; Req: {{feat.requirements}}</span>
+                      </div>
+                      <div class="cs-archetype-item-actions">
+                        <button type="button" data-action="arch-popup" data-item-id="{{feat.id}}" title="Send popup to player"><i class="fas fa-eye"></i></button>
+                        <button type="button" data-action="arch-assign" data-item-id="{{feat.id}}" title="Assign to actor"><i class="fas fa-user-plus"></i></button>
+                      </div>
+                    </div>
+                  {{/each}}
+                {{/if}}
+              </div>
+            </div>
+          {{/each}}
+        </div>
+      </section>
+    {{/if}}
+
+    {{! ═══════════ COVENS TAB ═══════════ }}
+    {{#if (eq activeTab tabs.COVENS)}}
+      <div class="cs-summary-row">
+        <div class="cs-card">
+          <div class="label">Covens Loaded</div>
+          <div class="value">{{covenContext.covens.length}}</div>
+        </div>
+        <div class="cs-card">
+          <div class="label">Total Members</div>
+          <div class="value">{{covenContext.totalMembers}}</div>
+        </div>
+        <div class="cs-card">
+          <div class="label">Showing</div>
+          <div class="value">{{covenContext.members.length}}</div>
+        </div>
+      </div>
+
+      <section class="cs-panel">
+        <h2>Coven Database</h2>
+        <div class="cs-coven-filters">
+          <label>
+            Coven
+            <select data-action="coven-filter">
+              <option value="all" {{#if (eq covenContext.covenFilter "all")}}selected{{/if}}>All Covens</option>
+              {{#each covenContext.covens as |c|}}
+                <option value="{{c.covenId}}" {{#if (eq ../covenContext.covenFilter c.covenId)}}selected{{/if}}>{{c.covenName}}</option>
+              {{/each}}
+            </select>
+          </label>
+          <label>
+            Rank
+            <select data-action="coven-rank-filter">
+              {{#each covenContext.ranks as |r|}}
+                <option value="{{r}}" {{#if (eq ../covenContext.covenRankFilter r)}}selected{{/if}}>{{r}}</option>
+              {{/each}}
+            </select>
+          </label>
+          <label>
+            Sort
+            <select data-action="coven-sort">
+              <option value="level-desc" {{#if (eq covenContext.covenSort "level-desc")}}selected{{/if}}>Level (High-Low)</option>
+              <option value="level-asc" {{#if (eq covenContext.covenSort "level-asc")}}selected{{/if}}>Level (Low-High)</option>
+              <option value="name" {{#if (eq covenContext.covenSort "name")}}selected{{/if}}>Name A-Z</option>
+            </select>
+          </label>
+          <label>
+            Search
+            <input type="text" placeholder="Search members..." value="{{covenContext.covenSearch}}" data-action="coven-search" />
+          </label>
+        </div>
+      </section>
+
+      <section class="cs-panel">
+        <div class="cs-coven-grid">
+          {{#each covenContext.members as |m|}}
+            <div class="cs-coven-card">
+              <div class="cs-coven-portrait">
+                <img src="{{m.img}}" alt="{{m.name}}" />
+              </div>
+              <div class="cs-coven-info">
+                <div class="cs-coven-name">{{m.name}}</div>
+                <div class="cs-coven-meta">
+                  <span class="cs-coven-rank">{{m.rank}}</span>
+                  <span class="cs-coven-level">Lv {{m.level}}</span>
+                </div>
+                <div class="cs-coven-role">{{m.role}}</div>
+                <div class="cs-coven-build">{{m.build.primaryClass}} / {{m.build.subclass}}</div>
+                <div class="cs-coven-stats">
+                  <span>AC {{m.combat.ac}}</span>
+                  <span>HP {{m.combat.hp}}</span>
+                  <span>Spd {{m.combat.speed}}</span>
+                </div>
+                <div class="cs-coven-abilities">
+                  <span>STR {{m.abilities.str}}</span>
+                  <span>DEX {{m.abilities.dex}}</span>
+                  <span>CON {{m.abilities.con}}</span>
+                  <span>INT {{m.abilities.int}}</span>
+                  <span>WIS {{m.abilities.wis}}</span>
+                  <span>CHA {{m.abilities.cha}}</span>
+                </div>
+                <div class="cs-coven-faction">{{m._covenName}}</div>
+                <div class="cs-coven-actions">
+                  <button type="button" data-action="deploy-coven-member" data-member-id="{{m.id}}">Add to World</button>
+                  <button type="button" data-action="deploy-coven-member-canvas" data-member-id="{{m.id}}">Deploy to Canvas</button>
+                </div>
+              </div>
+            </div>
+          {{/each}}
+        </div>
+      </section>
+    {{/if}}
+
+    {{! ═══════════ GENERATOR TAB ═══════════ }}
+    {{#if (eq activeTab tabs.GENERATOR)}}
+      <section class="cs-panel">
+        <h2>Vampire Generator</h2>
+        <p>Generate a fully built vampire NPC ready to drop on the canvas. All stats, equipment, spells, features, portrait, and token are included.</p>
+
+        <div class="cs-gen-controls">
+          <label>
+            Level
+            <input type="number" min="1" max="30" value="{{genContext.level}}" data-action="gen-level" />
+          </label>
+          <label>
+            Build Type
+            <select data-action="gen-build-type">
+              <option value="random" {{#if (eq genContext.buildType "random")}}selected{{/if}}>Random</option>
+              <option value="martial" {{#if (eq genContext.buildType "martial")}}selected{{/if}}>Martial</option>
+              <option value="caster" {{#if (eq genContext.buildType "caster")}}selected{{/if}}>Caster</option>
+              <option value="hybrid" {{#if (eq genContext.buildType "hybrid")}}selected{{/if}}>Hybrid</option>
+            </select>
+          </label>
+          <label>
+            Rank
+            <select data-action="gen-rank">
+              <option value="auto" {{#if (eq genContext.rank "auto")}}selected{{/if}}>Auto (by level)</option>
+              <option value="Matriarch" {{#if (eq genContext.rank "Matriarch")}}selected{{/if}}>Matriarch</option>
+              <option value="Captain" {{#if (eq genContext.rank "Captain")}}selected{{/if}}>Captain</option>
+              <option value="Sergeant" {{#if (eq genContext.rank "Sergeant")}}selected{{/if}}>Sergeant</option>
+              <option value="Corporal" {{#if (eq genContext.rank "Corporal")}}selected{{/if}}>Corporal</option>
+              <option value="Private" {{#if (eq genContext.rank "Private")}}selected{{/if}}>Private</option>
+              <option value="Recruit" {{#if (eq genContext.rank "Recruit")}}selected{{/if}}>Recruit</option>
+            </select>
+          </label>
+          <button type="button" class="cs-gen-btn" data-action="gen-generate">Generate Vampire</button>
+        </div>
+      </section>
+
+      {{#if genContext.result}}
+        <section class="cs-panel cs-gen-result">
+          <div class="cs-gen-result-header">
+            <div class="cs-gen-portrait">
+              <img src="{{genContext.result.img}}" alt="{{genContext.result.name}}" />
+            </div>
+            <div class="cs-gen-result-title">
+              <h2>{{genContext.result.name}}</h2>
+              <div class="cs-gen-result-meta">
+                <span class="cs-coven-rank">{{genContext.result.rank}}</span>
+                <span class="cs-coven-level">Level {{genContext.result.level}}</span>
+                <span>{{genContext.result.role}}</span>
+              </div>
+              <div class="cs-gen-result-build">{{genContext.result.build.primaryClass}} / {{genContext.result.build.subclass}} {{#if (neq genContext.result.build.secondaryClass "None")}}+ {{genContext.result.build.secondaryClass}}{{/if}}</div>
+            </div>
+          </div>
+
+          <div class="cs-gen-stat-strip">
+            <div class="cs-gen-stat"><span class="lbl">STR</span><span class="val">{{genContext.result.abilities.str}}</span></div>
+            <div class="cs-gen-stat"><span class="lbl">DEX</span><span class="val">{{genContext.result.abilities.dex}}</span></div>
+            <div class="cs-gen-stat"><span class="lbl">CON</span><span class="val">{{genContext.result.abilities.con}}</span></div>
+            <div class="cs-gen-stat"><span class="lbl">INT</span><span class="val">{{genContext.result.abilities.int}}</span></div>
+            <div class="cs-gen-stat"><span class="lbl">WIS</span><span class="val">{{genContext.result.abilities.wis}}</span></div>
+            <div class="cs-gen-stat"><span class="lbl">CHA</span><span class="val">{{genContext.result.abilities.cha}}</span></div>
+          </div>
+
+          <div class="cs-gen-vitals">
+            <span>AC {{genContext.result.combat.ac}}</span>
+            <span>HP {{genContext.result.combat.hp}}</span>
+            <span>Speed {{genContext.result.combat.speed}} ft.</span>
+            <span>Init +{{genContext.result.combat.initiative}}</span>
+          </div>
+
+          <div class="cs-gen-section">
+            <h3>Skills</h3>
+            <div class="cs-gen-tags">
+              {{#each genContext.result.skills as |s|}}
+                <span class="cs-gen-tag">{{s}}</span>
+              {{/each}}
+            </div>
+          </div>
+
+          <div class="cs-gen-section">
+            <h3>Equipment</h3>
+            <div class="cs-gen-equip-list">
+              {{#each genContext.result.equipment.armor as |a|}}
+                <div class="cs-gen-equip-item"><img src="{{a.img}}" /><span>{{a.name}}</span></div>
+              {{/each}}
+              {{#each genContext.result.equipment.weapons as |w|}}
+                <div class="cs-gen-equip-item"><img src="{{w.img}}" /><span>{{w.name}}</span></div>
+              {{/each}}
+              {{#each genContext.result.equipment.focus as |f|}}
+                <div class="cs-gen-equip-item"><img src="{{f.img}}" /><span>{{f.name}}</span></div>
+              {{/each}}
+            </div>
+          </div>
+
+          <div class="cs-gen-section">
+            <h3>Features</h3>
+            <ul class="cs-gen-feature-list">
+              {{#each genContext.result.features as |f|}}
+                <li>{{f}}</li>
+              {{/each}}
+            </ul>
+          </div>
+
+          {{#if genContext.result.spells.cantrips.length}}
+            <div class="cs-gen-section">
+              <h3>Spells</h3>
+              {{#each genContext.result.spells as |spellList key|}}
+                {{#if spellList.length}}
+                  <div class="cs-gen-spell-row"><strong>{{key}}:</strong> {{#each spellList as |sp|}}{{sp}}{{#unless @last}}, {{/unless}}{{/each}}</div>
+                {{/if}}
+              {{/each}}
+            </div>
+          {{/if}}
+
+          <div class="cs-gen-result-actions">
+            <button type="button" data-action="gen-reroll">Reroll</button>
+            <button type="button" data-action="gen-deploy-world">Add to World</button>
+            <button type="button" data-action="gen-deploy-canvas">Deploy to Canvas</button>
+          </div>
+        </section>
+      {{else}}
+        <section class="cs-panel cs-gen-empty">
+          <div class="cs-gen-empty-icon"><i class="fas fa-skull-crossbones"></i></div>
+          <p>Click <strong>Generate Vampire</strong> to create a fully-built NPC.</p>
+        </section>
+      {{/if}}
+
+      {{#if genContext.history.length}}
+        <section class="cs-panel">
+          <h3>Recent Generations</h3>
+          <div class="cs-gen-history">
+            {{#each genContext.history as |h|}}
+              <button type="button" class="cs-gen-history-item" data-action="gen-load-history" data-history-index="{{@index}}">
+                <span class="name">{{h.name}}</span>
+                <span class="meta">Lv{{h.level}} {{h.rank}} {{h.build.primaryClass}}</span>
+              </button>
+            {{/each}}
+          </div>
+        </section>
+      {{/if}}
+    {{/if}}
+
+    {{#if (eq activeTab tabs.SPELLS)}}
+      <section class="cs-panel">
+        <h2>Spells</h2>
+        <p>Spells section is scaffolded and will be implemented next.</p>
+      </section>
+    {{/if}}
+
+    {{! ═══════════ SCALING RULES TAB ═══════════ }}
+    {{#if (eq activeTab tabs.SETTINGS)}}
+      <section class="cs-panel">
+        <h2>Scaling Rules</h2>
+        {{#if validation.valid}}
+          <div class="cs-valid">Rule schema status: VALID</div>
+        {{else}}
+          <div class="cs-invalid">Rule schema status: INVALID</div>
+          <ul>
+            {{#each validation.errors as |error|}}
+              <li>{{error}}</li>
+            {{/each}}
+          </ul>
+        {{/if}}
+      </section>
+
+      <section class="cs-panel">
+        <h3>Metadata</h3>
+        <div class="cs-rules-fields">
+          <label>Rule Set Name <input type="text" data-rule-path="metadata.name" value="{{rulesData.metadata.name}}" /></label>
+          <label>Version <input type="number" data-rule-path="metadata.version" value="{{rulesData.metadata.version}}" /></label>
+        </div>
+      </section>
+
+      <section class="cs-panel">
+        <h3>Weapon Scaling</h3>
+        <div class="cs-rules-fields">
+          <label>Tier 1 Level <input type="number" data-rule-path="weapons.tierLevels.0" value="{{rulesData.weapons.tierLevel0}}" /></label>
+          <label>Tier 2 Level <input type="number" data-rule-path="weapons.tierLevels.1" value="{{rulesData.weapons.tierLevel1}}" /></label>
+          <label>Tier 3 Level <input type="number" data-rule-path="weapons.tierLevels.2" value="{{rulesData.weapons.tierLevel2}}" /></label>
+          <label>Tier 4 Level <input type="number" data-rule-path="weapons.tierLevels.3" value="{{rulesData.weapons.tierLevel3}}" /></label>
+        </div>
+        <div class="cs-rules-fields">
+          <label>Tier 1 Die Bump <input type="number" data-rule-path="weapons.denominationIncrements.0" value="{{rulesData.weapons.denom0}}" /></label>
+          <label>Tier 2 Die Bump <input type="number" data-rule-path="weapons.denominationIncrements.1" value="{{rulesData.weapons.denom1}}" /></label>
+          <label>Tier 3 Die Bump <input type="number" data-rule-path="weapons.denominationIncrements.2" value="{{rulesData.weapons.denom2}}" /></label>
+          <label>Tier 4 Die Bump <input type="number" data-rule-path="weapons.denominationIncrements.3" value="{{rulesData.weapons.denom3}}" /></label>
+        </div>
+        <div class="cs-rules-fields">
+          <label>Min Denomination <input type="number" data-rule-path="weapons.minDenomination" value="{{rulesData.weapons.minDenomination}}" /></label>
+          <label>Max Denomination <input type="number" data-rule-path="weapons.maxDenomination" value="{{rulesData.weapons.maxDenomination}}" /></label>
+          <label class="cs-rules-check">
+            <input type="checkbox" data-rule-path="weapons.enforceEmptyCustomFormula" {{#if rulesData.weapons.enforceEmptyCustomFormula}}checked{{/if}} />
+            Enforce Empty Custom Formula
+          </label>
+        </div>
+      </section>
+
+      <section class="cs-panel">
+        <h3>Armor Scaling</h3>
+        <div class="cs-rules-fields">
+          <label>Tier 1 Level <input type="number" data-rule-path="armor.tierLevels.0" value="{{rulesData.armor.tierLevel0}}" /></label>
+          <label>Tier 2 Level <input type="number" data-rule-path="armor.tierLevels.1" value="{{rulesData.armor.tierLevel1}}" /></label>
+          <label>Tier 3 Level <input type="number" data-rule-path="armor.tierLevels.2" value="{{rulesData.armor.tierLevel2}}" /></label>
+          <label>Tier 4 Level <input type="number" data-rule-path="armor.tierLevels.3" value="{{rulesData.armor.tierLevel3}}" /></label>
+        </div>
+        <div class="cs-rules-fields">
+          <label>Tier 1 AC Bonus <input type="number" data-rule-path="armor.acBonusByTier.0" value="{{rulesData.armor.acBonus0}}" /></label>
+          <label>Tier 2 AC Bonus <input type="number" data-rule-path="armor.acBonusByTier.1" value="{{rulesData.armor.acBonus1}}" /></label>
+          <label>Tier 3 AC Bonus <input type="number" data-rule-path="armor.acBonusByTier.2" value="{{rulesData.armor.acBonus2}}" /></label>
+          <label>Tier 4 AC Bonus <input type="number" data-rule-path="armor.acBonusByTier.3" value="{{rulesData.armor.acBonus3}}" /></label>
+        </div>
+        <div class="cs-rules-fields">
+          <label>Base AC Default <input type="number" data-rule-path="armor.baseAcDefault" value="{{rulesData.armor.baseAcDefault}}" /></label>
+          <label class="cs-rules-check">
+            <input type="checkbox" data-rule-path="armor.requireArmorValue" {{#if rulesData.armor.requireArmorValue}}checked{{/if}} />
+            Require Armor Value
+          </label>
+        </div>
+      </section>
+
+      <section class="cs-panel">
+        <div class="cs-rule-actions">
+          <button type="button" data-action="save-rules">Save Rules</button>
+          <button type="button" data-action="reset-rules">Reset to Defaults</button>
+        </div>
+      </section>
+    {{/if}}
+  </section>
+</section>

@@ -1,0 +1,32 @@
+{
+  "covenId": "yelena-crimson-archive-coven",
+  "covenName": "Yelena's Crimson Archive",
+  "theme": "scholarly-blood-magic-rnd-war-machine",
+  "hierarchyModel": "strict-cascade",
+  "notes": "Roster source said 12 sergeants but listed 13; all listed names included.",
+  "levelPolicy": {
+    "matriarch": 26,
+    "captains": [24, 23],
+    "sergeants": [22, 21, 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10]
+  },
+  "members": [
+    { "name": "Yelena Vetrova", "rank": "Matriarch", "level": 26, "file": "characters/yelena-vetrova.json" },
+    { "name": "Captain Mirael Voss", "rank": "Captain", "level": 24, "file": "characters/captain-mirael-voss.json" },
+    { "name": "Captain Thorne Quill", "rank": "Captain", "level": 23, "file": "characters/captain-thorne-quill.json" },
+
+    { "name": "Sgt. Elara Bloodweaver", "rank": "Sergeant", "level": 22, "file": "characters/sgt-elara-bloodweaver.json" },
+    { "name": "Sgt. Korr Hexbinder", "rank": "Sergeant", "level": 21, "file": "characters/sgt-korr-hexbinder.json" },
+    { "name": "Sgt. Lira Forgeheart", "rank": "Sergeant", "level": 20, "file": "characters/sgt-lira-forgeheart.json" },
+    { "name": "Sgt. Daxen Scrollkeeper", "rank": "Sergeant", "level": 19, "file": "characters/sgt-daxen-scrollkeeper.json" },
+    { "name": "Sgt. Nyssa Veinreader", "rank": "Sergeant", "level": 18, "file": "characters/sgt-nyssa-veinreader.json" },
+    { "name": "Sgt. Riven Bonecarver", "rank": "Sergeant", "level": 17, "file": "characters/sgt-riven-bonecarver.json" },
+    { "name": "Sgt. Sylva Elixirist", "rank": "Sergeant", "level": 16, "file": "characters/sgt-sylva-elixirist.json" },
+    { "name": "Sgt. Joren Runeetcher", "rank": "Sergeant", "level": 15, "file": "characters/sgt-joren-runeetcher.json" },
+    { "name": "Sgt. Vesper Alkahest", "rank": "Sergeant", "level": 14, "file": "characters/sgt-vesper-alkahest.json" },
+    { "name": "Sgt. Grimor Codex", "rank": "Sergeant", "level": 13, "file": "characters/sgt-grimor-codex.json" },
+    { "name": "Sgt. Lirien Flux", "rank": "Sergeant", "level": 12, "file": "characters/sgt-lirien-flux.json" },
+    { "name": "Sgt. Torin Hemocrafter", "rank": "Sergeant", "level": 11, "file": "characters/sgt-torin-hemocrafter.json" },
+    { "name": "Sgt. Elowen Testbed", "rank": "Sergeant", "level": 10, "file": "characters/sgt-elowen-testbed.json" }
+  ],
+  "status": "phase-1-core-command-built"
+}

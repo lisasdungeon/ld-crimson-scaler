@@ -1,0 +1,97 @@
+{
+  "id": "pvt-ryk-fang-soler",
+  "name": "Ryk \"Fang\" Soler",
+  "img": "modules/ld-crimson-scaler/assets/portraits/warrior_darkelve_man_01.png",
+  "rank": "Private",
+  "level": 9,
+  "role": "Poison Specialist",
+  "build": {
+    "primaryClass": "Rogue",
+    "subclass": "Assassin",
+    "secondaryClass": "Artificer",
+    "casterType": "hybrid"
+  },
+  "abilities": {
+    "str": 10,
+    "dex": 19,
+    "con": 14,
+    "int": 15,
+    "wis": 12,
+    "cha": 11
+  },
+  "combat": {
+    "ac": 17,
+    "hp": 108,
+    "speed": 30,
+    "initiative": 8
+  },
+  "skills": [
+    "medicine",
+    "sleight-of-hand",
+    "stealth",
+    "deception",
+    "survival"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Toxin-Stained Jerkin",
+        "img": "icons/equipment/chest/leather-vest-brown.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Venom Needler",
+        "img": "icons/weapons/daggers/dagger-curved-gold.webp"
+      },
+      {
+        "name": "Brewmaster's Knife",
+        "img": "icons/weapons/daggers/dagger-serrated.webp"
+      },
+      {
+        "name": "Injection Spikes",
+        "img": "icons/weapons/polearms/pike-steel.webp"
+      }
+    ],
+    "consumables": [
+      "Blood-Brew Toxin Vials x6"
+    ]
+  },
+  "features": [
+    "Accelerated Venom Mark",
+    "Captive Trial Protocol",
+    "Needle Flick",
+    "Toxic Persistence"
+  ],
+  "spells": {
+    "level1": [
+      "ray of sickness",
+      "tasha's caustic brew"
+    ],
+    "level2": [
+      "protection from poison"
+    ]
+  },
+  "integration": {
+    "faction": "lyssa-veil-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "poison-control-striker"
+  },
+  "prototypeToken": {
+    "name": "Ryk \"Fang\" Soler",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/warrior_darkelve_man_01.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}

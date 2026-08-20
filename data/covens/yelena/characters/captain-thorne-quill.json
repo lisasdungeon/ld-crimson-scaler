@@ -1,0 +1,116 @@
+{
+  "id": "captain-thorne-quill",
+  "name": "Captain Thorne Quill",
+  "img": "modules/ld-crimson-scaler/assets/portraits/highwizard_elve_man_01.png",
+  "rank": "Captain",
+  "level": 23,
+  "role": "Lore Captain",
+  "build": {
+    "primaryClass": "Wizard",
+    "subclass": "Scribes",
+    "secondaryClass": "Rogue",
+    "casterType": "full-caster"
+  },
+  "abilities": {
+    "str": 8,
+    "dex": 13,
+    "con": 16,
+    "int": 24,
+    "wis": 18,
+    "cha": 12
+  },
+  "combat": {
+    "ac": 19,
+    "hp": 264,
+    "speed": 30,
+    "initiative": 6
+  },
+  "skills": [
+    "arcana",
+    "history",
+    "investigation",
+    "religion",
+    "insight"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Archive Keeper Robes",
+        "img": "icons/equipment/chest/robe-blue-gold.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Rune-Hand Quill Blade",
+        "img": "icons/weapons/swords/sword-guard-steel-green.webp"
+      }
+    ],
+    "focus": [
+      {
+        "name": "Forbidden Stack Codex",
+        "img": "icons/sundries/books/book-embossed-gold-red.webp"
+      },
+      {
+        "name": "Dead Tongue Mark",
+        "img": "icons/magic/symbols/rune-sigil-red-orange.webp"
+      }
+    ]
+  },
+  "features": [
+    "Dead Language Decryption",
+    "Animated Diagram Projection",
+    "Forbidden Stack Lockdown",
+    "Lore Counterplay Matrix"
+  ],
+  "spells": {
+    "cantrips": [
+      "message",
+      "minor illusion",
+      "mage hand"
+    ],
+    "level1": [
+      "comprehend languages",
+      "identify",
+      "illusory script"
+    ],
+    "level2": [
+      "detect thoughts",
+      "see invisibility"
+    ],
+    "level3": [
+      "tongues",
+      "counterspell",
+      "major image"
+    ],
+    "level4": [
+      "arcane eye",
+      "greater invisibility"
+    ],
+    "level5": [
+      "legend lore",
+      "modify memory"
+    ]
+  },
+  "integration": {
+    "faction": "yelena-crimson-archive-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "knowledge-controller"
+  },
+  "prototypeToken": {
+    "name": "Captain Thorne Quill",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/highwizard_elve_man_01.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}

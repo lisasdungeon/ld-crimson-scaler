@@ -1,0 +1,85 @@
+{
+  "id": "recruit-aspirant-jem-relic-korr",
+  "name": "Aspirant Jem \"Relic\" Korr",
+  "img": "modules/ld-crimson-scaler/assets/portraits/outdated_19.png",
+  "rank": "Recruit",
+  "level": 2,
+  "role": "Boot Camp Bearer",
+  "build": {
+    "primaryClass": "Cleric",
+    "subclass": "None",
+    "secondaryClass": "None",
+    "casterType": "support-trainee"
+  },
+  "abilities": {
+    "str": 10,
+    "dex": 10,
+    "con": 12,
+    "int": 9,
+    "wis": 13,
+    "cha": 10
+  },
+  "combat": {
+    "ac": 12,
+    "hp": 24,
+    "speed": 30,
+    "initiative": 2
+  },
+  "skills": [
+    "religion",
+    "medicine",
+    "history"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Relic Bearer Cloth",
+        "img": "icons/equipment/chest/cloth-simple-brown.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Pole Relic Frame",
+        "img": "icons/weapons/swords/sword-guard-steel-green.webp"
+      }
+    ],
+    "focus": [
+      {
+        "name": "Icon Polish Kit",
+        "img": "icons/sundries/misc/cross-wooden-brown.webp"
+      }
+    ]
+  },
+  "features": [
+    "Passive Relic Aura",
+    "Nearline Wound Stitch",
+    "Tithe-Bound Carry"
+  ],
+  "spells": {
+    "level1": [
+      "cure wounds"
+    ]
+  },
+  "integration": {
+    "faction": "sofiya-dawn-chorus-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "follow-and-sustain-trainee"
+  },
+  "prototypeToken": {
+    "name": "Aspirant Jem \"Relic\" Korr",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/outdated_19.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}

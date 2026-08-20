@@ -1,0 +1,108 @@
+{
+  "id": "sgt-elara-bloodweaver",
+  "name": "Sgt. Elara Bloodweaver",
+  "img": "modules/ld-crimson-scaler/assets/portraits/highwizard_stellar_woman_01.png",
+  "rank": "Sergeant",
+  "level": 22,
+  "role": "Healer Sergeant",
+  "build": {
+    "primaryClass": "Cleric",
+    "subclass": "Life",
+    "secondaryClass": "Wizard",
+    "casterType": "full-caster"
+  },
+  "abilities": {
+    "str": 10,
+    "dex": 13,
+    "con": 17,
+    "int": 16,
+    "wis": 22,
+    "cha": 13
+  },
+  "combat": {
+    "ac": 20,
+    "hp": 248,
+    "speed": 30,
+    "initiative": 6
+  },
+  "skills": [
+    "medicine",
+    "insight",
+    "arcana",
+    "survival"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Suturemail Vestments",
+        "img": "icons/equipment/chest/robe-blue-gold.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Veinneedle Rod",
+        "img": "icons/weapons/daggers/dagger-curved-gold.webp"
+      },
+      {
+        "name": "Field Scalpel",
+        "img": "icons/weapons/swords/sword-guard-steel-green.webp"
+      }
+    ],
+    "focus": [
+      {
+        "name": "Regenerative Mark Loom",
+        "img": "icons/sundries/survival/rope-coiled-brown.webp"
+      }
+    ]
+  },
+  "features": [
+    "Vein-Thread Stitching",
+    "Squad Regen Pulse",
+    "Calm Dissector Protocol"
+  ],
+  "spells": {
+    "cantrips": [
+      "spare the dying",
+      "guidance",
+      "sacred flame"
+    ],
+    "level1": [
+      "cure wounds",
+      "healing word",
+      "sanctuary"
+    ],
+    "level2": [
+      "lesser restoration",
+      "prayer of healing"
+    ],
+    "level3": [
+      "revivify",
+      "mass healing word"
+    ],
+    "level4": [
+      "death ward"
+    ]
+  },
+  "integration": {
+    "faction": "yelena-crimson-archive-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "combat-medic"
+  },
+  "prototypeToken": {
+    "name": "Sgt. Elara Bloodweaver",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/highwizard_stellar_woman_01.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}

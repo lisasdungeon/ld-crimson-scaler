@@ -1,0 +1,82 @@
+{
+  "id": "sgt-goran-skullsplitter",
+  "name": "Sgt. Goran Skullsplitter",
+  "img": "modules/ld-crimson-scaler/assets/portraits/warrior_human_man_01.png",
+  "rank": "Sergeant",
+  "level": 13,
+  "role": "Weaponmaster Sergeant",
+  "build": {
+    "primaryClass": "Fighter",
+    "subclass": "Champion",
+    "secondaryClass": "Barbarian",
+    "casterType": "martial"
+  },
+  "abilities": {
+    "str": 20,
+    "dex": 13,
+    "con": 16,
+    "int": 11,
+    "wis": 12,
+    "cha": 13
+  },
+  "combat": {
+    "ac": 19,
+    "hp": 188,
+    "speed": 35,
+    "initiative": 6
+  },
+  "skills": [
+    "athletics",
+    "intimidation",
+    "acrobatics",
+    "perception"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Duelmaster Half-Plate",
+        "img": "icons/equipment/chest/breastplate-steel-grey.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Notched Twin Blades",
+        "img": "icons/weapons/swords/sword-guard-steel-green.webp"
+      },
+      {
+        "name": "Armory Key Ring",
+        "img": "icons/sundries/misc/lock-simple-steel.webp"
+      }
+    ]
+  },
+  "features": [
+    "Edge Sharp Mark",
+    "Dual Duel Tempo",
+    "Armory Spar Doctrine"
+  ],
+  "spells": {
+    "level1": []
+  },
+  "integration": {
+    "faction": "daria-iron-ring-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "duelist-bruiser"
+  },
+  "prototypeToken": {
+    "name": "Sgt. Goran Skullsplitter",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/warrior_human_man_01.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}

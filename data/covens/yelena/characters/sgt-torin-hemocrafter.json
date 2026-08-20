@@ -1,0 +1,99 @@
+{
+  "id": "sgt-torin-hemocrafter",
+  "name": "Sgt. Torin Hemocrafter",
+  "img": "modules/ld-crimson-scaler/assets/portraits/outdated_01.png",
+  "rank": "Sergeant",
+  "level": 11,
+  "role": "Blood Sergeant",
+  "build": {
+    "primaryClass": "Wizard",
+    "subclass": "Necromancy",
+    "secondaryClass": "Fighter",
+    "casterType": "full-caster"
+  },
+  "abilities": {
+    "str": 12,
+    "dex": 14,
+    "con": 16,
+    "int": 18,
+    "wis": 14,
+    "cha": 13
+  },
+  "combat": {
+    "ac": 18,
+    "hp": 146,
+    "speed": 30,
+    "initiative": 6
+  },
+  "skills": [
+    "arcana",
+    "medicine",
+    "athletics",
+    "intimidation"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Hemocraft Mail",
+        "img": "icons/equipment/chest/chain-mail-steel-grey.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Bloodlash Focus",
+        "img": "icons/weapons/sickles/sickle-curved-grey.webp"
+      },
+      {
+        "name": "Ritual Shortsword",
+        "img": "icons/weapons/swords/shortsword-guard-engraved-gem-red.webp"
+      }
+    ],
+    "focus": [
+      {
+        "name": "Self-Bleed Sustain Mark",
+        "img": "icons/magic/symbols/rune-sigil-red-orange.webp"
+      }
+    ]
+  },
+  "features": [
+    "Blood Whip Craft",
+    "Blood Shield Weave",
+    "Endless Self-Bleed Channel"
+  ],
+  "spells": {
+    "level1": [
+      "shield",
+      "false life"
+    ],
+    "level2": [
+      "hold person",
+      "mirror image"
+    ],
+    "level3": [
+      "vampiric touch",
+      "counterspell"
+    ]
+  },
+  "integration": {
+    "faction": "yelena-crimson-archive-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "blood-control-duelist"
+  },
+  "prototypeToken": {
+    "name": "Sgt. Torin Hemocrafter",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/outdated_01.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}

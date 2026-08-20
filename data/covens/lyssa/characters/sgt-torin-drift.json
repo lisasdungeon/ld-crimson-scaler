@@ -1,0 +1,99 @@
+{
+  "id": "sgt-torin-drift",
+  "name": "Sgt. Torin Drift",
+  "img": "modules/ld-crimson-scaler/assets/portraits/resident_darkelve_woman_03.png",
+  "rank": "Sergeant",
+  "level": 12,
+  "role": "Courier Sergeant",
+  "build": {
+    "primaryClass": "Monk",
+    "subclass": "Shadow",
+    "secondaryClass": "Rogue",
+    "casterType": "martial"
+  },
+  "abilities": {
+    "str": 12,
+    "dex": 21,
+    "con": 15,
+    "int": 13,
+    "wis": 18,
+    "cha": 11
+  },
+  "combat": {
+    "ac": 20,
+    "hp": 154,
+    "speed": 55,
+    "initiative": 10
+  },
+  "skills": [
+    "acrobatics",
+    "athletics",
+    "stealth",
+    "perception",
+    "survival"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Windstep Wraps",
+        "img": "icons/equipment/chest/cloth-simple-brown.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Courier's Shortsword",
+        "img": "icons/weapons/swords/shortsword-guard-engraved-gem-red.webp"
+      },
+      {
+        "name": "Smoke Pellets",
+        "img": "icons/weapons/thrown/bomb-iron-black.webp"
+      },
+      {
+        "name": "Signal Spikes",
+        "img": "icons/weapons/polearms/pike-steel.webp"
+      }
+    ],
+    "focus": [
+      {
+        "name": "Blockade Route Codex",
+        "img": "icons/sundries/books/book-embossed-gold-red.webp"
+      }
+    ]
+  },
+  "features": [
+    "Blockade Slip",
+    "Arrow Drift",
+    "Wall Sprint",
+    "Zero-Delay Relay"
+  ],
+  "spells": {
+    "level1": [
+      "expeditious retreat"
+    ],
+    "level2": [
+      "pass without trace"
+    ]
+  },
+  "integration": {
+    "faction": "lyssa-veil-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "high-mobility-runner"
+  },
+  "prototypeToken": {
+    "name": "Sgt. Torin Drift",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/resident_darkelve_woman_03.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}

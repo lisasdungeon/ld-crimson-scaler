@@ -1,0 +1,90 @@
+{
+  "id": "cpl-kara-ghost-veldt",
+  "name": "Kara \"Ghost\" Veldt",
+  "img": "modules/ld-crimson-scaler/assets/portraits/warrior_darkelve_woman_01.png",
+  "rank": "Corporal",
+  "level": 10,
+  "role": "Alley Enforcer",
+  "build": {
+    "primaryClass": "Rogue",
+    "subclass": "Assassin",
+    "secondaryClass": "Fighter",
+    "casterType": "martial"
+  },
+  "abilities": {
+    "str": 11,
+    "dex": 20,
+    "con": 14,
+    "int": 13,
+    "wis": 14,
+    "cha": 12
+  },
+  "combat": {
+    "ac": 18,
+    "hp": 122,
+    "speed": 35,
+    "initiative": 9
+  },
+  "skills": [
+    "stealth",
+    "deception",
+    "intimidation",
+    "sleight-of-hand",
+    "perception"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Ghostweave Street Leathers",
+        "img": "icons/equipment/chest/leather-chest-dark.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Wire Garrote",
+        "img": "icons/weapons/sickles/hook-steel-grey.webp"
+      },
+      {
+        "name": "Market Fang Dagger",
+        "img": "icons/weapons/daggers/dagger-serrated.webp"
+      },
+      {
+        "name": "Bribe Purse (decoy)",
+        "img": "icons/containers/bags/pouch-leather-brown-gold.webp"
+      }
+    ]
+  },
+  "features": [
+    "Burst Invisibility",
+    "Loose-Tongue Silence",
+    "Street Informant Chain",
+    "Promotion Hunter"
+  ],
+  "spells": {
+    "level1": [
+      "disguise self"
+    ]
+  },
+  "integration": {
+    "faction": "lyssa-veil-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "close-ambush-enforcer"
+  },
+  "prototypeToken": {
+    "name": "Kara \"Ghost\" Veldt",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/warrior_darkelve_woman_01.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}

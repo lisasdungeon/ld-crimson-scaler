@@ -1,0 +1,112 @@
+{
+  "id": "sgt-korr-hexbinder",
+  "name": "Sgt. Korr Hexbinder",
+  "img": "modules/ld-crimson-scaler/assets/portraits/highwizard_human_man_03.png",
+  "rank": "Sergeant",
+  "level": 21,
+  "role": "Curser Sergeant",
+  "build": {
+    "primaryClass": "Warlock",
+    "subclass": "Great Old One",
+    "secondaryClass": "Wizard",
+    "casterType": "full-caster"
+  },
+  "abilities": {
+    "str": 9,
+    "dex": 14,
+    "con": 16,
+    "int": 17,
+    "wis": 15,
+    "cha": 21
+  },
+  "combat": {
+    "ac": 19,
+    "hp": 232,
+    "speed": 30,
+    "initiative": 7
+  },
+  "skills": [
+    "arcana",
+    "religion",
+    "intimidation",
+    "medicine"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Plague Doctor Mantle",
+        "img": "icons/equipment/back/cloak-collared-grey.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Hex Syringe",
+        "img": "icons/weapons/swords/sword-guard-steel-green.webp"
+      },
+      {
+        "name": "Contagion Censer",
+        "img": "icons/sundries/lights/lantern-iron-rusty.webp"
+      }
+    ],
+    "focus": [
+      {
+        "name": "Airborne Curse Mark",
+        "img": "icons/magic/symbols/rune-sigil-red-orange.webp"
+      }
+    ]
+  },
+  "features": [
+    "Ritual Plague Bombardment",
+    "Airborne Hex Spread",
+    "Camp Rot Protocol"
+  ],
+  "spells": {
+    "cantrips": [
+      "eldritch blast",
+      "poison spray",
+      "chill touch"
+    ],
+    "level1": [
+      "hex",
+      "ray of sickness"
+    ],
+    "level2": [
+      "hold person",
+      "blindness/deafness"
+    ],
+    "level3": [
+      "bestow curse",
+      "stinking cloud"
+    ],
+    "level4": [
+      "blight",
+      "greater invisibility"
+    ],
+    "level5": [
+      "contagion",
+      "cloudkill"
+    ]
+  },
+  "integration": {
+    "faction": "yelena-crimson-archive-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "debilitation-controller"
+  },
+  "prototypeToken": {
+    "name": "Sgt. Korr Hexbinder",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/highwizard_human_man_03.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}

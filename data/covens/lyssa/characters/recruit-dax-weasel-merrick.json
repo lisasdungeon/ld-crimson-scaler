@@ -1,0 +1,85 @@
+{
+  "id": "recruit-dax-weasel-merrick",
+  "name": "Dax \"Weasel\" Merrick",
+  "img": "modules/ld-crimson-scaler/assets/portraits/resident_human_man_04.png",
+  "rank": "Recruit",
+  "level": 3,
+  "role": "Outer Court Thief",
+  "build": {
+    "primaryClass": "Rogue",
+    "subclass": "Thief",
+    "secondaryClass": "None",
+    "casterType": "martial"
+  },
+  "abilities": {
+    "str": 9,
+    "dex": 16,
+    "con": 12,
+    "int": 11,
+    "wis": 12,
+    "cha": 12
+  },
+  "combat": {
+    "ac": 14,
+    "hp": 32,
+    "speed": 35,
+    "initiative": 5
+  },
+  "skills": [
+    "sleight-of-hand",
+    "stealth",
+    "acrobatics",
+    "deception"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Patchwork Leathers",
+        "img": "icons/equipment/chest/leather-chest-dark.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Snatch Dagger",
+        "img": "icons/weapons/daggers/dagger-serrated.webp"
+      },
+      {
+        "name": "Pocket Sand",
+        "img": "icons/weapons/swords/sword-guard-steel-green.webp"
+      }
+    ],
+    "tools": [
+      "Coin-Sense Mark Token"
+    ]
+  },
+  "features": [
+    "Quick Snatch",
+    "Crowd Fade",
+    "Stash Hoarder"
+  ],
+  "spells": {
+    "level1": []
+  },
+  "integration": {
+    "faction": "lyssa-veil-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "hit-and-fade-pickpocket"
+  },
+  "prototypeToken": {
+    "name": "Dax \"Weasel\" Merrick",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/resident_human_man_04.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}

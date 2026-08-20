@@ -1,0 +1,19 @@
+{
+  "poolId": "sofiya-generic-fighters",
+  "faction": "sofiya-dawn-chorus-coven",
+  "usage": "reusable-generic-support-frontline",
+  "baseTemplate": {
+    "name": "Dawn Chorus Fighter Base",
+    "role": "Zealot supporter",
+    "coreGear": ["white robe with red stole", "rosary whip", "holy water vials", "censer or staff"],
+    "markEffect": "pain transfer (self heal 1d4, foe takes 1 damage, 1/short rest)",
+    "discipline": "dies singing for Sofiya"
+  },
+  "templates": [
+    { "id": "sofiya-generic-fighter-v1", "name": "Dawn Chorus Fighter - Lament Chanter", "level": 8, "file": "generic-fighter-v1-lament-chanter.json" },
+    { "id": "sofiya-generic-fighter-v2", "name": "Dawn Chorus Fighter - Stigmata Bearer", "level": 8, "file": "generic-fighter-v2-stigmata-bearer.json" },
+    { "id": "sofiya-generic-fighter-v3", "name": "Dawn Chorus Fighter - Censer Swinger", "level": 8, "file": "generic-fighter-v3-censer-swinger.json" },
+    { "id": "sofiya-generic-fighter-v4", "name": "Dawn Chorus Fighter - Relic Bearer", "level": 8, "file": "generic-fighter-v4-relic-bearer.json" },
+    { "id": "sofiya-generic-fighter-v5", "name": "Dawn Chorus Fighter - Oath Enforcer", "level": 8, "file": "generic-fighter-v5-oath-enforcer.json" }
+  ]
+}

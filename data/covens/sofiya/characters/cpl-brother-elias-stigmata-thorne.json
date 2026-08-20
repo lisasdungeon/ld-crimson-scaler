@@ -1,0 +1,107 @@
+{
+  "id": "cpl-brother-elias-stigmata-thorne",
+  "name": "Brother Elias \"Stigmata\" Thorne",
+  "img": "modules/ld-crimson-scaler/assets/portraits/highpriest_human_man_01.png",
+  "rank": "Corporal",
+  "level": 10,
+  "role": "Painbearer",
+  "build": {
+    "primaryClass": "Cleric",
+    "subclass": "Grave",
+    "secondaryClass": "Fighter",
+    "casterType": "full-caster"
+  },
+  "abilities": {
+    "str": 14,
+    "dex": 12,
+    "con": 16,
+    "int": 10,
+    "wis": 18,
+    "cha": 13
+  },
+  "combat": {
+    "ac": 17,
+    "hp": 116,
+    "speed": 30,
+    "initiative": 4
+  },
+  "skills": [
+    "religion",
+    "intimidation",
+    "insight",
+    "medicine",
+    "athletics"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Penitent Half-Plate",
+        "img": "icons/equipment/chest/breastplate-steel-grey.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Barbed Palm-Dagger",
+        "img": "icons/weapons/daggers/dagger-serrated.webp"
+      },
+      {
+        "name": "Chapel Mace",
+        "img": "icons/weapons/maces/mace-round-spiked-grey.webp"
+      }
+    ],
+    "focus": [
+      {
+        "name": "Stigmata Prayer Wraps",
+        "img": "icons/sundries/misc/cross-wooden-brown.webp"
+      }
+    ]
+  },
+  "features": [
+    "Martyr Mark Transfer (heal ally 1d8, foe psychic 1d8)",
+    "Pain Communion Aura",
+    "Vision in Blood",
+    "Psalm of Advance"
+  ],
+  "spells": {
+    "cantrips": [
+      "thaumaturgy",
+      "sacred flame",
+      "spare the dying"
+    ],
+    "level1": [
+      "shield of faith",
+      "healing word",
+      "inflict wounds"
+    ],
+    "level2": [
+      "warding bond",
+      "lesser restoration"
+    ],
+    "level3": [
+      "beacon of hope",
+      "spirit guardians"
+    ]
+  },
+  "integration": {
+    "faction": "sofiya-dawn-chorus-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "frontline-martyr-anchor"
+  },
+  "prototypeToken": {
+    "name": "Brother Elias \"Stigmata\" Thorne",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/highpriest_human_man_01.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}

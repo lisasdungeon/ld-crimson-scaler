@@ -1,0 +1,112 @@
+{
+  "id": "sgt-niamh-shade",
+  "name": "Sgt. Niamh Shade",
+  "img": "modules/ld-crimson-scaler/assets/portraits/resident_darkelve_woman_02.png",
+  "rank": "Sergeant",
+  "level": 13,
+  "role": "Counter-Intel Sergeant",
+  "build": {
+    "primaryClass": "Cleric",
+    "subclass": "Trickery",
+    "secondaryClass": "Rogue",
+    "casterType": "full-caster"
+  },
+  "abilities": {
+    "str": 12,
+    "dex": 18,
+    "con": 15,
+    "int": 14,
+    "wis": 20,
+    "cha": 15
+  },
+  "combat": {
+    "ac": 19,
+    "hp": 162,
+    "speed": 30,
+    "initiative": 8
+  },
+  "skills": [
+    "insight",
+    "intimidation",
+    "religion",
+    "investigation",
+    "stealth"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Interrogator's Veilmail",
+        "img": "icons/equipment/chest/chain-mail-steel-grey.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Confessor's Whip",
+        "img": "icons/weapons/sickles/sickle-curved-grey.webp"
+      },
+      {
+        "name": "Needle Dagger",
+        "img": "icons/weapons/daggers/dagger-curved-gold.webp"
+      }
+    ],
+    "focus": [
+      {
+        "name": "Pain Rite Reliquary",
+        "img": "icons/sundries/misc/cross-wooden-brown.webp"
+      }
+    ]
+  },
+  "features": [
+    "Leak Hunter",
+    "Confession Pulse",
+    "Mind Pressure",
+    "Traitor Net"
+  ],
+  "spells": {
+    "cantrips": [
+      "thaumaturgy",
+      "guidance",
+      "spare the dying"
+    ],
+    "level1": [
+      "command",
+      "bane",
+      "detect evil and good"
+    ],
+    "level2": [
+      "zone of truth",
+      "hold person",
+      "silence"
+    ],
+    "level3": [
+      "bestow curse",
+      "clairvoyance"
+    ],
+    "level4": [
+      "compulsion",
+      "locate creature"
+    ]
+  },
+  "integration": {
+    "faction": "lyssa-veil-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "interrogation-controller"
+  },
+  "prototypeToken": {
+    "name": "Sgt. Niamh Shade",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/resident_darkelve_woman_02.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}

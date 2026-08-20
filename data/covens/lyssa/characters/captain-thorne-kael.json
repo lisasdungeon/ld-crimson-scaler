@@ -1,0 +1,123 @@
+{
+  "id": "captain-thorne-kael",
+  "name": "Captain Thorne Kael",
+  "img": "modules/ld-crimson-scaler/assets/portraits/noble_elve_man_01.png",
+  "rank": "Captain",
+  "level": 23,
+  "role": "Sabotage Captain",
+  "build": {
+    "primaryClass": "Rogue",
+    "subclass": "Assassin",
+    "secondaryClass": "Sorcerer",
+    "casterType": "hybrid"
+  },
+  "abilities": {
+    "str": 14,
+    "dex": 22,
+    "con": 18,
+    "int": 16,
+    "wis": 16,
+    "cha": 19
+  },
+  "combat": {
+    "ac": 22,
+    "hp": 318,
+    "speed": 35,
+    "initiative": 11
+  },
+  "skills": [
+    "stealth",
+    "sleight-of-hand",
+    "intimidation",
+    "deception",
+    "athletics"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Saboteur's Smoke Harness",
+        "img": "icons/equipment/chest/leather-vest-brown.webp"
+      },
+      {
+        "name": "Patch of the One-Eyed Mark",
+        "img": "icons/equipment/chest/cloth-simple-brown.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Grinner (poison saber)",
+        "img": "icons/weapons/swords/sword-guard-steel-green.webp"
+      },
+      {
+        "name": "Needle Kit Bandolier",
+        "img": "icons/weapons/daggers/dagger-curved-gold.webp"
+      },
+      {
+        "name": "Blackglass Buckler",
+        "img": "icons/equipment/shield/buckler-wooden-round-black.webp"
+      }
+    ],
+    "focus": [
+      {
+        "name": "Voice-Mirror Locket",
+        "img": "icons/svg/items/equipment.svg"
+      }
+    ]
+  },
+  "features": [
+    "Perfect Voice Mimicry",
+    "Chaos Breach",
+    "Poison Cascade",
+    "Emergency Cover Operation"
+  ],
+  "spells": {
+    "atWill": [
+      "prestidigitation",
+      "minor illusion"
+    ],
+    "level1": [
+      "disguise self",
+      "shield",
+      "chromatic orb"
+    ],
+    "level2": [
+      "mirror image",
+      "blur",
+      "alter self"
+    ],
+    "level3": [
+      "counterspell",
+      "fear",
+      "stinking cloud"
+    ],
+    "level4": [
+      "greater invisibility",
+      "dimension door"
+    ],
+    "level5": [
+      "cloudkill"
+    ]
+  },
+  "integration": {
+    "faction": "lyssa-veil-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "aggressive-saboteur"
+  },
+  "prototypeToken": {
+    "name": "Captain Thorne Kael",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/noble_elve_man_01.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}

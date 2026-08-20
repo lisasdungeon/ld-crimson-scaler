@@ -1,0 +1,146 @@
+{
+  "id": "vespera-pyne",
+  "name": "Vespera Pyne",
+  "img": "modules/ld-crimson-scaler/assets/portraits/deity_woman_01.png",
+  "rank": "Matriarch",
+  "level": 30,
+  "role": "Shadow sovereign and pact-break liberator",
+  "build": {
+    "primaryClass": "Wizard",
+    "subclass": "Necromancy",
+    "secondaryClass": "Warlock",
+    "casterType": "mythic-full-caster"
+  },
+  "abilities": {
+    "str": 10,
+    "dex": 20,
+    "con": 22,
+    "int": 30,
+    "wis": 22,
+    "cha": 24
+  },
+  "combat": {
+    "ac": 24,
+    "hp": 436,
+    "speed": 35,
+    "initiative": 15
+  },
+  "skills": [
+    "arcana",
+    "deception",
+    "insight",
+    "investigation",
+    "perception",
+    "stealth"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Mourning Veil of the Fifth Shadow",
+        "img": "icons/equipment/back/cloak-collared-grey.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Void-Scribed Athame",
+        "img": "icons/weapons/daggers/dagger-ritual-red.webp"
+      },
+      {
+        "name": "Sorrowglass Rod",
+        "img": "icons/weapons/wands/wand-gem-red.webp"
+      }
+    ],
+    "focus": [
+      {
+        "name": "Self-Forged Collarbone Mark",
+        "img": "icons/svg/items/equipment.svg"
+      },
+      {
+        "name": "Sepulcher Prism",
+        "img": "icons/magic/light/orb-shadow-blue.webp"
+      }
+    ]
+  },
+  "features": [
+    "Shadowphase Transit",
+    "Speak With the Restless",
+    "Dream-to-Despair Curse Weave",
+    "Shade Sovereignty",
+    "True Freedom Decree"
+  ],
+  "spells": {
+    "cantrips": [
+      "chill touch",
+      "mage hand",
+      "mind sliver",
+      "minor illusion"
+    ],
+    "level1": [
+      "armor of agathys",
+      "shield",
+      "hex"
+    ],
+    "level2": [
+      "darkness",
+      "misty step",
+      "mirror image"
+    ],
+    "level3": [
+      "counterspell",
+      "summon shadowspawn",
+      "bestow curse"
+    ],
+    "level4": [
+      "greater invisibility",
+      "blight",
+      "dimension door"
+    ],
+    "level5": [
+      "danse macabre",
+      "wall of force",
+      "dominate person"
+    ],
+    "level6": [
+      "circle of death",
+      "disintegrate",
+      "mass suggestion"
+    ],
+    "level7": [
+      "finger of death",
+      "plane shift",
+      "forcecage"
+    ],
+    "level8": [
+      "power word stun",
+      "maze",
+      "demiplane"
+    ],
+    "level9": [
+      "power word kill",
+      "time stop",
+      "wish"
+    ]
+  },
+  "integration": {
+    "faction": "vespera-fifth-shadow-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "apex-void-necromancer-controller"
+  },
+  "prototypeToken": {
+    "name": "Vespera Pyne",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/deity_woman_01.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "id": "sgt-torin-revenant",
+  "name": "Sgt. Torin Revenant",
+  "img": "modules/ld-crimson-scaler/assets/portraits/highwizard_darkelve_man_01.png",
+  "rank": "Sergeant",
+  "level": 28,
+  "role": "Revenant Sgt",
+  "build": {
+    "primaryClass": "Fighter",
+    "subclass": "Champion",
+    "secondaryClass": "Cleric",
+    "casterType": "martial-hybrid"
+  },
+  "abilities": {
+    "str": 24,
+    "dex": 14,
+    "con": 23,
+    "int": 11,
+    "wis": 16,
+    "cha": 14
+  },
+  "combat": {
+    "ac": 22,
+    "hp": 348,
+    "speed": 35,
+    "initiative": 9
+  },
+  "skills": [
+    "athletics",
+    "intimidation",
+    "survival",
+    "perception"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Revenant Warplate",
+        "img": "icons/equipment/chest/breastplate-steel-grey.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Scarbreaker Greatsword",
+        "img": "icons/weapons/swords/greatsword-crossguard-steel.webp"
+      },
+      {
+        "name": "Hooked Handaxe",
+        "img": "icons/weapons/axes/hatchet-broad-grey.webp"
+      }
+    ],
+    "focus": [
+      {
+        "name": "Revival Mark Seal",
+        "img": "icons/magic/symbols/rune-sigil-red-orange.webp"
+      }
+    ]
+  },
+  "features": [
+    "One Revival Per Battle",
+    "Scar Reopen Fury",
+    "Goreknit Recovery",
+    "Deathline Return"
+  ],
+  "spells": {
+    "level1": [
+      "shield of faith",
+      "inflict wounds"
+    ],
+    "level2": [
+      "aid",
+      "lesser restoration"
+    ],
+    "level3": [
+      "revivify"
+    ]
+  },
+  "integration": {
+    "faction": "vespera-fifth-shadow-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "undying-frontline-bruiser"
+  },
+  "prototypeToken": {
+    "name": "Sgt. Torin Revenant",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/highwizard_darkelve_man_01.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}

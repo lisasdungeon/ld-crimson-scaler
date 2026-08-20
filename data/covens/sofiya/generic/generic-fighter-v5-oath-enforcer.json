@@ -1,0 +1,95 @@
+{
+  "id": "sofiya-generic-fighter-v5",
+  "name": "Dawn Chorus Fighter - Oath Enforcer",
+  "img": "modules/ld-crimson-scaler/assets/portraits/outdated_25.png",
+  "rank": "Generic Fighter",
+  "level": 8,
+  "role": "Morale surge enforcer",
+  "build": {
+    "primaryClass": "Paladin",
+    "subclass": "Conquest",
+    "secondaryClass": "Bard",
+    "casterType": "half-caster"
+  },
+  "abilities": {
+    "str": 16,
+    "dex": 11,
+    "con": 15,
+    "int": 10,
+    "wis": 11,
+    "cha": 16
+  },
+  "combat": {
+    "ac": 17,
+    "hp": 102,
+    "speed": 30,
+    "initiative": 3
+  },
+  "skills": [
+    "intimidation",
+    "persuasion",
+    "athletics",
+    "religion"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Oathbound Mail",
+        "img": "icons/equipment/chest/chain-mail-steel-grey.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Vowblade",
+        "img": "icons/weapons/swords/sword-guard-steel-green.webp"
+      },
+      {
+        "name": "Rosary Lash",
+        "img": "icons/weapons/sickles/sickle-curved-grey.webp"
+      }
+    ],
+    "focus": [
+      {
+        "name": "Crimson Oath Sigil",
+        "img": "icons/magic/symbols/rune-sigil-red-orange.webp"
+      }
+    ]
+  },
+  "features": [
+    "Rally Call (+attack for allies, 1 turn)",
+    "Fear Deserter Pressure",
+    "Oath-Link Morale Chain",
+    "Pain-Share Mark"
+  ],
+  "spells": {
+    "level1": [
+      "heroism",
+      "command"
+    ],
+    "level2": [
+      "zone of truth"
+    ]
+  },
+  "integration": {
+    "faction": "sofiya-dawn-chorus-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "rally-fearline-enforcer"
+  },
+  "prototypeToken": {
+    "name": "Dawn Chorus Fighter - Oath Enforcer",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/outdated_25.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}

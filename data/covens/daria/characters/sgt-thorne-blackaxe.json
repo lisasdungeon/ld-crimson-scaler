@@ -1,0 +1,85 @@
+{
+  "id": "sgt-thorne-blackaxe",
+  "name": "Sgt. Thorne Blackaxe",
+  "img": "modules/ld-crimson-scaler/assets/portraits/knight_human_man_05.png",
+  "rank": "Sergeant",
+  "level": 19,
+  "role": "Enforcer Sergeant",
+  "build": {
+    "primaryClass": "Fighter",
+    "subclass": "Champion",
+    "secondaryClass": "Rogue",
+    "casterType": "martial"
+  },
+  "abilities": {
+    "str": 20,
+    "dex": 12,
+    "con": 17,
+    "int": 13,
+    "wis": 13,
+    "cha": 12
+  },
+  "combat": {
+    "ac": 20,
+    "hp": 264,
+    "speed": 30,
+    "initiative": 5
+  },
+  "skills": [
+    "athletics",
+    "intimidation",
+    "insight",
+    "investigation"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Debtbreaker Plate",
+        "img": "icons/equipment/chest/breastplate-steel-grey.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Iron Knuckles",
+        "img": "icons/weapons/fist/fist-knuckles-iron.webp"
+      },
+      {
+        "name": "Collector Axe",
+        "img": "icons/weapons/axes/axe-broad-grey.webp"
+      }
+    ],
+    "tools": [
+      "Tithe Chain Shackles"
+    ]
+  },
+  "features": [
+    "Fearsense Mark",
+    "Debtor Drag",
+    "Cold Collections"
+  ],
+  "spells": {
+    "level1": []
+  },
+  "integration": {
+    "faction": "daria-iron-ring-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "debt-enforcer"
+  },
+  "prototypeToken": {
+    "name": "Sgt. Thorne Blackaxe",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/knight_human_man_05.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}

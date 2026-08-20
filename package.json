@@ -1,0 +1,24 @@
+{
+  "name": "ld-crimson-scaler",
+  "version": "1.0.5",
+  "description": "GM hub for monitoring and validating item scaling rules, with editable scaling profiles for weapons and armor.",
+  "type": "module",
+  "scripts": {
+    "syntax": "node tests/check-syntax.mjs",
+    "validate": "node tests/validate.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "check": "npm run syntax && npm run validate && npm test"
+  },
+  "author": "Lisa's Dungeon",
+  "contributors": [
+    {
+      "name": "Lisa's Dungeon",
+      "url": "https://github.com/lisasdungeon"
+    }
+  ],
+  "license": "Proprietary",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ld-crimson-blood/ld-crimson-scaler.git"
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "id": "captain-nyx-voidwhisper",
+  "name": "Captain Nyx Voidwhisper",
+  "img": "modules/ld-crimson-scaler/assets/portraits/demon_darkelve_woman_02.png",
+  "rank": "Captain",
+  "level": 29,
+  "role": "Dream Captain",
+  "build": {
+    "primaryClass": "Wizard",
+    "subclass": "Enchantment",
+    "secondaryClass": "Rogue",
+    "casterType": "full-caster"
+  },
+  "abilities": {
+    "str": 9,
+    "dex": 18,
+    "con": 18,
+    "int": 26,
+    "wis": 20,
+    "cha": 19
+  },
+  "combat": {
+    "ac": 21,
+    "hp": 302,
+    "speed": 30,
+    "initiative": 12
+  },
+  "skills": [
+    "arcana",
+    "insight",
+    "stealth",
+    "deception",
+    "investigation"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Sleep-Rune Mantle",
+        "img": "icons/equipment/back/cloak-collared-grey.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Somnus Dagger",
+        "img": "icons/weapons/daggers/dagger-serrated.webp"
+      }
+    ],
+    "focus": [
+      {
+        "name": "Dream Needle",
+        "img": "icons/tools/scribing/ink-quill-red.webp"
+      },
+      {
+        "name": "Nightmare Censer",
+        "img": "icons/sundries/lights/lantern-iron-rusty.webp"
+      }
+    ]
+  },
+  "features": [
+    "Nightmare Incursion",
+    "Camp Sleep Sabotage",
+    "Fear-Vision Mark",
+    "Shared Terror Loop"
+  ],
+  "spells": {
+    "level1": [
+      "sleep",
+      "disguise self",
+      "shield"
+    ],
+    "level2": [
+      "detect thoughts",
+      "phantasmal force"
+    ],
+    "level3": [
+      "hypnotic pattern",
+      "fear",
+      "counterspell"
+    ],
+    "level4": [
+      "greater invisibility",
+      "phantasmal killer"
+    ],
+    "level5": [
+      "dream",
+      "modify memory"
+    ],
+    "level6": [
+      "mass suggestion"
+    ]
+  },
+  "integration": {
+    "faction": "vespera-fifth-shadow-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "dream-sabotage-controller"
+  },
+  "prototypeToken": {
+    "name": "Captain Nyx Voidwhisper",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/demon_darkelve_woman_02.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}

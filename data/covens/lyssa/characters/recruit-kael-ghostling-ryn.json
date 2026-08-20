@@ -1,0 +1,86 @@
+{
+  "id": "recruit-kael-ghostling-ryn",
+  "name": "Kael \"Ghostling\" Ryn",
+  "img": "modules/ld-crimson-scaler/assets/portraits/resident_human_man_05.png",
+  "rank": "Recruit",
+  "level": 1,
+  "role": "Outer Court Saboteur",
+  "build": {
+    "primaryClass": "Rogue",
+    "subclass": "None",
+    "secondaryClass": "None",
+    "casterType": "martial"
+  },
+  "abilities": {
+    "str": 8,
+    "dex": 14,
+    "con": 11,
+    "int": 12,
+    "wis": 10,
+    "cha": 11
+  },
+  "combat": {
+    "ac": 12,
+    "hp": 18,
+    "speed": 30,
+    "initiative": 4
+  },
+  "skills": [
+    "sleight-of-hand",
+    "stealth",
+    "survival",
+    "deception"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Sootcloth Wrap",
+        "img": "icons/equipment/chest/cloth-simple-brown.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Starter Shiv",
+        "img": "icons/weapons/daggers/dagger-straight-grey.webp"
+      },
+      {
+        "name": "Crude Spark Bomb x2",
+        "img": "icons/weapons/thrown/bomb-iron-black.webp"
+      }
+    ],
+    "tools": [
+      "Tripwire Spool",
+      "Reagent Satchel"
+    ]
+  },
+  "features": [
+    "Minor Shadow Cloak",
+    "Trap Runner",
+    "Unstable Spark"
+  ],
+  "spells": {
+    "level1": []
+  },
+  "integration": {
+    "faction": "lyssa-veil-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "reckless-saboteur-trainee"
+  },
+  "prototypeToken": {
+    "name": "Kael \"Ghostling\" Ryn",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/resident_human_man_05.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}

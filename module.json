@@ -1,0 +1,48 @@
+{
+  "id": "ld-crimson-scaler",
+  "title": "LD Crimson Scaler",
+  "description": "GM hub for monitoring and validating item scaling rules, with editable scaling profiles for weapons and armor.",
+  "version": "1.0.5",
+  "authors": [
+    {
+      "name": "Lisa's Dungeon",
+      "url": "https://github.com/lisasdungeon",
+      "discord": "MystryssLysa",
+      "email": "Lisasdungeon@gmail.com",
+      "patreon": "https://patreon.com/LisasDungeon"
+    }
+  ],
+  "compatibility": {
+    "minimum": 13,
+    "verified": 14
+  },
+  "esmodules": [
+    "src/main.js"
+  ],
+  "styles": [
+    "styles/ld-crimson-scaler.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "languages/en.json"
+    }
+  ],
+  "socket": true,
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system"
+      }
+    ]
+  },
+  "protected": false,
+  "url": "https://github.com/ld-crimson-blood/ld-crimson-scaler",
+  "manifest": "https://github.com/ld-crimson-blood/ld-crimson-scaler/releases/latest/download/module.json",
+  "download": "https://github.com/ld-crimson-blood/ld-crimson-scaler/releases/latest/download/ld-crimson-scaler.zip",
+  "readme": "https://github.com/ld-crimson-blood/ld-crimson-scaler/blob/main/README.md",
+  "changelog": "https://github.com/ld-crimson-blood/ld-crimson-scaler/blob/main/CHANGELOG.md",
+  "license": "https://github.com/ld-crimson-blood/ld-crimson-scaler/blob/main/LICENSE"
+}

@@ -1,0 +1,106 @@
+{
+  "id": "pvt-acolyte-ysme-blood-chalice-vey",
+  "name": "Acolyte Ysme \"Blood Chalice\" Vey",
+  "img": "modules/ld-crimson-scaler/assets/portraits/resident_human_woman_05.png",
+  "rank": "Private",
+  "level": 7,
+  "role": "Sacrificer",
+  "build": {
+    "primaryClass": "Cleric",
+    "subclass": "Life",
+    "secondaryClass": "None",
+    "casterType": "full-caster"
+  },
+  "abilities": {
+    "str": 10,
+    "dex": 13,
+    "con": 14,
+    "int": 11,
+    "wis": 17,
+    "cha": 15
+  },
+  "combat": {
+    "ac": 16,
+    "hp": 74,
+    "speed": 30,
+    "initiative": 5
+  },
+  "skills": [
+    "medicine",
+    "religion",
+    "insight",
+    "persuasion"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Chalice Vestments",
+        "img": "icons/equipment/chest/robe-blue-gold.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Ritual Dagger",
+        "img": "icons/weapons/daggers/dagger-ritual-red.webp"
+      }
+    ],
+    "focus": [
+      {
+        "name": "Red Glass Chalice",
+        "img": "icons/magic/light/orb-shadow-blue.webp"
+      },
+      {
+        "name": "Tithe Chain",
+        "img": "icons/sundries/survival/rope-coiled-brown.webp"
+      }
+    ]
+  },
+  "features": [
+    "Vitae Reservoir (party heal burst 2d6)",
+    "Self-Tithe Guard",
+    "Blood Offering Surge",
+    "Chapel-Bred Resolve"
+  ],
+  "spells": {
+    "cantrips": [
+      "guidance",
+      "spare the dying",
+      "sacred flame"
+    ],
+    "level1": [
+      "cure wounds",
+      "bless",
+      "sanctuary"
+    ],
+    "level2": [
+      "lesser restoration",
+      "prayer of healing"
+    ],
+    "level3": [
+      "mass healing word",
+      "beacon of hope"
+    ]
+  },
+  "integration": {
+    "faction": "sofiya-dawn-chorus-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "support-blood-tithe-healer"
+  },
+  "prototypeToken": {
+    "name": "Acolyte Ysme \"Blood Chalice\" Vey",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/resident_human_woman_05.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}

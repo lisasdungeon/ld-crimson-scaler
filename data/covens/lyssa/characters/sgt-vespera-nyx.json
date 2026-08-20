@@ -1,0 +1,111 @@
+{
+  "id": "sgt-vespera-nyx",
+  "name": "Sgt. Vespera Nyx",
+  "img": "modules/ld-crimson-scaler/assets/portraits/noble_human_woman_03.png",
+  "rank": "Sergeant",
+  "level": 19,
+  "role": "Deception Sergeant",
+  "build": {
+    "primaryClass": "Warlock",
+    "subclass": "Archfey",
+    "secondaryClass": "Bard",
+    "casterType": "full-caster"
+  },
+  "abilities": {
+    "str": 9,
+    "dex": 18,
+    "con": 15,
+    "int": 15,
+    "wis": 14,
+    "cha": 22
+  },
+  "combat": {
+    "ac": 19,
+    "hp": 214,
+    "speed": 35,
+    "initiative": 9
+  },
+  "skills": [
+    "deception",
+    "insight",
+    "arcana",
+    "persuasion",
+    "stealth"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Mirage Silk Robes",
+        "img": "icons/equipment/chest/robe-blue-gold.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Illusionist's Dagger",
+        "img": "icons/weapons/daggers/dagger-serrated.webp"
+      }
+    ],
+    "focus": [
+      {
+        "name": "Hypnosis Voice Choker",
+        "img": "icons/svg/items/equipment.svg"
+      }
+    ]
+  },
+  "features": [
+    "Voice Hypnosis",
+    "False Council",
+    "Panic Script",
+    "Betrayal Trigger"
+  ],
+  "spells": {
+    "atWill": [
+      "minor illusion",
+      "mage hand",
+      "friends"
+    ],
+    "level1": [
+      "charm person",
+      "silent image"
+    ],
+    "level2": [
+      "mirror image",
+      "suggestion"
+    ],
+    "level3": [
+      "major image",
+      "fear",
+      "counterspell"
+    ],
+    "level4": [
+      "hallucinatory terrain",
+      "greater invisibility"
+    ],
+    "level5": [
+      "dominate person",
+      "mislead"
+    ]
+  },
+  "integration": {
+    "faction": "lyssa-veil-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "illusion-controller"
+  },
+  "prototypeToken": {
+    "name": "Sgt. Vespera Nyx",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/noble_human_woman_03.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}

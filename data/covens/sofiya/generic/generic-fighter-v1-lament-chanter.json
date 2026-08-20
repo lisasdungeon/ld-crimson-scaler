@@ -1,0 +1,95 @@
+{
+  "id": "sofiya-generic-fighter-v1",
+  "name": "Dawn Chorus Fighter - Lament Chanter",
+  "img": "modules/ld-crimson-scaler/assets/portraits/outdated_21.png",
+  "rank": "Generic Fighter",
+  "level": 8,
+  "role": "Dirge debuff support",
+  "build": {
+    "primaryClass": "Bard",
+    "subclass": "Spirits",
+    "secondaryClass": "Cleric",
+    "casterType": "full-caster"
+  },
+  "abilities": {
+    "str": 10,
+    "dex": 13,
+    "con": 14,
+    "int": 11,
+    "wis": 14,
+    "cha": 17
+  },
+  "combat": {
+    "ac": 15,
+    "hp": 84,
+    "speed": 30,
+    "initiative": 5
+  },
+  "skills": [
+    "performance",
+    "religion",
+    "insight",
+    "intimidation"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Dawn Robes",
+        "img": "icons/equipment/chest/robe-blue-gold.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Rosary Whip",
+        "img": "icons/weapons/sickles/sickle-curved-grey.webp"
+      },
+      {
+        "name": "Dirge Staff",
+        "img": "icons/weapons/staves/staff-ornate-red.webp"
+      }
+    ],
+    "consumables": [
+      "Holy Water Vial x2"
+    ]
+  },
+  "features": [
+    "Dirge Debuff (foe disadvantage on saves)",
+    "Extra Channel Use",
+    "Grief Wave Pulse",
+    "Pain-Share Mark"
+  ],
+  "spells": {
+    "level1": [
+      "bane",
+      "healing word"
+    ],
+    "level2": [
+      "calm emotions"
+    ],
+    "level3": [
+      "bestow curse"
+    ]
+  },
+  "integration": {
+    "faction": "sofiya-dawn-chorus-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "debuff-chant-support"
+  },
+  "prototypeToken": {
+    "name": "Dawn Chorus Fighter - Lament Chanter",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/outdated_21.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}

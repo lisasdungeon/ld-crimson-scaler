@@ -1,0 +1,350 @@
+/* ═══════════ FOUNDRY WINDOW SHELL ═══════════ */
+
+.ld-crimson-scaler .window-content {
+  background: #131217;
+  color: #eee8f3;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 0;
+}
+
+/* ═══════════ ROOT LAYOUT ═══════════
+ *  cs-root  (flex column, fills window)
+ *    cs-header   - pinned top
+ *    cs-tabs     - pinned top
+ *    cs-body     - SINGLE scroll region, everything else lives here
+ */
+
+.cs-root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+  padding: 0.5rem;
+  gap: 0.5rem;
+}
+
+.cs-header {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.cs-header h1 {
+  margin: 0;
+  font-size: 1.1rem;
+  white-space: nowrap;
+}
+
+.cs-toolbar {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.cs-toolbar input {
+  min-width: 200px;
+}
+
+.cs-tabs,
+.cs-item-sections {
+  flex: 0 0 auto;
+  display: flex;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+}
+
+.cs-tabs button,
+.cs-item-sections button,
+.cs-rule-actions button,
+.cs-toolbar button {
+  border: 1px solid #6b2343;
+  background: #24121b;
+  color: #f7dbe7;
+  border-radius: 4px;
+  padding: 0.3rem 0.65rem;
+  cursor: pointer;
+  font-size: 0.82rem;
+}
+
+.cs-tabs button.active,
+.cs-item-sections button.active {
+  background: #702640;
+}
+
+/* ── THE ONE AND ONLY SCROLL REGION ── */
+.cs-body {
+  flex: 1 1 0;
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding-right: 0.25rem;
+}
+
+/* ═══════════ SHARED COMPONENTS ═══════════ */
+
+.cs-summary-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  flex: 0 0 auto;
+}
+
+.cs-card {
+  border: 1px solid #422334;
+  background: #1e1720;
+  padding: 0.4rem 0.5rem;
+  border-radius: 4px;
+}
+
+.cs-card .label {
+  font-size: 0.78rem;
+  opacity: 0.85;
+}
+
+.cs-card .value {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.cs-panel {
+  border: 1px solid #422334;
+  background: #1a141e;
+  border-radius: 6px;
+  padding: 0.75rem;
+  flex: 0 0 auto;
+}
+
+.cs-panel h2 {
+  margin-top: 0;
+  margin-bottom: 0.4rem;
+  font-size: 1rem;
+}
+
+/* ═══════════ DISPATCH PANEL ═══════════ */
+
+.cs-dispatch-panel h2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.cs-dispatch-panel h2 .cs-dispatch-toggle {
+  font-size: 0.7rem;
+  color: #8a6a7e;
+  margin-left: 0.5rem;
+}
+
+.cs-dispatch-body {
+  margin-top: 0.5rem;
+}
+
+.cs-dispatch-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 0.5rem;
+}
+
+.cs-dispatch-grid label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  font-size: 0.78rem;
+}
+
+.cs-dispatch-grid select {
+  background: #1e1720;
+  border: 1px solid #6b2343;
+  color: #eee8f3;
+  border-radius: 4px;
+  box-sizing: border-box;
+  height: var(--input-height, 2rem);
+  line-height: var(--input-height, 2rem);
+  padding: 0 0.4rem;
+  font-size: 0.78rem;
+  text-align: left;
+  text-align-last: left;
+  vertical-align: middle;
+}
+
+.cs-dispatch-actions {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.cs-dispatch-actions button {
+  border: 1px solid #6b2343;
+  background: #24121b;
+  color: #f7dbe7;
+  border-radius: 4px;
+  padding: 0.25rem 0.55rem;
+  font-size: 0.78rem;
+  cursor: pointer;
+}
+
+/* ═══════════ CLASS / ARCHETYPE GRID ═══════════ */
+
+.cs-class-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 0.65rem;
+}
+
+.cs-class-card {
+  border: 1px solid #5e3244;
+  background: #231723;
+  color: #f2dce8;
+  border-radius: 6px;
+  padding: 0.75rem;
+  text-align: left;
+  cursor: pointer;
+}
+
+.cs-class-card.active {
+  border-color: #d35f88;
+  box-shadow: 0 0 0 1px #d35f88 inset;
+}
+
+.cs-class-card .name {
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.cs-class-card .subname {
+  font-size: 0.78rem;
+  color: #ddb8ca;
+  margin-bottom: 0.2rem;
+}
+
+.cs-class-card .meta {
+  font-size: 0.8rem;
+  opacity: 0.92;
+}
+
+/* ── Tables ── */
+
+.cs-table-wrap {
+  overflow: auto;
+}
+
+.cs-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cs-table th,
+.cs-table td {
+  border-bottom: 1px solid #3d2a35;
+  padding: 0.35rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.cs-grid-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cs-grid-table th,
+.cs-grid-table td {
+  border-bottom: 1px solid #3d2a35;
+  padding: 0.4rem;
+  text-align: left;
+}
+
+/* ── Issue / validation badges ── */
+
+.cs-issue { color: #ff98b7; }
+.cs-valid { color: #90ed90; }
+.cs-invalid { color: #ff8080; }
+
+/* ── Scaling rules editor ── */
+
+.cs-rules-editor textarea {
+  width: 100%;
+  min-height: 360px;
+  font-family: monospace;
+  font-size: 12px;
+  background: #111;
+  color: #e5e5e5;
+}
+
+.cs-rule-actions {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* ── Misc class detail ── */
+
+.cs-class-subname {
+  margin-top: -0.25rem;
+  color: #ddb8ca;
+  font-style: italic;
+}
+
+.cs-linked-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(180px, 1fr));
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.cs-linked-list {
+  margin: 0.25rem 0 0;
+  padding-left: 1.2rem;
+  max-height: 160px;
+  overflow: auto;
+}
+
+/* ═══════════ DETAIL WINDOW ═══════════ */
+
+.ld-crimson-scaler-detail .window-content {
+  overflow: hidden;
+}
+
+.cs-detail-root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.cs-detail-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.cs-back-button {
+  border: 1px solid #6b2343;
+  background: #24121b;
+  color: #f7dbe7;
+  border-radius: 4px;
+  padding: 0.35rem 0.75rem;
+}
+
+.cs-detail-scroll {
+  flex: 1 1 0;
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}

@@ -1,0 +1,87 @@
+{
+  "id": "recruit-novice-lira-kneeler-dax",
+  "name": "Novice Lira \"Kneeler\" Dax",
+  "img": "modules/ld-crimson-scaler/assets/portraits/resident_human_woman_06.png",
+  "rank": "Recruit",
+  "level": 5,
+  "role": "Outer Court Penitent",
+  "build": {
+    "primaryClass": "Cleric",
+    "subclass": "None",
+    "secondaryClass": "None",
+    "casterType": "support-trainee"
+  },
+  "abilities": {
+    "str": 9,
+    "dex": 12,
+    "con": 12,
+    "int": 10,
+    "wis": 14,
+    "cha": 11
+  },
+  "combat": {
+    "ac": 13,
+    "hp": 38,
+    "speed": 30,
+    "initiative": 3
+  },
+  "skills": [
+    "religion",
+    "insight",
+    "medicine",
+    "perception"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Penitent Robes",
+        "img": "icons/equipment/chest/robe-blue-gold.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Icon Staff",
+        "img": "icons/weapons/staves/staff-ornate-red.webp"
+      }
+    ],
+    "focus": [
+      {
+        "name": "Rosary Shield Focus",
+        "img": "icons/sundries/misc/cross-wooden-brown.webp"
+      }
+    ]
+  },
+  "features": [
+    "Prayer Ward Flicker",
+    "Kneeling Litany Buff",
+    "Faith Tremor Mark"
+  ],
+  "spells": {
+    "level1": [
+      "bless",
+      "sanctuary"
+    ]
+  },
+  "integration": {
+    "faction": "sofiya-dawn-chorus-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "backline-penitent-buffer"
+  },
+  "prototypeToken": {
+    "name": "Novice Lira \"Kneeler\" Dax",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/resident_human_woman_06.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}

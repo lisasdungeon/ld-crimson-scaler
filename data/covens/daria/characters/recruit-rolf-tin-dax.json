@@ -1,0 +1,81 @@
+{
+  "id": "recruit-rolf-tin-dax",
+  "name": "Rolf \"Tin\" Dax",
+  "img": "modules/ld-crimson-scaler/assets/portraits/resident_human_man_02.png",
+  "rank": "Recruit",
+  "level": 3,
+  "role": "Boot Camp Shieldboy",
+  "build": {
+    "primaryClass": "Fighter",
+    "subclass": "None",
+    "secondaryClass": "None",
+    "casterType": "martial"
+  },
+  "abilities": {
+    "str": 13,
+    "dex": 10,
+    "con": 14,
+    "int": 9,
+    "wis": 10,
+    "cha": 9
+  },
+  "combat": {
+    "ac": 14,
+    "hp": 38,
+    "speed": 30,
+    "initiative": 2
+  },
+  "skills": [
+    "athletics",
+    "survival",
+    "intimidation"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Patched Training Plate",
+        "img": "icons/equipment/chest/breastplate-steel-grey.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Wall Shield",
+        "img": "icons/equipment/shield/heater-steel-sword.webp"
+      },
+      {
+        "name": "Practice Mace",
+        "img": "icons/weapons/maces/mace-round-spiked-grey.webp"
+      }
+    ]
+  },
+  "features": [
+    "Skin-Hardening Mark",
+    "Log Drop Brace",
+    "Defiance Stance"
+  ],
+  "spells": {
+    "level1": []
+  },
+  "integration": {
+    "faction": "daria-iron-ring-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "shield-trainee"
+  },
+  "prototypeToken": {
+    "name": "Rolf \"Tin\" Dax",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/resident_human_man_02.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}

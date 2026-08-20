@@ -1,0 +1,88 @@
+{
+  "id": "pvt-viktor-shade-draven",
+  "name": "Viktor \"Shade\" Draven",
+  "img": "modules/ld-crimson-scaler/assets/portraits/warrior_dwarf_man_01.png",
+  "rank": "Private",
+  "level": 7,
+  "role": "Lockbreaker",
+  "build": {
+    "primaryClass": "Rogue",
+    "subclass": "Thief",
+    "secondaryClass": "Fighter",
+    "casterType": "martial"
+  },
+  "abilities": {
+    "str": 17,
+    "dex": 16,
+    "con": 15,
+    "int": 12,
+    "wis": 11,
+    "cha": 10
+  },
+  "combat": {
+    "ac": 17,
+    "hp": 96,
+    "speed": 30,
+    "initiative": 5
+  },
+  "skills": [
+    "athletics",
+    "thieves-tools",
+    "investigation",
+    "intimidation",
+    "perception"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Raidplate Harness",
+        "img": "icons/equipment/chest/breastplate-steel-grey.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Wardbreaker Maul",
+        "img": "icons/weapons/hammers/maul-rounded-dark.webp"
+      },
+      {
+        "name": "Filetooth Dagger",
+        "img": "icons/weapons/daggers/dagger-serrated.webp"
+      }
+    ],
+    "tools": [
+      "Rune Cracker Kit",
+      "Heavy Tumbler Picks"
+    ]
+  },
+  "features": [
+    "Metal Vibrate Mark",
+    "Vault Breach",
+    "Uneven Split (loot behavior)",
+    "Paranoid Guard Stance"
+  ],
+  "spells": {
+    "level1": []
+  },
+  "integration": {
+    "faction": "lyssa-veil-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "breach-bruiser"
+  },
+  "prototypeToken": {
+    "name": "Viktor \"Shade\" Draven",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/warrior_dwarf_man_01.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}

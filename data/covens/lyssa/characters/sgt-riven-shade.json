@@ -1,0 +1,105 @@
+{
+  "id": "sgt-riven-shade",
+  "name": "Sgt. Riven Shade",
+  "img": "modules/ld-crimson-scaler/assets/portraits/ranger_elve_man_01.png",
+  "rank": "Sergeant",
+  "level": 22,
+  "role": "Scout Sergeant",
+  "build": {
+    "primaryClass": "Ranger",
+    "subclass": "Gloom Stalker",
+    "secondaryClass": "Rogue",
+    "casterType": "half-caster"
+  },
+  "abilities": {
+    "str": 12,
+    "dex": 22,
+    "con": 16,
+    "int": 14,
+    "wis": 18,
+    "cha": 12
+  },
+  "combat": {
+    "ac": 21,
+    "hp": 264,
+    "speed": 45,
+    "initiative": 12
+  },
+  "skills": [
+    "stealth",
+    "survival",
+    "perception",
+    "acrobatics",
+    "investigation"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Moonshade Leathers",
+        "img": "icons/equipment/chest/leather-chest-dark.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Rooftop Recurve",
+        "img": "icons/weapons/swords/sword-guard-steel-green.webp"
+      },
+      {
+        "name": "Twin Claw Knives",
+        "img": "icons/weapons/daggers/dagger-serrated.webp"
+      },
+      {
+        "name": "Hookline Grappler",
+        "img": "icons/sundries/survival/rope-coiled-brown.webp"
+      }
+    ],
+    "focus": [
+      {
+        "name": "Night-Sight Mark Lens",
+        "img": "icons/tools/navigation/compass-brass.webp"
+      }
+    ]
+  },
+  "features": [
+    "Ghost Climber",
+    "Wardfinder",
+    "Night-Eye Pulse",
+    "Silent Landing"
+  ],
+  "spells": {
+    "level1": [
+      "hunter's mark",
+      "longstrider"
+    ],
+    "level2": [
+      "pass without trace",
+      "darkvision"
+    ],
+    "level3": [
+      "nondetection",
+      "fear"
+    ]
+  },
+  "integration": {
+    "faction": "lyssa-veil-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "recon-striker"
+  },
+  "prototypeToken": {
+    "name": "Sgt. Riven Shade",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/ranger_elve_man_01.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}

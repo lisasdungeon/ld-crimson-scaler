@@ -1,0 +1,92 @@
+{
+  "id": "sgt-rolf-steelvein",
+  "name": "Sgt. Rolf Steelvein",
+  "img": "modules/ld-crimson-scaler/assets/portraits/knight_raceless_man_01.png",
+  "rank": "Sergeant",
+  "level": 15,
+  "role": "Quartermaster Sergeant",
+  "build": {
+    "primaryClass": "Artificer",
+    "subclass": "Battle Smith",
+    "secondaryClass": "Fighter",
+    "casterType": "hybrid"
+  },
+  "abilities": {
+    "str": 16,
+    "dex": 11,
+    "con": 17,
+    "int": 18,
+    "wis": 14,
+    "cha": 12
+  },
+  "combat": {
+    "ac": 20,
+    "hp": 214,
+    "speed": 30,
+    "initiative": 4
+  },
+  "skills": [
+    "investigation",
+    "smith-tools",
+    "history",
+    "insight"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Ledgerplate",
+        "img": "icons/equipment/chest/breastplate-steel-grey.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Inventory Halberd",
+        "img": "icons/weapons/polearms/halberd-crescent-steel.webp"
+      },
+      {
+        "name": "Supply Sidearm",
+        "img": "icons/weapons/swords/sword-guard-steel-green.webp"
+      }
+    ],
+    "tools": [
+      "Defect-Sense Mark Ledger"
+    ]
+  },
+  "features": [
+    "Shortage Detection",
+    "Armory Audit",
+    "Rapid Refit"
+  ],
+  "spells": {
+    "level1": [
+      "identify",
+      "heroism"
+    ],
+    "level2": [
+      "magic weapon",
+      "enhance ability"
+    ]
+  },
+  "integration": {
+    "faction": "daria-iron-ring-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "support-logistics"
+  },
+  "prototypeToken": {
+    "name": "Sgt. Rolf Steelvein",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/knight_raceless_man_01.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}

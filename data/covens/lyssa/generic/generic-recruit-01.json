@@ -1,0 +1,85 @@
+{
+  "id": "lyssa-generic-recruit-01",
+  "name": "Lyssa Generic Recruit I",
+  "img": "modules/ld-crimson-scaler/assets/portraits/outdated_14.png",
+  "rank": "Recruit",
+  "level": 5,
+  "role": "Generic Spy Trainee",
+  "build": {
+    "primaryClass": "Rogue",
+    "subclass": "Scout",
+    "secondaryClass": "None",
+    "casterType": "martial"
+  },
+  "abilities": {
+    "str": 8,
+    "dex": 16,
+    "con": 12,
+    "int": 13,
+    "wis": 14,
+    "cha": 10
+  },
+  "combat": {
+    "ac": 14,
+    "hp": 44,
+    "speed": 35,
+    "initiative": 6
+  },
+  "skills": [
+    "stealth",
+    "perception",
+    "survival",
+    "investigation"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Patchcloak",
+        "img": "icons/equipment/back/cloak-collared-grey.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Rust Knife",
+        "img": "icons/weapons/daggers/dagger-serrated.webp"
+      },
+      {
+        "name": "Training Sling",
+        "img": "icons/weapons/slings/sling-leather-brown.webp"
+      }
+    ],
+    "tools": [
+      "Route Journal"
+    ]
+  },
+  "features": [
+    "Patrol Tail",
+    "Wall Press Hide",
+    "Faint Mark Pulse"
+  ],
+  "spells": {
+    "level1": []
+  },
+  "integration": {
+    "faction": "lyssa-veil-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "scout-trainee"
+  },
+  "prototypeToken": {
+    "name": "Lyssa Generic Recruit I",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/outdated_14.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}

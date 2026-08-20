@@ -1,0 +1,114 @@
+{
+  "id": "sgt-joren-whisper",
+  "name": "Sgt. Joren Whisper",
+  "img": "modules/ld-crimson-scaler/assets/portraits/noble_human_man_01.png",
+  "rank": "Sergeant",
+  "level": 20,
+  "role": "Infiltrator Sergeant",
+  "build": {
+    "primaryClass": "Bard",
+    "subclass": "Eloquence",
+    "secondaryClass": "Rogue",
+    "casterType": "full-caster"
+  },
+  "abilities": {
+    "str": 10,
+    "dex": 20,
+    "con": 15,
+    "int": 16,
+    "wis": 14,
+    "cha": 22
+  },
+  "combat": {
+    "ac": 20,
+    "hp": 228,
+    "speed": 35,
+    "initiative": 10
+  },
+  "skills": [
+    "deception",
+    "persuasion",
+    "performance",
+    "insight",
+    "investigation"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Courtbreaker Vestments",
+        "img": "icons/equipment/chest/robe-blue-gold.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Sleeve Dagger",
+        "img": "icons/weapons/daggers/dagger-serrated.webp"
+      },
+      {
+        "name": "Palm-Dart Launcher",
+        "img": "icons/weapons/crossbows/crossbow-simple-brown.webp"
+      }
+    ],
+    "focus": [
+      {
+        "name": "Glamour Signet",
+        "img": "icons/equipment/finger/ring-cabochon-gold-red.webp"
+      }
+    ]
+  },
+  "features": [
+    "Micro-Expression Read",
+    "Persona Weave",
+    "Seal Theft",
+    "Social Ghosting"
+  ],
+  "spells": {
+    "atWill": [
+      "friends",
+      "minor illusion"
+    ],
+    "level1": [
+      "charm person",
+      "disguise self",
+      "comprehend languages"
+    ],
+    "level2": [
+      "suggestion",
+      "detect thoughts",
+      "invisibility"
+    ],
+    "level3": [
+      "tongues",
+      "major image",
+      "hypnotic pattern"
+    ],
+    "level4": [
+      "greater invisibility"
+    ],
+    "level5": [
+      "modify memory"
+    ]
+  },
+  "integration": {
+    "faction": "lyssa-veil-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "social-infiltrator"
+  },
+  "prototypeToken": {
+    "name": "Sgt. Joren Whisper",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/noble_human_man_01.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}

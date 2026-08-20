@@ -1,0 +1,82 @@
+{
+  "id": "lyssa-generic-recruit-04",
+  "name": "Lyssa Generic Recruit IV",
+  "img": "modules/ld-crimson-scaler/assets/portraits/outdated_17.png",
+  "rank": "Recruit",
+  "level": 2,
+  "role": "Generic Watcher Trainee",
+  "build": {
+    "primaryClass": "Ranger",
+    "subclass": "None",
+    "secondaryClass": "None",
+    "casterType": "martial"
+  },
+  "abilities": {
+    "str": 8,
+    "dex": 14,
+    "con": 11,
+    "int": 12,
+    "wis": 14,
+    "cha": 10
+  },
+  "combat": {
+    "ac": 12,
+    "hp": 22,
+    "speed": 30,
+    "initiative": 4
+  },
+  "skills": [
+    "perception",
+    "investigation",
+    "stealth",
+    "survival"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Raftercloth",
+        "img": "icons/equipment/chest/cloth-simple-brown.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Shortknife",
+        "img": "icons/weapons/daggers/dagger-serrated.webp"
+      }
+    ],
+    "tools": [
+      "Spyglass",
+      "Ink Sketch Kit"
+    ]
+  },
+  "features": [
+    "Echo-Hearing Flicker",
+    "Hidden Observation",
+    "Fast Mapping"
+  ],
+  "spells": {
+    "level1": []
+  },
+  "integration": {
+    "faction": "lyssa-veil-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "observer-trainee"
+  },
+  "prototypeToken": {
+    "name": "Lyssa Generic Recruit IV",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/outdated_17.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}

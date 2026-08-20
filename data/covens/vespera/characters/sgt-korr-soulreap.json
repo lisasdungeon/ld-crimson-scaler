@@ -1,0 +1,101 @@
+{
+  "id": "sgt-korr-soulreap",
+  "name": "Sgt. Korr Soulreap",
+  "img": "modules/ld-crimson-scaler/assets/portraits/wizard_human_man_03.png",
+  "rank": "Sergeant",
+  "level": 28,
+  "role": "Reaper Sgt",
+  "build": {
+    "primaryClass": "Fighter",
+    "subclass": "Echo Knight",
+    "secondaryClass": "Warlock",
+    "casterType": "martial-hybrid"
+  },
+  "abilities": {
+    "str": 23,
+    "dex": 17,
+    "con": 22,
+    "int": 12,
+    "wis": 16,
+    "cha": 17
+  },
+  "combat": {
+    "ac": 22,
+    "hp": 336,
+    "speed": 35,
+    "initiative": 10
+  },
+  "skills": [
+    "athletics",
+    "intimidation",
+    "perception",
+    "survival"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Soulharvest Plate",
+        "img": "icons/equipment/chest/breastplate-steel-grey.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Reaping Scythe",
+        "img": "icons/weapons/sickles/scythe-bone-grey.webp"
+      },
+      {
+        "name": "Essence Hook",
+        "img": "icons/weapons/swords/sword-guard-steel-green.webp"
+      }
+    ],
+    "focus": [
+      {
+        "name": "Soul Flask Sigil",
+        "img": "icons/consumables/potions/potion-flask-corked-red.webp"
+      }
+    ]
+  },
+  "features": [
+    "Dying Soul Harvest",
+    "Temp HP From Kills",
+    "Reap Arc Cleave",
+    "Essence Overflow"
+  ],
+  "spells": {
+    "level1": [
+      "hex",
+      "false life"
+    ],
+    "level2": [
+      "mirror image"
+    ],
+    "level3": [
+      "spirit shroud"
+    ],
+    "level4": [
+      "shadow of moil"
+    ]
+  },
+  "integration": {
+    "faction": "vespera-fifth-shadow-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "soul-harvest-bruiser"
+  },
+  "prototypeToken": {
+    "name": "Sgt. Korr Soulreap",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/wizard_human_man_03.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}

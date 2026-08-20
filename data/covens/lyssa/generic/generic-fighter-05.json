@@ -1,0 +1,92 @@
+{
+  "id": "lyssa-generic-fighter-05",
+  "name": "Lyssa Generic Fighter V",
+  "img": "modules/ld-crimson-scaler/assets/portraits/outdated_13.png",
+  "rank": "Corporal",
+  "level": 6,
+  "role": "Generic Scout-Sniper",
+  "build": {
+    "primaryClass": "Ranger",
+    "subclass": "Gloom Stalker",
+    "secondaryClass": "Rogue",
+    "casterType": "half-caster"
+  },
+  "abilities": {
+    "str": 10,
+    "dex": 18,
+    "con": 13,
+    "int": 12,
+    "wis": 15,
+    "cha": 11
+  },
+  "combat": {
+    "ac": 16,
+    "hp": 80,
+    "speed": 35,
+    "initiative": 7
+  },
+  "skills": [
+    "stealth",
+    "perception",
+    "survival",
+    "investigation"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Highperch Cloak",
+        "img": "icons/equipment/back/cloak-collared-grey.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Fogshot Crossbow",
+        "img": "icons/weapons/crossbows/crossbow-simple-brown.webp"
+      },
+      {
+        "name": "Cursed Bolts x12",
+        "img": "icons/weapons/swords/sword-guard-steel-green.webp"
+      },
+      {
+        "name": "Knife",
+        "img": "icons/weapons/daggers/dagger-serrated.webp"
+      }
+    ],
+    "consumables": [
+      "Weatherproof Oil"
+    ]
+  },
+  "features": [
+    "Fog Aim",
+    "Sentry Pickoff",
+    "Perch Discipline"
+  ],
+  "spells": {
+    "level1": [
+      "hunter's mark",
+      "fog cloud"
+    ]
+  },
+  "integration": {
+    "faction": "lyssa-veil-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "ranged-hunter"
+  },
+  "prototypeToken": {
+    "name": "Lyssa Generic Fighter V",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/outdated_13.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}

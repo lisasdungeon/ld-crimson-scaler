@@ -1,0 +1,98 @@
+{
+  "id": "sgt-joren-runeetcher",
+  "name": "Sgt. Joren Runeetcher",
+  "img": "modules/ld-crimson-scaler/assets/portraits/deity_man_02.png",
+  "rank": "Sergeant",
+  "level": 15,
+  "role": "Warder Sergeant",
+  "build": {
+    "primaryClass": "Wizard",
+    "subclass": "Abjuration",
+    "secondaryClass": "Artificer",
+    "casterType": "full-caster"
+  },
+  "abilities": {
+    "str": 10,
+    "dex": 13,
+    "con": 16,
+    "int": 20,
+    "wis": 15,
+    "cha": 12
+  },
+  "combat": {
+    "ac": 19,
+    "hp": 176,
+    "speed": 30,
+    "initiative": 6
+  },
+  "skills": [
+    "arcana",
+    "investigation",
+    "perception",
+    "history"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Glyphguard Coat",
+        "img": "icons/equipment/chest/coat-leather-brown.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Etching Stylus Blade",
+        "img": "icons/weapons/swords/sword-guard-steel-green.webp"
+      }
+    ],
+    "focus": [
+      {
+        "name": "Ignition Mark Array",
+        "img": "icons/magic/symbols/rune-sigil-red-orange.webp"
+      }
+    ]
+  },
+  "features": [
+    "Explosive Glyph Etch",
+    "Lab Defense Grid",
+    "Rune Ignition Command"
+  ],
+  "spells": {
+    "level1": [
+      "alarm",
+      "shield"
+    ],
+    "level2": [
+      "arcane lock",
+      "warding wind"
+    ],
+    "level3": [
+      "glyph of warding",
+      "counterspell"
+    ],
+    "level4": [
+      "wall of fire"
+    ]
+  },
+  "integration": {
+    "faction": "yelena-crimson-archive-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "trap-ward-controller"
+  },
+  "prototypeToken": {
+    "name": "Sgt. Joren Runeetcher",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/deity_man_02.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}

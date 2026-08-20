@@ -1,0 +1,93 @@
+{
+  "id": "sgt-elowen-testbed",
+  "name": "Sgt. Elowen Testbed",
+  "img": "modules/ld-crimson-scaler/assets/portraits/outdated_03.png",
+  "rank": "Sergeant",
+  "level": 10,
+  "role": "Experiment Sergeant",
+  "build": {
+    "primaryClass": "Barbarian",
+    "subclass": "Berserker",
+    "secondaryClass": "Artificer",
+    "casterType": "hybrid"
+  },
+  "abilities": {
+    "str": 17,
+    "dex": 12,
+    "con": 18,
+    "int": 13,
+    "wis": 11,
+    "cha": 12
+  },
+  "combat": {
+    "ac": 16,
+    "hp": 154,
+    "speed": 35,
+    "initiative": 5
+  },
+  "skills": [
+    "athletics",
+    "intimidation",
+    "survival",
+    "medicine"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Testbed Straps",
+        "img": "icons/equipment/chest/leather-vest-brown.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Rite Claw",
+        "img": "icons/weapons/swords/sword-guard-steel-green.webp"
+      },
+      {
+        "name": "Lab Chain",
+        "img": "icons/weapons/sickles/hook-steel-grey.webp"
+      }
+    ],
+    "focus": [
+      {
+        "name": "Rapid Adaptation Mark",
+        "img": "icons/magic/symbols/rune-sigil-red-orange.webp"
+      }
+    ]
+  },
+  "features": [
+    "Volunteer Rite Tank",
+    "Captive Demo Protocol",
+    "Accelerated Adaptation"
+  ],
+  "spells": {
+    "level1": [
+      "false life"
+    ],
+    "level2": [
+      "enhance ability"
+    ]
+  },
+  "integration": {
+    "faction": "yelena-crimson-archive-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "volatile-test-subject"
+  },
+  "prototypeToken": {
+    "name": "Sgt. Elowen Testbed",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/outdated_03.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}

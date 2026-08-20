@@ -1,0 +1,85 @@
+{
+  "id": "pvt-freya-flayer-karg",
+  "name": "Freya \"Flayer\" Karg",
+  "img": "modules/ld-crimson-scaler/assets/portraits/warrior_elve_woman_01.png",
+  "rank": "Private",
+  "level": 9,
+  "role": "Whip Cracker",
+  "build": {
+    "primaryClass": "Fighter",
+    "subclass": "Champion",
+    "secondaryClass": "Rogue",
+    "casterType": "martial"
+  },
+  "abilities": {
+    "str": 17,
+    "dex": 18,
+    "con": 15,
+    "int": 11,
+    "wis": 12,
+    "cha": 13
+  },
+  "combat": {
+    "ac": 18,
+    "hp": 142,
+    "speed": 35,
+    "initiative": 7
+  },
+  "skills": [
+    "athletics",
+    "acrobatics",
+    "intimidation",
+    "deception"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Flayer Scalecoat",
+        "img": "icons/equipment/chest/scale-mail-steel-gold.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Chain Whip",
+        "img": "icons/weapons/sickles/sickle-curved-grey.webp"
+      },
+      {
+        "name": "Hook Knife",
+        "img": "icons/weapons/daggers/dagger-serrated.webp"
+      }
+    ],
+    "tools": [
+      "Debtor Drag Chain"
+    ]
+  },
+  "features": [
+    "Extended Lash Mark",
+    "Disarm Hook",
+    "Dragdown Sweep"
+  ],
+  "spells": {
+    "level1": []
+  },
+  "integration": {
+    "faction": "daria-iron-ring-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "flank-disarmer"
+  },
+  "prototypeToken": {
+    "name": "Freya \"Flayer\" Karg",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/warrior_elve_woman_01.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "sgt-lirael-voss",
+  "name": "Sgt. Lirael Voss",
+  "img": "modules/ld-crimson-scaler/assets/portraits/noble_human_woman_05.png",
+  "rank": "Sergeant",
+  "level": 17,
+  "role": "Smuggler Sergeant",
+  "build": {
+    "primaryClass": "Rogue",
+    "subclass": "Swashbuckler",
+    "secondaryClass": "Ranger",
+    "casterType": "hybrid"
+  },
+  "abilities": {
+    "str": 14,
+    "dex": 21,
+    "con": 16,
+    "int": 14,
+    "wis": 16,
+    "cha": 16
+  },
+  "combat": {
+    "ac": 20,
+    "hp": 198,
+    "speed": 40,
+    "initiative": 10
+  },
+  "skills": [
+    "athletics",
+    "stealth",
+    "perception",
+    "deception",
+    "vehicle-water"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Dockrunner Scale Jacket",
+        "img": "icons/equipment/chest/scale-mail-steel-gold.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Harbor Saber",
+        "img": "icons/weapons/swords/sword-guard-steel-green.webp"
+      },
+      {
+        "name": "Weighted Net",
+        "img": "icons/weapons/thrown/net-steel.webp"
+      },
+      {
+        "name": "Smuggler's Pistol",
+        "img": "icons/weapons/crossbows/crossbow-simple-brown.webp"
+      }
+    ],
+    "focus": [
+      {
+        "name": "Contraband Sense Mark",
+        "img": "icons/equipment/finger/ring-cabochon-gold-red.webp"
+      }
+    ]
+  },
+  "features": [
+    "Hidden Compartment Mastery",
+    "Pursuit Break",
+    "Cargo Veil",
+    "River Escape Route"
+  ],
+  "spells": {
+    "level1": [
+      "fog cloud",
+      "hunter's mark"
+    ],
+    "level2": [
+      "pass without trace",
+      "rope trick"
+    ]
+  },
+  "integration": {
+    "faction": "lyssa-veil-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "mobile-ambusher"
+  },
+  "prototypeToken": {
+    "name": "Sgt. Lirael Voss",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/noble_human_woman_05.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}

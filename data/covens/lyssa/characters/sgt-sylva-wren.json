@@ -1,0 +1,101 @@
+{
+  "id": "sgt-sylva-wren",
+  "name": "Sgt. Sylva Wren",
+  "img": "modules/ld-crimson-scaler/assets/portraits/resident_darkelve_woman_01.png",
+  "rank": "Sergeant",
+  "level": 15,
+  "role": "Eavesdropper Sergeant",
+  "build": {
+    "primaryClass": "Ranger",
+    "subclass": "Beast Master",
+    "secondaryClass": "Druid",
+    "casterType": "half-caster"
+  },
+  "abilities": {
+    "str": 10,
+    "dex": 20,
+    "con": 14,
+    "int": 14,
+    "wis": 20,
+    "cha": 12
+  },
+  "combat": {
+    "ac": 19,
+    "hp": 168,
+    "speed": 35,
+    "initiative": 9
+  },
+  "skills": [
+    "perception",
+    "insight",
+    "stealth",
+    "survival",
+    "animal-handling"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Whisperfeather Mantle",
+        "img": "icons/equipment/back/cloak-collared-grey.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Shortbow of Listening Wind",
+        "img": "icons/weapons/bows/shortbow-recurve.webp"
+      },
+      {
+        "name": "Perch Knife",
+        "img": "icons/weapons/daggers/dagger-serrated.webp"
+      }
+    ],
+    "focus": [
+      {
+        "name": "Avian Link Totem",
+        "img": "icons/svg/damage/psychic.svg"
+      }
+    ]
+  },
+  "features": [
+    "Long-Range Whisper Decode",
+    "Perch Anchor",
+    "Signal Flock",
+    "Silent Observation"
+  ],
+  "spells": {
+    "level1": [
+      "speak with animals",
+      "hunter's mark"
+    ],
+    "level2": [
+      "pass without trace",
+      "enhance ability"
+    ],
+    "level3": [
+      "clairvoyance",
+      "sending"
+    ]
+  },
+  "integration": {
+    "faction": "lyssa-veil-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "observer-controller"
+  },
+  "prototypeToken": {
+    "name": "Sgt. Sylva Wren",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/resident_darkelve_woman_01.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}

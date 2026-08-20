@@ -1,0 +1,89 @@
+{
+  "id": "lyssa-generic-fighter-01",
+  "name": "Lyssa Generic Fighter I",
+  "img": "modules/ld-crimson-scaler/assets/portraits/outdated_09.png",
+  "rank": "Corporal",
+  "level": 10,
+  "role": "Generic Alley Enforcer",
+  "build": {
+    "primaryClass": "Rogue",
+    "subclass": "Assassin",
+    "secondaryClass": "Fighter",
+    "casterType": "martial"
+  },
+  "abilities": {
+    "str": 12,
+    "dex": 19,
+    "con": 14,
+    "int": 12,
+    "wis": 13,
+    "cha": 12
+  },
+  "combat": {
+    "ac": 18,
+    "hp": 118,
+    "speed": 35,
+    "initiative": 8
+  },
+  "skills": [
+    "stealth",
+    "deception",
+    "intimidation",
+    "perception"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Veil Street Leathers",
+        "img": "icons/equipment/chest/leather-chest-dark.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Garrote Wire",
+        "img": "icons/weapons/sickles/hook-steel-grey.webp"
+      },
+      {
+        "name": "Short Dagger",
+        "img": "icons/weapons/daggers/dagger-serrated.webp"
+      },
+      {
+        "name": "Concealed Club",
+        "img": "icons/weapons/clubs/club-heavy-barbed-brown.webp"
+      }
+    ],
+    "consumables": [
+      "Smoke Capsule x2"
+    ]
+  },
+  "features": [
+    "Shadow Burst",
+    "Quick Silence",
+    "Crowd Blend"
+  ],
+  "spells": {
+    "level1": []
+  },
+  "integration": {
+    "faction": "lyssa-veil-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "close-quarters-enforcer"
+  },
+  "prototypeToken": {
+    "name": "Lyssa Generic Fighter I",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/outdated_09.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}

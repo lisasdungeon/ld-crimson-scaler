@@ -1,0 +1,90 @@
+{
+  "id": "sgt-elyn-firebrand",
+  "name": "Sgt. Elyn Firebrand",
+  "img": "modules/ld-crimson-scaler/assets/portraits/warrior_human_woman_05.png",
+  "rank": "Sergeant",
+  "level": 12,
+  "role": "Torchbearer Sergeant",
+  "build": {
+    "primaryClass": "Ranger",
+    "subclass": "Hunter",
+    "secondaryClass": "Artificer",
+    "casterType": "hybrid"
+  },
+  "abilities": {
+    "str": 14,
+    "dex": 17,
+    "con": 15,
+    "int": 13,
+    "wis": 14,
+    "cha": 12
+  },
+  "combat": {
+    "ac": 17,
+    "hp": 156,
+    "speed": 35,
+    "initiative": 7
+  },
+  "skills": [
+    "survival",
+    "stealth",
+    "athletics",
+    "intimidation"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Firebrand Lamellar",
+        "img": "icons/equipment/chest/leather-vest-brown.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Raid Torch Spear",
+        "img": "icons/weapons/polearms/spear-hooked.webp"
+      },
+      {
+        "name": "Fire Pots x4",
+        "img": "icons/weapons/thrown/bomb-iron-black.webp"
+      }
+    ],
+    "tools": [
+      "Burnproof Mark Wrap"
+    ]
+  },
+  "features": [
+    "Burn Resistance Mark",
+    "Night Raid Ignition",
+    "Campfire Collapse"
+  ],
+  "spells": {
+    "level1": [
+      "absorb elements"
+    ],
+    "level2": [
+      "flame blade"
+    ]
+  },
+  "integration": {
+    "faction": "daria-iron-ring-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "fire-raider"
+  },
+  "prototypeToken": {
+    "name": "Sgt. Elyn Firebrand",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/warrior_human_woman_05.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "poolId": "lyssa-generic-pool",
+  "faction": "lyssa-veil-coven",
+  "usage": "reusable-generic-npcs",
+  "templates": [
+    { "id": "lyssa-generic-fighter-01", "name": "Lyssa Generic Fighter I", "rank": "Corporal", "level": 10, "file": "generic-fighter-01.json" },
+    { "id": "lyssa-generic-fighter-02", "name": "Lyssa Generic Fighter II", "rank": "Private", "level": 9, "file": "generic-fighter-02.json" },
+    { "id": "lyssa-generic-fighter-03", "name": "Lyssa Generic Fighter III", "rank": "Corporal", "level": 8, "file": "generic-fighter-03.json" },
+    { "id": "lyssa-generic-fighter-04", "name": "Lyssa Generic Fighter IV", "rank": "Private", "level": 7, "file": "generic-fighter-04.json" },
+    { "id": "lyssa-generic-fighter-05", "name": "Lyssa Generic Fighter V", "rank": "Corporal", "level": 6, "file": "generic-fighter-05.json" },
+
+    { "id": "lyssa-generic-recruit-01", "name": "Lyssa Generic Recruit I", "rank": "Recruit", "level": 5, "file": "generic-recruit-01.json" },
+    { "id": "lyssa-generic-recruit-02", "name": "Lyssa Generic Recruit II", "rank": "Recruit", "level": 4, "file": "generic-recruit-02.json" },
+    { "id": "lyssa-generic-recruit-03", "name": "Lyssa Generic Recruit III", "rank": "Recruit", "level": 3, "file": "generic-recruit-03.json" },
+    { "id": "lyssa-generic-recruit-04", "name": "Lyssa Generic Recruit IV", "rank": "Recruit", "level": 2, "file": "generic-recruit-04.json" },
+    { "id": "lyssa-generic-recruit-05", "name": "Lyssa Generic Recruit V", "rank": "Recruit", "level": 1, "file": "generic-recruit-05.json" }
+  ]
+}

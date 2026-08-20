@@ -1,0 +1,82 @@
+{
+  "id": "recruit-nyssa-shadelet-vale",
+  "name": "Nyssa \"Shadelet\" Vale",
+  "img": "modules/ld-crimson-scaler/assets/portraits/resident_human_woman_04.png",
+  "rank": "Recruit",
+  "level": 2,
+  "role": "Boot Camp Watcher",
+  "build": {
+    "primaryClass": "Ranger",
+    "subclass": "None",
+    "secondaryClass": "None",
+    "casterType": "martial"
+  },
+  "abilities": {
+    "str": 8,
+    "dex": 14,
+    "con": 11,
+    "int": 13,
+    "wis": 15,
+    "cha": 10
+  },
+  "combat": {
+    "ac": 13,
+    "hp": 24,
+    "speed": 30,
+    "initiative": 4
+  },
+  "skills": [
+    "perception",
+    "investigation",
+    "stealth",
+    "survival"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Raftercloak",
+        "img": "icons/equipment/back/cloak-collared-grey.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Shortknife",
+        "img": "icons/weapons/daggers/dagger-serrated.webp"
+      }
+    ],
+    "tools": [
+      "Blood-Diluted Ink Kit",
+      "Rooftop Spyglass"
+    ]
+  },
+  "features": [
+    "Echo-Hearing Flicker",
+    "Map Sketch Discipline",
+    "Hide Survival"
+  ],
+  "spells": {
+    "level1": []
+  },
+  "integration": {
+    "faction": "lyssa-veil-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "observer-trainee"
+  },
+  "prototypeToken": {
+    "name": "Nyssa \"Shadelet\" Vale",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/resident_human_woman_04.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}

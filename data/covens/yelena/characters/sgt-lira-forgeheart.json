@@ -1,0 +1,98 @@
+{
+  "id": "sgt-lira-forgeheart",
+  "name": "Sgt. Lira Forgeheart",
+  "img": "modules/ld-crimson-scaler/assets/portraits/wizard_human_woman_01.png",
+  "rank": "Sergeant",
+  "level": 20,
+  "role": "Artificer Sergeant",
+  "build": {
+    "primaryClass": "Artificer",
+    "subclass": "Armorer",
+    "secondaryClass": "Fighter",
+    "casterType": "hybrid"
+  },
+  "abilities": {
+    "str": 14,
+    "dex": 11,
+    "con": 18,
+    "int": 21,
+    "wis": 13,
+    "cha": 12
+  },
+  "combat": {
+    "ac": 21,
+    "hp": 228,
+    "speed": 30,
+    "initiative": 5
+  },
+  "skills": [
+    "arcana",
+    "investigation",
+    "smith-tools",
+    "athletics"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Bloodforge Plate",
+        "img": "icons/equipment/chest/breastplate-steel-grey.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Heart-Anvil Hammer",
+        "img": "icons/weapons/hammers/hammer-war-rounding.webp"
+      },
+      {
+        "name": "Rune Tongs",
+        "img": "icons/weapons/swords/sword-guard-steel-green.webp"
+      }
+    ],
+    "focus": [
+      {
+        "name": "Supernatural Temper Mark",
+        "img": "icons/magic/symbols/rune-sigil-red-orange.webp"
+      }
+    ]
+  },
+  "features": [
+    "Blood-Forged Weaponcraft",
+    "Heart-Hilt Binding",
+    "Rune Tempering"
+  ],
+  "spells": {
+    "level1": [
+      "magic weapon",
+      "shield"
+    ],
+    "level2": [
+      "heat metal",
+      "enhance ability"
+    ],
+    "level3": [
+      "glyph of warding"
+    ]
+  },
+  "integration": {
+    "faction": "yelena-crimson-archive-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "forge-support"
+  },
+  "prototypeToken": {
+    "name": "Sgt. Lira Forgeheart",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/wizard_human_woman_01.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}

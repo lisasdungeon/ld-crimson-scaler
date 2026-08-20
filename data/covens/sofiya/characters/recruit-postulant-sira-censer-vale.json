@@ -1,0 +1,92 @@
+{
+  "id": "recruit-postulant-sira-censer-vale",
+  "name": "Postulant Sira \"Censer\" Vale",
+  "img": "modules/ld-crimson-scaler/assets/portraits/resident_human_man_01.png",
+  "rank": "Recruit",
+  "level": 3,
+  "role": "Outer Court Incenser",
+  "build": {
+    "primaryClass": "Rogue",
+    "subclass": "None",
+    "secondaryClass": "None",
+    "casterType": "martial-support"
+  },
+  "abilities": {
+    "str": 8,
+    "dex": 14,
+    "con": 11,
+    "int": 10,
+    "wis": 12,
+    "cha": 11
+  },
+  "combat": {
+    "ac": 13,
+    "hp": 28,
+    "speed": 30,
+    "initiative": 4
+  },
+  "skills": [
+    "stealth",
+    "acrobatics",
+    "sleight-of-hand",
+    "perception"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Soot-Stained Leathers",
+        "img": "icons/equipment/chest/leather-chest-dark.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Censer Chain",
+        "img": "icons/weapons/sickles/hook-steel-grey.webp"
+      },
+      {
+        "name": "Smokeshard Knife",
+        "img": "icons/weapons/daggers/dagger-serrated.webp"
+      }
+    ],
+    "focus": [
+      {
+        "name": "Incense Pouch",
+        "img": "icons/sundries/lights/lantern-iron-rusty.webp"
+      },
+      {
+        "name": "Spark Kit",
+        "img": "icons/tools/crafting/tinderbox-leather-brown.webp"
+      }
+    ]
+  },
+  "features": [
+    "Smoke Ward Sweep",
+    "Purifying Burst Mark",
+    "Arrowline Obscuration"
+  ],
+  "spells": {
+    "level1": []
+  },
+  "integration": {
+    "faction": "sofiya-dawn-chorus-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "screen-and-harass-trainee"
+  },
+  "prototypeToken": {
+    "name": "Postulant Sira \"Censer\" Vale",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/resident_human_man_01.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}

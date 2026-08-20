@@ -1,0 +1,87 @@
+{
+  "id": "recruit-neophyte-nyssa-vow-ryn",
+  "name": "Neophyte Nyssa \"Vow\" Ryn",
+  "img": "modules/ld-crimson-scaler/assets/portraits/outdated_20.png",
+  "rank": "Recruit",
+  "level": 1,
+  "role": "Outer Court Swearer",
+  "build": {
+    "primaryClass": "Paladin",
+    "subclass": "None",
+    "secondaryClass": "None",
+    "casterType": "martial-support"
+  },
+  "abilities": {
+    "str": 11,
+    "dex": 11,
+    "con": 12,
+    "int": 9,
+    "wis": 10,
+    "cha": 13
+  },
+  "combat": {
+    "ac": 13,
+    "hp": 18,
+    "speed": 30,
+    "initiative": 2
+  },
+  "skills": [
+    "persuasion",
+    "religion",
+    "insight"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Vow-Bound Leather",
+        "img": "icons/equipment/chest/leather-chest-dark.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Oath Dagger",
+        "img": "icons/weapons/daggers/dagger-serrated.webp"
+      }
+    ],
+    "focus": [
+      {
+        "name": "Blood Oath Chalk",
+        "img": "icons/svg/damage/necrotic.svg"
+      },
+      {
+        "name": "Creed Script",
+        "img": "icons/sundries/documents/document-sealed-red-yellow.webp"
+      }
+    ]
+  },
+  "features": [
+    "Blood Oath Trigger",
+    "Backlash on Broken Vow",
+    "Red Flash Speed Boon"
+  ],
+  "spells": {
+    "level1": []
+  },
+  "integration": {
+    "faction": "sofiya-dawn-chorus-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "oath-trigger-support-trainee"
+  },
+  "prototypeToken": {
+    "name": "Neophyte Nyssa \"Vow\" Ryn",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/outdated_20.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}

@@ -1,0 +1,141 @@
+<section class="cs-detail-root">
+  <header class="cs-header">
+    <div class="cs-detail-header-row">
+      <h1>{{classData.classLabel}}</h1>
+      <button type="button" class="cs-back-button" data-action="back-to-hub">Back to Hub</button>
+    </div>
+    {{#if classData.classSubName}}
+      <p class="cs-class-subname">{{classData.classSubName}}</p>
+    {{/if}}
+    {{#if classData.classItem}}
+      <p>Linked Class Item: {{classData.classItem.name}}</p>
+    {{else}}
+      <p>Linked Class Item: Not found in current world items.</p>
+    {{/if}}
+    <p>Total Linked: {{classData.summary.total}} | Healthy: {{classData.summary.healthy}} | Issues: {{classData.summary.withIssues}}</p>
+  </header>
+
+  <section class="cs-detail-scroll">
+    <section class="cs-panel">
+      <h2>Linked Class Content</h2>
+      <div class="cs-linked-grid">
+        <div>
+          <h4>Item Grants</h4>
+          {{#if classData.linkedContent.grants.length}}
+            <ul class="cs-linked-list">
+              {{#each classData.linkedContent.grants as |g|}}
+                <li>L{{g.level}} - {{g.title}} ({{g.count}} links)</li>
+              {{/each}}
+            </ul>
+          {{else}}
+            <p>None</p>
+          {{/if}}
+        </div>
+
+        <div>
+          <h4>Class Features</h4>
+          {{#if classData.linkedContent.features.length}}
+            <ul class="cs-linked-list">
+              {{#each classData.linkedContent.features as |f|}}
+                <li>L{{f.level}} - {{f.title}}</li>
+              {{/each}}
+            </ul>
+          {{else}}
+            <p>None</p>
+          {{/if}}
+        </div>
+
+        <div>
+          <h4>Progression Entries</h4>
+          {{#if classData.linkedContent.progression.length}}
+            <ul class="cs-linked-list">
+              {{#each classData.linkedContent.progression as |p|}}
+                <li>L{{p.level}} - {{p.title}} [{{p.type}}]</li>
+              {{/each}}
+            </ul>
+          {{else}}
+            <p>None</p>
+          {{/if}}
+        </div>
+      </div>
+    </section>
+
+    <section class="cs-panel">
+      <h2>Weapons</h2>
+      <p>Total: {{classData.weapons.summary.total}} | Healthy: {{classData.weapons.summary.healthy}} | Issues: {{classData.weapons.summary.withIssues}}</p>
+      <div class="cs-table-wrap">
+        <table class="cs-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Base Die</th>
+              <th>Projected Scaling</th>
+              <th>Issues</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{#each classData.weapons.rows as |row|}}
+              <tr>
+                <td>{{row.name}}</td>
+                <td>d{{row.denomination}}</td>
+                <td>
+                  {{#each row.projected as |tier|}}
+                    L{{tier.level}}: d{{tier.denomination}}{{#unless @last}}, {{/unless}}
+                  {{/each}}
+                </td>
+                <td>
+                  {{#if row.issues.length}}
+                    {{#each row.issues as |issue|}}
+                      <div class="cs-issue">{{issue}}</div>
+                    {{/each}}
+                  {{else}}
+                    OK
+                  {{/if}}
+                </td>
+              </tr>
+            {{/each}}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="cs-panel">
+      <h2>Armor</h2>
+      <p>Total: {{classData.armor.summary.total}} | Healthy: {{classData.armor.summary.healthy}} | Issues: {{classData.armor.summary.withIssues}}</p>
+      <div class="cs-table-wrap">
+        <table class="cs-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Base AC</th>
+              <th>Projected AC Bonuses</th>
+              <th>Issues</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{#each classData.armor.rows as |row|}}
+              <tr>
+                <td>{{row.name}}</td>
+                <td>{{#if row.armorValue}}{{row.armorValue}}{{else}}N/A{{/if}}</td>
+                <td>
+                  {{#each row.projectedBonuses as |tier|}}
+                    L{{tier.level}}: +{{tier.acBonus}}{{#unless @last}}, {{/unless}}
+                  {{/each}}
+                </td>
+                <td>
+                  {{#if row.issues.length}}
+                    {{#each row.issues as |issue|}}
+                      <div class="cs-issue">{{issue}}</div>
+                    {{/each}}
+                  {{else}}
+                    OK
+                  {{/if}}
+                </td>
+              </tr>
+            {{/each}}
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </section>
+</section>

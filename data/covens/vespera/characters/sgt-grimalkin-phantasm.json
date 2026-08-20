@@ -1,0 +1,106 @@
+{
+  "id": "sgt-grimalkin-phantasm",
+  "name": "Sgt. Grimalkin Phantasm",
+  "img": "modules/ld-crimson-scaler/assets/portraits/wizard_human_man_04.png",
+  "rank": "Sergeant",
+  "level": 28,
+  "role": "Phantasm Sgt",
+  "build": {
+    "primaryClass": "Wizard",
+    "subclass": "Illusion",
+    "secondaryClass": "Rogue",
+    "casterType": "full-caster"
+  },
+  "abilities": {
+    "str": 10,
+    "dex": 21,
+    "con": 18,
+    "int": 24,
+    "wis": 16,
+    "cha": 18
+  },
+  "combat": {
+    "ac": 21,
+    "hp": 274,
+    "speed": 35,
+    "initiative": 12
+  },
+  "skills": [
+    "arcana",
+    "deception",
+    "sleight-of-hand",
+    "stealth"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Mirror-Shard Coat",
+        "img": "icons/equipment/chest/coat-leather-brown.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Phantom Dirk",
+        "img": "icons/weapons/daggers/dagger-straight-grey.webp"
+      },
+      {
+        "name": "Illusion Rod",
+        "img": "icons/weapons/wands/wand-gem-red.webp"
+      }
+    ],
+    "focus": [
+      {
+        "name": "Triplicate Mark",
+        "img": "icons/magic/symbols/rune-sigil-red-orange.webp"
+      }
+    ]
+  },
+  "features": [
+    "Three Phantom Duplicates",
+    "Diversion Split",
+    "Mirror Feint",
+    "False Position Flood"
+  ],
+  "spells": {
+    "level1": [
+      "silent image",
+      "disguise self"
+    ],
+    "level2": [
+      "mirror image",
+      "blur"
+    ],
+    "level3": [
+      "major image",
+      "hypnotic pattern"
+    ],
+    "level4": [
+      "greater invisibility"
+    ],
+    "level5": [
+      "mislead"
+    ]
+  },
+  "integration": {
+    "faction": "vespera-fifth-shadow-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "multi-illusion-diverter"
+  },
+  "prototypeToken": {
+    "name": "Sgt. Grimalkin Phantasm",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/wizard_human_man_04.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}

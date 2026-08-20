@@ -1,0 +1,44 @@
+{
+  "covenId": "lyssa-veil-coven",
+  "covenName": "Lyssa's Veil Coven",
+  "theme": "stealth-intel-sabotage",
+  "hierarchyModel": "strict-cascade",
+  "notes": "Lyssa's Veil Coven: stealth-intel-sabotage specialists. 12 sergeants, full fighter and recruit tiers built.",
+  "levelPolicy": {
+    "matriarch": 26,
+    "captains": [24, 23],
+    "sergeants": [22, 21, 20, 19, 18, 17, 16, 15, 14, 13, 12, 11],
+    "fighters": [10, 9, 8, 7, 6],
+    "recruits": [5, 4, 3, 2, 1]
+  },
+  "members": [
+    { "name": "Lyssa Markova", "rank": "Matriarch", "level": 26, "file": "characters/lyssa-markova.json" },
+    { "name": "Captain Elara Voss", "rank": "Captain", "level": 24, "file": "characters/captain-elara-voss.json" },
+    { "name": "Captain Thorne Kael", "rank": "Captain", "level": 23, "file": "characters/captain-thorne-kael.json" },
+    { "name": "Sgt. Riven Shade", "rank": "Sergeant", "level": 22, "file": "characters/sgt-riven-shade.json" },
+    { "name": "Sgt. Mira Locke", "rank": "Sergeant", "level": 21, "file": "characters/sgt-mira-locke.json" },
+    { "name": "Sgt. Joren Whisper", "rank": "Sergeant", "level": 20, "file": "characters/sgt-joren-whisper.json" },
+    { "name": "Sgt. Vespera Nyx", "rank": "Sergeant", "level": 19, "file": "characters/sgt-vespera-nyx.json" },
+    { "name": "Sgt. Korr Blackfeather", "rank": "Sergeant", "level": 18, "file": "characters/sgt-korr-blackfeather.json" },
+    { "name": "Sgt. Lirael Voss", "rank": "Sergeant", "level": 17, "file": "characters/sgt-lirael-voss.json" },
+    { "name": "Sgt. Daxen Quill", "rank": "Sergeant", "level": 16, "file": "characters/sgt-daxen-quill.json" },
+    { "name": "Sgt. Sylva Wren", "rank": "Sergeant", "level": 15, "file": "characters/sgt-sylva-wren.json" },
+    { "name": "Sgt. Grimalkin", "rank": "Sergeant", "level": 14, "file": "characters/sgt-grimalkin.json" },
+    { "name": "Sgt. Niamh Shade", "rank": "Sergeant", "level": 13, "file": "characters/sgt-niamh-shade.json" },
+    { "name": "Sgt. Torin Drift", "rank": "Sergeant", "level": 12, "file": "characters/sgt-torin-drift.json" },
+    { "name": "Sgt. Elowen Mist", "rank": "Sergeant", "level": 11, "file": "characters/sgt-elowen-mist.json" },
+
+    { "name": "Kara \"Ghost\" Veldt", "rank": "Corporal", "level": 10, "file": "characters/cpl-kara-ghost-veldt.json" },
+    { "name": "Ryk \"Fang\" Soler", "rank": "Private", "level": 9, "file": "characters/pvt-ryk-fang-soler.json" },
+    { "name": "Tessa \"Echo\" Lorne", "rank": "Corporal", "level": 8, "file": "characters/cpl-tessa-echo-lorne.json" },
+    { "name": "Viktor \"Shade\" Draven", "rank": "Private", "level": 7, "file": "characters/pvt-viktor-shade-draven.json" },
+    { "name": "Lirien \"Wisp\" Faye", "rank": "Corporal", "level": 6, "file": "characters/cpl-lirien-wisp-faye.json" },
+
+    { "name": "Jem \"Rat\" Korrin", "rank": "Recruit", "level": 5, "file": "characters/recruit-jem-rat-korrin.json" },
+    { "name": "Sira \"Crow\" Thorne", "rank": "Recruit", "level": 4, "file": "characters/recruit-sira-crow-thorne.json" },
+    { "name": "Dax \"Weasel\" Merrick", "rank": "Recruit", "level": 3, "file": "characters/recruit-dax-weasel-merrick.json" },
+    { "name": "Nyssa \"Shadelet\" Vale", "rank": "Recruit", "level": 2, "file": "characters/recruit-nyssa-shadelet-vale.json" },
+    { "name": "Kael \"Ghostling\" Ryn", "rank": "Recruit", "level": 1, "file": "characters/recruit-kael-ghostling-ryn.json" }
+  ],
+  "status": "phase-2-fighters-and-recruits-complete"
+}

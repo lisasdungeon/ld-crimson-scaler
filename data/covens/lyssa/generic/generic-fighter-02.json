@@ -1,0 +1,90 @@
+{
+  "id": "lyssa-generic-fighter-02",
+  "name": "Lyssa Generic Fighter II",
+  "img": "modules/ld-crimson-scaler/assets/portraits/outdated_10.png",
+  "rank": "Private",
+  "level": 9,
+  "role": "Generic Poison Operative",
+  "build": {
+    "primaryClass": "Rogue",
+    "subclass": "Assassin",
+    "secondaryClass": "Artificer",
+    "casterType": "hybrid"
+  },
+  "abilities": {
+    "str": 10,
+    "dex": 18,
+    "con": 14,
+    "int": 14,
+    "wis": 12,
+    "cha": 11
+  },
+  "combat": {
+    "ac": 17,
+    "hp": 106,
+    "speed": 30,
+    "initiative": 7
+  },
+  "skills": [
+    "sleight-of-hand",
+    "medicine",
+    "stealth",
+    "investigation"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Toxin Jerkin",
+        "img": "icons/equipment/chest/leather-vest-brown.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Needle Dagger",
+        "img": "icons/weapons/daggers/dagger-curved-gold.webp"
+      },
+      {
+        "name": "Poison Needle Launcher",
+        "img": "icons/weapons/daggers/dagger-curved-gold.webp"
+      }
+    ],
+    "consumables": [
+      "Venom Vials x4"
+    ]
+  },
+  "features": [
+    "Venom Spread Mark",
+    "Needle Flick",
+    "Rapid Application"
+  ],
+  "spells": {
+    "level1": [
+      "ray of sickness"
+    ],
+    "level2": [
+      "protection from poison"
+    ]
+  },
+  "integration": {
+    "faction": "lyssa-veil-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "poison-skirmisher"
+  },
+  "prototypeToken": {
+    "name": "Lyssa Generic Fighter II",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/outdated_10.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}

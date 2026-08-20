@@ -1,0 +1,21 @@
+<div class="cs-rules-editor">
+  <p>Edit scaling rules as JSON. Invalid JSON is blocked on save.</p>
+
+  {{#if validation.valid}}
+    <div class="cs-valid">Rule schema status: VALID</div>
+  {{else}}
+    <div class="cs-invalid">Rule schema status: INVALID</div>
+    <ul>
+      {{#each validation.errors as |error|}}
+        <li>{{error}}</li>
+      {{/each}}
+    </ul>
+  {{/if}}
+
+  <textarea name="rulesJson">{{rulesJsonDraft}}</textarea>
+
+  <div class="cs-rule-actions">
+    <button type="button" data-action="save-rules">Save Rules</button>
+    <button type="button" data-action="reset-rules">Reset Editor</button>
+  </div>
+</div>

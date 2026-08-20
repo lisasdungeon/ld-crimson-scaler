@@ -1,0 +1,59 @@
+<section class="cs-detail-root">
+  <header class="cs-header">
+    <div class="cs-detail-header-row">
+      <h1>{{group.classIdentifier}}</h1>
+      <button type="button" class="cs-back-button" data-action="back-to-hub">Back to Hub</button>
+    </div>
+    <p>Total Subclasses: {{group.subclassCount}} | Total Archetype Feats: {{group.featCount}}</p>
+  </header>
+
+  <section class="cs-detail-scroll">
+    <section class="cs-panel">
+      <h2>Subclasses</h2>
+      <div class="cs-table-wrap">
+        <table class="cs-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Identifier</th>
+              <th>Level Gates</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{#each group.subclasses as |sub|}}
+              <tr>
+                <td>{{sub.name}}</td>
+                <td>{{sub.identifier}}</td>
+                <td>{{sub.levelGates}}</td>
+              </tr>
+            {{/each}}
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="cs-panel">
+      <h2>Archetype Feats</h2>
+      <div class="cs-table-wrap">
+        <table class="cs-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Identifier</th>
+              <th>Requirements</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{#each group.feats as |feat|}}
+              <tr>
+                <td>{{feat.name}}</td>
+                <td>{{feat.identifier}}</td>
+                <td>{{feat.requirements}}</td>
+              </tr>
+            {{/each}}
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </section>
+</section>

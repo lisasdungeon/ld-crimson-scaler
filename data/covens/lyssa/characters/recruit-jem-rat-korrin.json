@@ -1,0 +1,85 @@
+{
+  "id": "recruit-jem-rat-korrin",
+  "name": "Jem \"Rat\" Korrin",
+  "img": "modules/ld-crimson-scaler/assets/portraits/resident_goblin_woman_01.png",
+  "rank": "Recruit",
+  "level": 5,
+  "role": "Spy-in-Training",
+  "build": {
+    "primaryClass": "Rogue",
+    "subclass": "Scout",
+    "secondaryClass": "None",
+    "casterType": "martial"
+  },
+  "abilities": {
+    "str": 8,
+    "dex": 17,
+    "con": 12,
+    "int": 13,
+    "wis": 14,
+    "cha": 11
+  },
+  "combat": {
+    "ac": 15,
+    "hp": 46,
+    "speed": 35,
+    "initiative": 6
+  },
+  "skills": [
+    "stealth",
+    "perception",
+    "investigation",
+    "survival"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Ragcloak Padding",
+        "img": "icons/equipment/back/cloak-collared-grey.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Rustknife",
+        "img": "icons/weapons/daggers/dagger-serrated.webp"
+      },
+      {
+        "name": "Practice Sling",
+        "img": "icons/weapons/slings/sling-leather-brown.webp"
+      }
+    ],
+    "tools": [
+      "Route Sketch Journal"
+    ]
+  },
+  "features": [
+    "Patrol Memory",
+    "Ratline Escape",
+    "Faint Shadow Meld"
+  ],
+  "spells": {
+    "level1": []
+  },
+  "integration": {
+    "faction": "lyssa-veil-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "tail-and-report"
+  },
+  "prototypeToken": {
+    "name": "Jem \"Rat\" Korrin",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/resident_goblin_woman_01.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}

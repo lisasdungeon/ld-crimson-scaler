@@ -1,0 +1,86 @@
+{
+  "id": "lyssa-generic-fighter-04",
+  "name": "Lyssa Generic Fighter IV",
+  "img": "modules/ld-crimson-scaler/assets/portraits/outdated_12.png",
+  "rank": "Private",
+  "level": 7,
+  "role": "Generic Lockbreaker",
+  "build": {
+    "primaryClass": "Rogue",
+    "subclass": "Thief",
+    "secondaryClass": "Fighter",
+    "casterType": "martial"
+  },
+  "abilities": {
+    "str": 16,
+    "dex": 15,
+    "con": 15,
+    "int": 11,
+    "wis": 11,
+    "cha": 10
+  },
+  "combat": {
+    "ac": 17,
+    "hp": 94,
+    "speed": 30,
+    "initiative": 5
+  },
+  "skills": [
+    "athletics",
+    "thieves-tools",
+    "investigation",
+    "intimidation"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Breach Harness",
+        "img": "icons/equipment/chest/leather-vest-brown.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Lock Maul",
+        "img": "icons/weapons/hammers/maul-rounded-dark.webp"
+      },
+      {
+        "name": "Backup Dirk",
+        "img": "icons/weapons/daggers/dagger-straight-grey.webp"
+      }
+    ],
+    "tools": [
+      "Heavy Pick Set",
+      "Rune Wedge"
+    ]
+  },
+  "features": [
+    "Metal Hum Mark",
+    "Forced Entry",
+    "Ward Crack"
+  ],
+  "spells": {
+    "level1": []
+  },
+  "integration": {
+    "faction": "lyssa-veil-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "entry-bruiser"
+  },
+  "prototypeToken": {
+    "name": "Lyssa Generic Fighter IV",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/outdated_12.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}

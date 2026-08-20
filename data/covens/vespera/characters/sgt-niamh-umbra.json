@@ -1,0 +1,103 @@
+{
+  "id": "sgt-niamh-umbra",
+  "name": "Sgt. Niamh Umbra",
+  "img": "modules/ld-crimson-scaler/assets/portraits/wizard_human_woman_03.png",
+  "rank": "Sergeant",
+  "level": 28,
+  "role": "Umbra Sgt",
+  "build": {
+    "primaryClass": "Druid",
+    "subclass": "Land",
+    "secondaryClass": "Warlock",
+    "casterType": "full-caster"
+  },
+  "abilities": {
+    "str": 11,
+    "dex": 15,
+    "con": 20,
+    "int": 14,
+    "wis": 24,
+    "cha": 16
+  },
+  "combat": {
+    "ac": 20,
+    "hp": 292,
+    "speed": 30,
+    "initiative": 8
+  },
+  "skills": [
+    "nature",
+    "survival",
+    "perception",
+    "medicine"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Oilskin Umbra Cloak",
+        "img": "icons/equipment/back/cloak-collared-grey.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Poolmaker Staff",
+        "img": "icons/weapons/staves/staff-ornate-red.webp"
+      }
+    ],
+    "focus": [
+      {
+        "name": "Terrain Mark Vessel",
+        "img": "icons/magic/symbols/rune-sigil-red-orange.webp"
+      }
+    ]
+  },
+  "features": [
+    "Darkness Pool Spread",
+    "Difficult Terrain Field",
+    "Trip-Slow Sink",
+    "Umbra Control Zone"
+  ],
+  "spells": {
+    "level1": [
+      "entangle",
+      "fog cloud"
+    ],
+    "level2": [
+      "darkness",
+      "spike growth"
+    ],
+    "level3": [
+      "plant growth",
+      "sleet storm"
+    ],
+    "level4": [
+      "grasping vine",
+      "blight"
+    ],
+    "level5": [
+      "insect plague"
+    ]
+  },
+  "integration": {
+    "faction": "vespera-fifth-shadow-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "terrain-control-umbra"
+  },
+  "prototypeToken": {
+    "name": "Sgt. Niamh Umbra",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/wizard_human_woman_03.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}

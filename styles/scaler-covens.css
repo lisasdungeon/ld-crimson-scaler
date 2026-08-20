@@ -1,0 +1,162 @@
+/* ═══════════ COVENS TAB ═══════════ */
+
+.cs-coven-filters {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.cs-coven-filters label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.82rem;
+}
+
+.cs-coven-filters select,
+.cs-coven-filters input {
+  background: #1e1720;
+  border: 1px solid #6b2343;
+  color: #eee8f3;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 0.3rem 0.5rem;
+  min-width: 140px;
+}
+
+.cs-coven-filters select {
+  height: var(--input-height, 2rem);
+  line-height: var(--input-height, 2rem);
+  padding: 0 0.5rem;
+  text-align: left;
+  text-align-last: left;
+  vertical-align: middle;
+}
+
+.cs-coven-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 0.75rem;
+}
+
+.cs-coven-card {
+  display: flex;
+  gap: 0.65rem;
+  border: 1px solid #5e3244;
+  background: #231723;
+  border-radius: 6px;
+  padding: 0.65rem;
+  transition: border-color 0.15s;
+}
+
+.cs-coven-card:hover {
+  border-color: #d35f88;
+}
+
+.cs-coven-portrait {
+  flex: 0 0 64px;
+  width: 64px;
+  height: 64px;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid #422334;
+}
+
+.cs-coven-portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cs-coven-info {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.cs-coven-name {
+  font-weight: 700;
+  font-size: 0.95rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cs-coven-meta {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.cs-coven-rank {
+  background: #702640;
+  color: #f7dbe7;
+  padding: 0.1rem 0.4rem;
+  border-radius: 3px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.cs-coven-level {
+  color: #ddb8ca;
+  font-weight: 600;
+}
+
+.cs-coven-role {
+  font-size: 0.78rem;
+  color: #c9a4b8;
+}
+
+.cs-coven-build {
+  font-size: 0.75rem;
+  color: #a08a98;
+  font-style: italic;
+}
+
+.cs-coven-stats {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  color: #ddb8ca;
+  font-weight: 600;
+}
+
+.cs-coven-abilities {
+  display: flex;
+  gap: 0.35rem;
+  font-size: 0.68rem;
+  color: #a08a98;
+  flex-wrap: wrap;
+}
+
+.cs-coven-faction {
+  font-size: 0.72rem;
+  color: #8a6a7e;
+  margin-top: 0.1rem;
+}
+
+.cs-coven-actions {
+  display: flex;
+  gap: 0.35rem;
+  margin-top: 0.25rem;
+}
+
+.cs-coven-actions button {
+  border: 1px solid #6b2343;
+  background: #24121b;
+  color: #f7dbe7;
+  border-radius: 4px;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.72rem;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.cs-coven-actions button:hover {
+  background: #702640;
+}

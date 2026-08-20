@@ -1,0 +1,95 @@
+{
+  "id": "sgt-sylva-elixirist",
+  "name": "Sgt. Sylva Elixirist",
+  "img": "modules/ld-crimson-scaler/assets/portraits/wizard_goblin_woman_01.png",
+  "rank": "Sergeant",
+  "level": 16,
+  "role": "Potion Sergeant",
+  "build": {
+    "primaryClass": "Artificer",
+    "subclass": "Alchemist",
+    "secondaryClass": "Barbarian",
+    "casterType": "hybrid"
+  },
+  "abilities": {
+    "str": 13,
+    "dex": 14,
+    "con": 17,
+    "int": 19,
+    "wis": 14,
+    "cha": 13
+  },
+  "combat": {
+    "ac": 18,
+    "hp": 188,
+    "speed": 35,
+    "initiative": 6
+  },
+  "skills": [
+    "medicine",
+    "investigation",
+    "athletics",
+    "intimidation"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Brewrunner Leathers",
+        "img": "icons/equipment/chest/leather-chest-dark.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Elixir Injector",
+        "img": "icons/weapons/swords/sword-guard-steel-green.webp"
+      },
+      {
+        "name": "Brawl Club",
+        "img": "icons/weapons/clubs/club-heavy-barbed-brown.webp"
+      }
+    ],
+    "consumables": [
+      "Berserk Draughts x6"
+    ]
+  },
+  "features": [
+    "Pre-Charge Draught Distribution",
+    "Self-Test Immunity",
+    "Toxin Purge Mark"
+  ],
+  "spells": {
+    "level1": [
+      "cure wounds",
+      "caustic brew"
+    ],
+    "level2": [
+      "enhance ability",
+      "lesser restoration"
+    ],
+    "level3": [
+      "haste"
+    ]
+  },
+  "integration": {
+    "faction": "yelena-crimson-archive-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "buff-distributor"
+  },
+  "prototypeToken": {
+    "name": "Sgt. Sylva Elixirist",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/wizard_goblin_woman_01.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}

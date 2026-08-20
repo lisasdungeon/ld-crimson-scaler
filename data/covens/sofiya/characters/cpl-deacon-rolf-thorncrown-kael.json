@@ -1,0 +1,106 @@
+{
+  "id": "cpl-deacon-rolf-thorncrown-kael",
+  "name": "Deacon Rolf \"Thorncrown\" Kael",
+  "img": "modules/ld-crimson-scaler/assets/portraits/highpriest_human_man_02.png",
+  "rank": "Corporal",
+  "level": 8,
+  "role": "Purifier",
+  "build": {
+    "primaryClass": "Cleric",
+    "subclass": "Light",
+    "secondaryClass": "Paladin",
+    "casterType": "full-caster"
+  },
+  "abilities": {
+    "str": 15,
+    "dex": 11,
+    "con": 15,
+    "int": 10,
+    "wis": 17,
+    "cha": 14
+  },
+  "combat": {
+    "ac": 18,
+    "hp": 96,
+    "speed": 30,
+    "initiative": 3
+  },
+  "skills": [
+    "religion",
+    "athletics",
+    "intimidation",
+    "survival"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Thorn-Halo Mail",
+        "img": "icons/equipment/chest/chain-mail-steel-grey.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Ashen Mace",
+        "img": "icons/weapons/maces/mace-round-spiked-grey.webp"
+      },
+      {
+        "name": "Sanctified Brand Spear",
+        "img": "icons/weapons/polearms/spear-hooked.webp"
+      }
+    ],
+    "focus": [
+      {
+        "name": "Crown of Penitent Thorns",
+        "img": "icons/equipment/head/circlet-gold-gems-red.webp"
+      }
+    ]
+  },
+  "features": [
+    "Blood-Fire Rite (1d6 fire aura burst)",
+    "Heresy Brand",
+    "Damnation Sermon",
+    "Redemption Through Flame"
+  ],
+  "spells": {
+    "cantrips": [
+      "sacred flame",
+      "light",
+      "word of radiance"
+    ],
+    "level1": [
+      "guiding bolt",
+      "burning hands",
+      "shield of faith"
+    ],
+    "level2": [
+      "flaming sphere",
+      "aid"
+    ],
+    "level3": [
+      "spirit guardians",
+      "daylight"
+    ]
+  },
+  "integration": {
+    "faction": "sofiya-dawn-chorus-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "fire-purge-frontliner"
+  },
+  "prototypeToken": {
+    "name": "Deacon Rolf \"Thorncrown\" Kael",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/highpriest_human_man_02.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}

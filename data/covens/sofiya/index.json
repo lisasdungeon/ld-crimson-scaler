@@ -1,0 +1,29 @@
+{
+  "covenId": "sofiya-dawn-chorus-coven",
+  "covenName": "Sofiya's Dawn Chorus",
+  "theme": "zealot-healing-martyr-frontline",
+  "hierarchyModel": "fighters-and-recruits-wave",
+  "notes": "Sofiya closeout includes 5 fighters + 5 recruits plus 5 reusable generic fighter variants for support swarm encounters.",
+  "levelPolicy": {
+    "fighters": [10, 9, 8, 7, 6],
+    "recruits": [5, 4, 3, 2, 1]
+  },
+  "members": [
+    { "name": "Brother Elias \"Stigmata\" Thorne", "rank": "Corporal", "level": 10, "file": "characters/cpl-brother-elias-stigmata-thorne.json" },
+    { "name": "Sister Mira \"Veil of Tears\" Lorn", "rank": "Private", "level": 9, "file": "characters/pvt-sister-mira-veil-of-tears-lorn.json" },
+    { "name": "Deacon Rolf \"Thorncrown\" Kael", "rank": "Corporal", "level": 8, "file": "characters/cpl-deacon-rolf-thorncrown-kael.json" },
+    { "name": "Acolyte Ysme \"Blood Chalice\" Vey", "rank": "Private", "level": 7, "file": "characters/pvt-acolyte-ysme-blood-chalice-vey.json" },
+    { "name": "Cantor Gavrin \"Echo Psalm\" Senn", "rank": "Corporal", "level": 6, "file": "characters/cpl-cantor-gavrin-echo-psalm-senn.json" },
+
+    { "name": "Novice Lira \"Kneeler\" Dax", "rank": "Recruit", "level": 5, "file": "characters/recruit-novice-lira-kneeler-dax.json" },
+    { "name": "Initiate Torin \"Ash\" Merr", "rank": "Recruit", "level": 4, "file": "characters/recruit-initiate-torin-ash-merr.json" },
+    { "name": "Postulant Sira \"Censer\" Vale", "rank": "Recruit", "level": 3, "file": "characters/recruit-postulant-sira-censer-vale.json" },
+    { "name": "Aspirant Jem \"Relic\" Korr", "rank": "Recruit", "level": 2, "file": "characters/recruit-aspirant-jem-relic-korr.json" },
+    { "name": "Neophyte Nyssa \"Vow\" Ryn", "rank": "Recruit", "level": 1, "file": "characters/recruit-neophyte-nyssa-vow-ryn.json" }
+  ],
+  "genericPool": {
+    "file": "generic/index.json",
+    "variants": 5
+  },
+  "status": "closed-out-fighters-recruits-and-generics"
+}

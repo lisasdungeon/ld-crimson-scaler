@@ -1,0 +1,127 @@
+{
+  "id": "lyssa-markova",
+  "name": "Lyssa Markova",
+  "img": "modules/ld-crimson-scaler/assets/portraits/noble_human_woman_01.png",
+  "rank": "Matriarch",
+  "level": 26,
+  "role": "Supreme spymaster",
+  "build": {
+    "primaryClass": "Rogue",
+    "subclass": "Nightstalker",
+    "secondaryClass": "Warlock",
+    "casterType": "half-caster"
+  },
+  "abilities": {
+    "str": 10,
+    "dex": 24,
+    "con": 18,
+    "int": 20,
+    "wis": 18,
+    "cha": 20
+  },
+  "combat": {
+    "ac": 23,
+    "hp": 372,
+    "speed": 40,
+    "initiative": 14
+  },
+  "skills": [
+    "stealth",
+    "deception",
+    "insight",
+    "investigation",
+    "perception",
+    "sleight-of-hand"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Lyssa's Veilweave Mantle (legendary light armor)",
+        "img": "icons/equipment/back/cloak-collared-grey.webp"
+      },
+      {
+        "name": "Shadowstep Boots",
+        "img": "icons/equipment/feet/boots-leather-engraved-brown.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Matriarch's Fang (legendary dagger)",
+        "img": "icons/weapons/daggers/dagger-serrated.webp"
+      },
+      {
+        "name": "Whisper Coil Garrote",
+        "img": "icons/weapons/sickles/hook-steel-grey.webp"
+      },
+      {
+        "name": "Veilbound Hand Crossbow",
+        "img": "icons/weapons/crossbows/crossbow-simple-brown.webp"
+      }
+    ],
+    "focus": [
+      {
+        "name": "Sanguine Heart Signet",
+        "img": "icons/equipment/finger/ring-cabochon-gold-red.webp"
+      }
+    ]
+  },
+  "features": [
+    "Crimson Lie-Sight",
+    "Shadowstep Command",
+    "Network of Knives",
+    "Coven Extraction Protocol",
+    "Mark of the Sanguine Heart"
+  ],
+  "spells": {
+    "cantrips": [
+      "minor illusion",
+      "message",
+      "thaumaturgy"
+    ],
+    "level1": [
+      "disguise self",
+      "silent image",
+      "hex"
+    ],
+    "level2": [
+      "invisibility",
+      "mirror image",
+      "detect thoughts"
+    ],
+    "level3": [
+      "major image",
+      "counterspell",
+      "fear"
+    ],
+    "level4": [
+      "greater invisibility",
+      "dimension door"
+    ],
+    "level5": [
+      "mislead",
+      "modify memory"
+    ]
+  },
+  "integration": {
+    "faction": "lyssa-veil-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "predatory-controller"
+  },
+  "prototypeToken": {
+    "name": "Lyssa Markova",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/noble_human_woman_01.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}

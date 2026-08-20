@@ -1,0 +1,87 @@
+{
+  "id": "sofiya-generic-fighter-v3",
+  "name": "Dawn Chorus Fighter - Censer Swinger",
+  "img": "modules/ld-crimson-scaler/assets/portraits/outdated_23.png",
+  "rank": "Generic Fighter",
+  "level": 8,
+  "role": "Smoke blind controller",
+  "build": {
+    "primaryClass": "Rogue",
+    "subclass": "Thief",
+    "secondaryClass": "Cleric",
+    "casterType": "martial-support"
+  },
+  "abilities": {
+    "str": 11,
+    "dex": 16,
+    "con": 13,
+    "int": 11,
+    "wis": 13,
+    "cha": 12
+  },
+  "combat": {
+    "ac": 16,
+    "hp": 76,
+    "speed": 30,
+    "initiative": 7
+  },
+  "skills": [
+    "stealth",
+    "acrobatics",
+    "sleight-of-hand",
+    "perception"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Incenser Leathers",
+        "img": "icons/equipment/chest/leather-chest-dark.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Censer Chain",
+        "img": "icons/weapons/sickles/hook-steel-grey.webp"
+      },
+      {
+        "name": "Hook Knife",
+        "img": "icons/weapons/daggers/dagger-serrated.webp"
+      }
+    ],
+    "consumables": [
+      "Fire Vial x2",
+      "Smoke Resin x2"
+    ]
+  },
+  "features": [
+    "Smoke Blind Cloud (10 ft)",
+    "Fire Vial Splash",
+    "Purifying Fog",
+    "Pain-Share Mark"
+  ],
+  "spells": {
+    "level1": []
+  },
+  "integration": {
+    "faction": "sofiya-dawn-chorus-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "screen-and-burn-controller"
+  },
+  "prototypeToken": {
+    "name": "Dawn Chorus Fighter - Censer Swinger",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/outdated_23.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}

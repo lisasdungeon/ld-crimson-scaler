@@ -1,0 +1,94 @@
+{
+  "id": "sgt-mira-locke",
+  "name": "Sgt. Mira Locke",
+  "img": "modules/ld-crimson-scaler/assets/portraits/ranger_elve_woman_01.png",
+  "rank": "Sergeant",
+  "level": 21,
+  "role": "Assassin Sergeant",
+  "build": {
+    "primaryClass": "Rogue",
+    "subclass": "Assassin",
+    "secondaryClass": "Fighter",
+    "casterType": "martial"
+  },
+  "abilities": {
+    "str": 13,
+    "dex": 23,
+    "con": 16,
+    "int": 14,
+    "wis": 15,
+    "cha": 11
+  },
+  "combat": {
+    "ac": 22,
+    "hp": 258,
+    "speed": 40,
+    "initiative": 13
+  },
+  "skills": [
+    "stealth",
+    "sleight-of-hand",
+    "perception",
+    "intimidation"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Footfall Null Suit",
+        "img": "icons/equipment/chest/leather-vest-brown.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Rune-Etched Twin Daggers",
+        "img": "icons/weapons/daggers/dagger-serrated.webp"
+      },
+      {
+        "name": "Garrote of Quiet End",
+        "img": "icons/weapons/sickles/hook-steel-grey.webp"
+      }
+    ],
+    "focus": [
+      {
+        "name": "Silence Mark Seal",
+        "img": "icons/magic/symbols/rune-sigil-red-orange.webp"
+      }
+    ]
+  },
+  "features": [
+    "Silent Footfall",
+    "Execution Window",
+    "Poisonmaster",
+    "No-Witness Protocol"
+  ],
+  "spells": {
+    "level1": [
+      "disguise self"
+    ],
+    "level2": [
+      "invisibility"
+    ]
+  },
+  "integration": {
+    "faction": "lyssa-veil-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "single-target-eliminator"
+  },
+  "prototypeToken": {
+    "name": "Sgt. Mira Locke",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/ranger_elve_woman_01.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}

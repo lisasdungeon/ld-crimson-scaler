@@ -1,0 +1,93 @@
+{
+  "id": "cpl-lirien-wisp-faye",
+  "name": "Lirien \"Wisp\" Faye",
+  "img": "modules/ld-crimson-scaler/assets/portraits/warrior_human_girl_01.png",
+  "rank": "Corporal",
+  "level": 6,
+  "role": "Scout-Sniper",
+  "build": {
+    "primaryClass": "Ranger",
+    "subclass": "Gloom Stalker",
+    "secondaryClass": "Rogue",
+    "casterType": "half-caster"
+  },
+  "abilities": {
+    "str": 10,
+    "dex": 19,
+    "con": 13,
+    "int": 12,
+    "wis": 16,
+    "cha": 11
+  },
+  "combat": {
+    "ac": 16,
+    "hp": 82,
+    "speed": 35,
+    "initiative": 8
+  },
+  "skills": [
+    "stealth",
+    "perception",
+    "survival",
+    "investigation"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Feather-Talisman Cloak",
+        "img": "icons/equipment/back/cloak-collared-grey.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Fogpiercer Crossbow",
+        "img": "icons/weapons/crossbows/crossbow-simple-brown.webp"
+      },
+      {
+        "name": "Curse Bolts x20",
+        "img": "icons/weapons/swords/sword-guard-steel-green.webp"
+      },
+      {
+        "name": "Backline Knife",
+        "img": "icons/weapons/daggers/dagger-serrated.webp"
+      }
+    ]
+  },
+  "features": [
+    "Fog Aim Mark",
+    "High-Perch Hunt",
+    "Sentry Elimination",
+    "Trauma Triggered Focus"
+  ],
+  "spells": {
+    "level1": [
+      "hunter's mark",
+      "fog cloud"
+    ],
+    "level2": [
+      "pass without trace"
+    ]
+  },
+  "integration": {
+    "faction": "lyssa-veil-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "high-ground-sniper"
+  },
+  "prototypeToken": {
+    "name": "Lirien \"Wisp\" Faye",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/warrior_human_girl_01.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}

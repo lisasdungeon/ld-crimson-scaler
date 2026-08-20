@@ -1,0 +1,106 @@
+{
+  "id": "cpl-cantor-gavrin-echo-psalm-senn",
+  "name": "Cantor Gavrin \"Echo Psalm\" Senn",
+  "img": "modules/ld-crimson-scaler/assets/portraits/priest_human_woman_01.png",
+  "rank": "Corporal",
+  "level": 6,
+  "role": "Chanter",
+  "build": {
+    "primaryClass": "Bard",
+    "subclass": "Valor",
+    "secondaryClass": "Cleric",
+    "casterType": "full-caster"
+  },
+  "abilities": {
+    "str": 11,
+    "dex": 14,
+    "con": 13,
+    "int": 10,
+    "wis": 13,
+    "cha": 17
+  },
+  "combat": {
+    "ac": 15,
+    "hp": 62,
+    "speed": 30,
+    "initiative": 6
+  },
+  "skills": [
+    "performance",
+    "insight",
+    "religion",
+    "intimidation"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Choir-Leather",
+        "img": "icons/equipment/chest/leather-chest-dark.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Rune Tuning Fork Mace",
+        "img": "icons/weapons/maces/mace-round-spiked-grey.webp"
+      },
+      {
+        "name": "Cantor's Knife",
+        "img": "icons/weapons/daggers/dagger-serrated.webp"
+      }
+    ],
+    "focus": [
+      {
+        "name": "Throat Rune Collar",
+        "img": "icons/svg/items/equipment.svg"
+      }
+    ]
+  },
+  "features": [
+    "Echo Psalm Channel (heals 1d4 each round while chanting)",
+    "Dissonant Breaknote",
+    "Morale Hymn Uplift",
+    "Blind Rite Compensation"
+  ],
+  "spells": {
+    "cantrips": [
+      "vicious mockery",
+      "message",
+      "thaumaturgy"
+    ],
+    "level1": [
+      "heroism",
+      "healing word",
+      "thunderwave"
+    ],
+    "level2": [
+      "shatter",
+      "enhance ability"
+    ],
+    "level3": [
+      "hypnotic pattern",
+      "mass healing word"
+    ]
+  },
+  "integration": {
+    "faction": "sofiya-dawn-chorus-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "aura-chant-buffer"
+  },
+  "prototypeToken": {
+    "name": "Cantor Gavrin \"Echo Psalm\" Senn",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/priest_human_woman_01.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}

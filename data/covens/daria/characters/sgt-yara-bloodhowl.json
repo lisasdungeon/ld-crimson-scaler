@@ -1,0 +1,82 @@
+{
+  "id": "sgt-yara-bloodhowl",
+  "name": "Sgt. Yara Bloodhowl",
+  "img": "modules/ld-crimson-scaler/assets/portraits/warrior_human_woman_03.png",
+  "rank": "Sergeant",
+  "level": 16,
+  "role": "Berserker Sergeant",
+  "build": {
+    "primaryClass": "Barbarian",
+    "subclass": "Berserker",
+    "secondaryClass": "Fighter",
+    "casterType": "martial"
+  },
+  "abilities": {
+    "str": 21,
+    "dex": 14,
+    "con": 18,
+    "int": 10,
+    "wis": 12,
+    "cha": 12
+  },
+  "combat": {
+    "ac": 19,
+    "hp": 248,
+    "speed": 40,
+    "initiative": 7
+  },
+  "skills": [
+    "athletics",
+    "intimidation",
+    "perception",
+    "survival"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Ragehide Harness",
+        "img": "icons/equipment/chest/leather-vest-brown.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Bloodclaw Axes",
+        "img": "icons/weapons/axes/axe-broad-grey.webp"
+      },
+      {
+        "name": "Ripper Hooks",
+        "img": "icons/weapons/fist/claw-gauntlet-grey.webp"
+      }
+    ]
+  },
+  "features": [
+    "Frenzy Mark Trigger",
+    "Rearline Shock Entry",
+    "Howling Terror"
+  ],
+  "spells": {
+    "level1": []
+  },
+  "integration": {
+    "faction": "daria-iron-ring-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "flank-berserker"
+  },
+  "prototypeToken": {
+    "name": "Sgt. Yara Bloodhowl",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/warrior_human_woman_03.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}

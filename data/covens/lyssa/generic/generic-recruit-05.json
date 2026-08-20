@@ -1,0 +1,82 @@
+{
+  "id": "lyssa-generic-recruit-05",
+  "name": "Lyssa Generic Recruit V",
+  "img": "modules/ld-crimson-scaler/assets/portraits/outdated_18.png",
+  "rank": "Recruit",
+  "level": 1,
+  "role": "Generic Saboteur Trainee",
+  "build": {
+    "primaryClass": "Rogue",
+    "subclass": "None",
+    "secondaryClass": "None",
+    "casterType": "martial"
+  },
+  "abilities": {
+    "str": 8,
+    "dex": 14,
+    "con": 11,
+    "int": 11,
+    "wis": 10,
+    "cha": 11
+  },
+  "combat": {
+    "ac": 12,
+    "hp": 16,
+    "speed": 30,
+    "initiative": 4
+  },
+  "skills": [
+    "sleight-of-hand",
+    "stealth",
+    "deception",
+    "survival"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Soot Wrap",
+        "img": "icons/equipment/chest/cloth-simple-brown.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Starter Shiv",
+        "img": "icons/weapons/daggers/dagger-straight-grey.webp"
+      }
+    ],
+    "tools": [
+      "Tripwire Kit",
+      "Spark Reagent Pouch"
+    ]
+  },
+  "features": [
+    "Minor Shadow Cloak",
+    "Basic Trap Set",
+    "Reagent Runner"
+  ],
+  "spells": {
+    "level1": []
+  },
+  "integration": {
+    "faction": "lyssa-veil-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "reckless-trainee"
+  },
+  "prototypeToken": {
+    "name": "Lyssa Generic Recruit V",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/outdated_18.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "id": "captain-shade-klythe",
+  "name": "Captain Shade Klythe",
+  "img": "modules/ld-crimson-scaler/assets/portraits/demon_elve_man_01.png",
+  "rank": "Captain",
+  "level": 29,
+  "role": "Assassin Captain",
+  "build": {
+    "primaryClass": "Rogue",
+    "subclass": "Assassin",
+    "secondaryClass": "Warlock",
+    "casterType": "martial-hybrid"
+  },
+  "abilities": {
+    "str": 14,
+    "dex": 25,
+    "con": 19,
+    "int": 14,
+    "wis": 17,
+    "cha": 20
+  },
+  "combat": {
+    "ac": 22,
+    "hp": 318,
+    "speed": 40,
+    "initiative": 14
+  },
+  "skills": [
+    "stealth",
+    "acrobatics",
+    "sleight-of-hand",
+    "perception",
+    "intimidation"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Pallid Shadeweave",
+        "img": "icons/equipment/chest/robe-armored-black.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Vein-Dagger Pair",
+        "img": "icons/weapons/daggers/dagger-serrated.webp"
+      },
+      {
+        "name": "Wraithline Garrote",
+        "img": "icons/weapons/sickles/hook-steel-grey.webp"
+      }
+    ],
+    "focus": [
+      {
+        "name": "Undead Binding Mark",
+        "img": "icons/magic/symbols/rune-sigil-red-orange.webp"
+      }
+    ]
+  },
+  "features": [
+    "Silent Shade Summons",
+    "Undead Minion Bind",
+    "Heart-Vanish Strike",
+    "Phantom Loyalty"
+  ],
+  "spells": {
+    "cantrips": [
+      "eldritch blast",
+      "minor illusion"
+    ],
+    "level1": [
+      "hex",
+      "armor of agathys"
+    ],
+    "level2": [
+      "invisibility",
+      "darkness"
+    ],
+    "level3": [
+      "summon shadowspawn",
+      "counterspell"
+    ],
+    "level4": [
+      "greater invisibility",
+      "shadow of moil"
+    ],
+    "level5": [
+      "hold monster"
+    ]
+  },
+  "integration": {
+    "faction": "vespera-fifth-shadow-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "silent-assassin-summoner"
+  },
+  "prototypeToken": {
+    "name": "Captain Shade Klythe",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/demon_elve_man_01.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}

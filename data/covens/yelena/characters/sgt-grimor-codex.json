@@ -1,0 +1,98 @@
+{
+  "id": "sgt-grimor-codex",
+  "name": "Sgt. Grimor Codex",
+  "img": "modules/ld-crimson-scaler/assets/portraits/deity_man_03.png",
+  "rank": "Sergeant",
+  "level": 13,
+  "role": "Historian Sergeant",
+  "build": {
+    "primaryClass": "Wizard",
+    "subclass": "Divination",
+    "secondaryClass": "Bard",
+    "casterType": "full-caster"
+  },
+  "abilities": {
+    "str": 8,
+    "dex": 11,
+    "con": 14,
+    "int": 21,
+    "wis": 18,
+    "cha": 12
+  },
+  "combat": {
+    "ac": 17,
+    "hp": 152,
+    "speed": 30,
+    "initiative": 4
+  },
+  "skills": [
+    "history",
+    "arcana",
+    "investigation",
+    "insight"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Codex Dust Robes",
+        "img": "icons/equipment/chest/robe-blue-gold.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Index Wand",
+        "img": "icons/weapons/wands/wand-fire-red.webp"
+      }
+    ],
+    "focus": [
+      {
+        "name": "Eidetic Mark Codex",
+        "img": "icons/sundries/books/book-embossed-gold-red.webp"
+      }
+    ]
+  },
+  "features": [
+    "Perfect Lore Recall",
+    "Ritual Counter Projection",
+    "Archive Recall Burst"
+  ],
+  "spells": {
+    "level1": [
+      "identify",
+      "comprehend languages"
+    ],
+    "level2": [
+      "augury",
+      "see invisibility"
+    ],
+    "level3": [
+      "clairvoyance",
+      "counterspell"
+    ],
+    "level4": [
+      "divination"
+    ]
+  },
+  "integration": {
+    "faction": "yelena-crimson-archive-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "counterplay-analyst"
+  },
+  "prototypeToken": {
+    "name": "Sgt. Grimor Codex",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/deity_man_03.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}

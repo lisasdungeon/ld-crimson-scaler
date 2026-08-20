@@ -1,0 +1,33 @@
+{
+  "covenId": "vespera-fifth-shadow-coven",
+  "covenName": "Vespera Pyne's Fifth Shadow",
+  "theme": "void-necromantic-stealth-command",
+  "hierarchyModel": "matriarch-captains-sergeants",
+  "notes": "Final coven command roster from source text. Vespera is level 30; all other named command members are level 29 or 28. Total strength: 140 members, 16 named command.",
+  "levelPolicy": {
+    "matriarch": 30,
+    "captains": [29, 29],
+    "sergeants": [28]
+  },
+  "members": [
+    { "name": "Vespera Pyne", "rank": "Matriarch", "level": 30, "file": "characters/vespera-pyne.json" },
+
+    { "name": "Captain Nyx Voidwhisper", "rank": "Captain", "level": 29, "file": "characters/captain-nyx-voidwhisper.json" },
+    { "name": "Captain Shade Klythe", "rank": "Captain", "level": 29, "file": "characters/captain-shade-klythe.json" },
+
+    { "name": "Sgt. Riven Dreamthief", "rank": "Sergeant", "level": 28, "file": "characters/sgt-riven-dreamthief.json" },
+    { "name": "Sgt. Grim Necrocall", "rank": "Sergeant", "level": 28, "file": "characters/sgt-grim-necrocall.json" },
+    { "name": "Sgt. Lira Voidstep", "rank": "Sergeant", "level": 28, "file": "characters/sgt-lira-voidstep.json" },
+    { "name": "Sgt. Thorne Despair", "rank": "Sergeant", "level": 28, "file": "characters/sgt-thorne-despair.json" },
+    { "name": "Sgt. Elowen Shadebind", "rank": "Sergeant", "level": 28, "file": "characters/sgt-elowen-shadebind.json" },
+    { "name": "Sgt. Daxen Wraithcaller", "rank": "Sergeant", "level": 28, "file": "characters/sgt-daxen-wraithcaller.json" },
+    { "name": "Sgt. Sylva Nightveil", "rank": "Sergeant", "level": 28, "file": "characters/sgt-sylva-nightveil.json" },
+    { "name": "Sgt. Korr Soulreap", "rank": "Sergeant", "level": 28, "file": "characters/sgt-korr-soulreap.json" },
+    { "name": "Sgt. Vespera Echo", "rank": "Sergeant", "level": 28, "file": "characters/sgt-vespera-echo.json" },
+    { "name": "Sgt. Grimalkin Phantasm", "rank": "Sergeant", "level": 28, "file": "characters/sgt-grimalkin-phantasm.json" },
+    { "name": "Sgt. Niamh Umbra", "rank": "Sergeant", "level": 28, "file": "characters/sgt-niamh-umbra.json" },
+    { "name": "Sgt. Torin Revenant", "rank": "Sergeant", "level": 28, "file": "characters/sgt-torin-revenant.json" },
+    { "name": "Sgt. Elara Forlorn", "rank": "Sergeant", "level": 28, "file": "characters/sgt-elara-forlorn.json" }
+  ],
+  "status": "fifth-shadow-command-built"
+}

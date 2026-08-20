@@ -1,0 +1,87 @@
+{
+  "id": "sofiya-generic-fighter-v4",
+  "name": "Dawn Chorus Fighter - Relic Bearer",
+  "img": "modules/ld-crimson-scaler/assets/portraits/outdated_24.png",
+  "rank": "Generic Fighter",
+  "level": 8,
+  "role": "Aura guard tank",
+  "build": {
+    "primaryClass": "Fighter",
+    "subclass": "Champion",
+    "secondaryClass": "Cleric",
+    "casterType": "martial-support"
+  },
+  "abilities": {
+    "str": 15,
+    "dex": 10,
+    "con": 17,
+    "int": 9,
+    "wis": 12,
+    "cha": 11
+  },
+  "combat": {
+    "ac": 18,
+    "hp": 112,
+    "speed": 25,
+    "initiative": 2
+  },
+  "skills": [
+    "athletics",
+    "religion",
+    "perception"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Icon Bearer Plate",
+        "img": "icons/equipment/chest/breastplate-steel-grey.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Relic Pole",
+        "img": "icons/weapons/swords/sword-guard-steel-green.webp"
+      },
+      {
+        "name": "Short Mace",
+        "img": "icons/weapons/maces/mace-round-spiked-grey.webp"
+      }
+    ],
+    "offhand": [
+      "Tower Icon Shield"
+    ]
+  },
+  "features": [
+    "Passive Halo Aura (+1 AC nearby allies)",
+    "Nearby Heal Pulse",
+    "Arrowline Guard",
+    "Pain-Share Mark"
+  ],
+  "spells": {
+    "level1": [
+      "shield of faith"
+    ]
+  },
+  "integration": {
+    "faction": "sofiya-dawn-chorus-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "slow-aura-front-guard"
+  },
+  "prototypeToken": {
+    "name": "Dawn Chorus Fighter - Relic Bearer",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/outdated_24.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}

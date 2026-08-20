@@ -1,0 +1,5406 @@
+{
+  "items": [
+    {
+      "id": "Item.Nmg4pqQN8xT6ocDV",
+      "name": "Agent's Hidden Blade",
+      "type": "weapon",
+      "system": {
+        "armor": {},
+        "damage": {
+          "base": {
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "types": [
+              "slashing"
+            ],
+            "scaling": {
+              "number": 1
+            },
+            "number": 1,
+            "denomination": 8,
+            "bonus": ""
+          },
+          "versatile": {
+            "custom": {
+              "enabled": false
+            },
+            "types": [],
+            "scaling": {
+              "number": 1
+            }
+          }
+        }
+      },
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "activity": []
+          }
+        },
+        "ld-crimson-scaler": {
+          "scaling": {
+            "enabled": true,
+            "classSpecific": true,
+            "profile": "default",
+            "tierModel": "rnk-crimson-baseline",
+            "version": 1,
+            "itemRole": "weapon",
+            "classKey": "the-veil-cutthroat",
+            "base": {
+              "denomination": 8,
+              "number": 1
+            },
+            "className": "Veil Cutthroat"
+          },
+          "linkMode": "actor-level",
+          "managedBy": "ld-crimson-scaler",
+          "linkedClass": {
+            "identifier": "the-veil-cutthroat",
+            "name": "Veil Cutthroat"
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "veil-3",
+          "uuid": "Item.Nmg4pqQN8xT6ocDV",
+          "coreVersion": "13.351",
+          "systemId": "dnd5e",
+          "systemVersion": "5.2.5"
+        },
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "createdTime": 1763746911946,
+        "modifiedTime": 1773331782131,
+        "lastModifiedBy": "qPrQhMZ8YlHSgRVs"
+      }
+    },
+    {
+      "id": "Item.vW9O2sYYMdmEiACG",
+      "name": "Agent's Shadow Suit",
+      "type": "equipment",
+      "system": {
+        "armor": {
+          "value": 11,
+          "dex": null
+        },
+        "damage": {
+          "base": {
+            "number": 0,
+            "denomination": 0,
+            "bonus": "",
+            "types": [],
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            }
+          },
+          "versatile": {
+            "types": [],
+            "custom": {
+              "enabled": false
+            },
+            "scaling": {
+              "number": 1
+            }
+          }
+        }
+      },
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "activity": []
+          }
+        },
+        "ld-crimson-scaler": {
+          "scaling": {
+            "enabled": true,
+            "classSpecific": true,
+            "profile": "default",
+            "tierModel": "rnk-crimson-baseline",
+            "version": 1,
+            "itemRole": "armor",
+            "classKey": "the-veil-cutthroat",
+            "base": {
+              "armorValue": 11
+            },
+            "className": "Veil Cutthroat"
+          },
+          "linkMode": "actor-level",
+          "managedBy": "ld-crimson-scaler",
+          "linkedClass": {
+            "identifier": "the-veil-cutthroat",
+            "name": "Veil Cutthroat"
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "veil-3",
+          "uuid": "Item.vW9O2sYYMdmEiACG",
+          "coreVersion": "13.351",
+          "systemId": "dnd5e",
+          "systemVersion": "5.2.5"
+        },
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "createdTime": 1763746911946,
+        "modifiedTime": 1773331789271,
+        "lastModifiedBy": "qPrQhMZ8YlHSgRVs"
+      }
+    },
+    {
+      "id": "Item.mCpEf7HjQnojcu73",
+      "name": "Blightblade",
+      "type": "weapon",
+      "system": {
+        "armor": {},
+        "damage": {
+          "base": {
+            "number": 1,
+            "denomination": 8,
+            "bonus": "",
+            "types": [
+              "slashing"
+            ],
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            }
+          },
+          "versatile": {
+            "types": [],
+            "custom": {
+              "enabled": false
+            },
+            "scaling": {
+              "number": 1
+            }
+          }
+        }
+      },
+      "flags": {
+        "autoanimations": {
+          "killAnim": false,
+          "override": true,
+          "animType": "melee",
+          "animName": "Sword",
+          "color": "Red",
+          "dtvar": "damage"
+        },
+        "dnd5e": {
+          "riders": {
+            "activity": []
+          }
+        },
+        "ld-crimson-scaler": {
+          "scaling": {
+            "enabled": true,
+            "classSpecific": true,
+            "profile": "default",
+            "tierModel": "rnk-crimson-baseline",
+            "version": 1,
+            "itemRole": "weapon",
+            "classKey": "the-blight-knight-sofiya",
+            "base": {
+              "denomination": 8,
+              "number": 1
+            },
+            "className": "Blight Knight (Sofiya)"
+          },
+          "linkMode": "actor-level",
+          "managedBy": "ld-crimson-scaler",
+          "linkedClass": {
+            "identifier": "the-blight-knight-sofiya",
+            "name": "Blight Knight (Sofiya)"
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "veil-3",
+          "uuid": "Item.mCpEf7HjQnojcu73",
+          "coreVersion": "13.351",
+          "systemId": "dnd5e",
+          "systemVersion": "5.2.5"
+        },
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "createdTime": 1763741716329,
+        "modifiedTime": 1773331664035,
+        "lastModifiedBy": "qPrQhMZ8YlHSgRVs"
+      }
+    },
+    {
+      "id": "Item.mCpEf7HjQnojcu73",
+      "name": "Blightblade Plate",
+      "type": "equipment",
+      "system": {
+        "armor": {
+          "value": 16,
+          "dex": null
+        },
+        "damage": {
+          "base": {
+            "number": 1,
+            "denomination": 8,
+            "bonus": "",
+            "types": [
+              "slashing"
+            ],
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            }
+          },
+          "versatile": {
+            "types": [],
+            "custom": {
+              "enabled": false
+            },
+            "scaling": {
+              "number": 1
+            }
+          }
+        }
+      },
+      "flags": {
+        "autoanimations": {
+          "killAnim": false,
+          "override": true,
+          "animType": "melee",
+          "animName": "Sword",
+          "color": "Red",
+          "dtvar": "damage"
+        },
+        "dnd5e": {
+          "riders": {
+            "activity": []
+          }
+        },
+        "ld-crimson-scaler": {
+          "scaling": {
+            "enabled": true,
+            "classSpecific": true,
+            "profile": "default",
+            "tierModel": "rnk-crimson-baseline",
+            "version": 1,
+            "itemRole": "armor",
+            "classKey": "the-blight-knight-sofiya",
+            "base": {
+              "armorValue": 16
+            },
+            "className": "Blight Knight (Sofiya)"
+          },
+          "linkMode": "actor-level",
+          "managedBy": "ld-crimson-scaler",
+          "linkedClass": {
+            "identifier": "the-blight-knight-sofiya",
+            "name": "Blight Knight (Sofiya)"
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "veil-3",
+          "uuid": "Item.mCpEf7HjQnojcu73",
+          "coreVersion": "13.351",
+          "systemId": "dnd5e",
+          "systemVersion": "5.2.5"
+        },
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "createdTime": 1763741716329,
+        "modifiedTime": 1773331664035,
+        "lastModifiedBy": "qPrQhMZ8YlHSgRVs"
+      }
+    },
+    {
+      "id": "Item.Pzh6wAcmRfHBaPCe",
+      "name": "Chronoblade",
+      "type": "weapon",
+      "system": {
+        "armor": {},
+        "damage": {
+          "base": {
+            "number": 1,
+            "denomination": 8,
+            "bonus": "",
+            "types": [
+              "slashing"
+            ],
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            }
+          },
+          "versatile": {
+            "types": [],
+            "custom": {
+              "enabled": false
+            },
+            "scaling": {
+              "number": 1
+            }
+          }
+        }
+      },
+      "flags": {
+        "autoanimations": {
+          "override": true,
+          "animType": "melee",
+          "animName": "Sword",
+          "color": "Blue"
+        },
+        "dnd5e": {
+          "riders": {
+            "activity": []
+          }
+        },
+        "ld-crimson-scaler": {
+          "scaling": {
+            "enabled": true,
+            "classSpecific": true,
+            "profile": "default",
+            "tierModel": "rnk-crimson-baseline",
+            "version": 1,
+            "itemRole": "weapon",
+            "classKey": "the-temporal-arcanist-yelena",
+            "base": {
+              "denomination": 8,
+              "number": 1
+            },
+            "className": "Temporal Arcanist (Yelena)"
+          },
+          "linkMode": "actor-level",
+          "managedBy": "ld-crimson-scaler",
+          "linkedClass": {
+            "identifier": "the-temporal-arcanist-yelena",
+            "name": "Temporal Arcanist (Yelena)"
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "veil-3",
+          "uuid": "Item.Pzh6wAcmRfHBaPCe",
+          "coreVersion": "13.351",
+          "systemId": "dnd5e",
+          "systemVersion": "5.2.5"
+        },
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "createdTime": 1763741799547,
+        "modifiedTime": 1773332292748,
+        "lastModifiedBy": "qPrQhMZ8YlHSgRVs"
+      }
+    },
+    {
+      "id": "Item.Mx1zkakgRkBRGWQi",
+      "name": "Chronoweave Robes",
+      "type": "equipment",
+      "system": {
+        "armor": {
+          "value": 11,
+          "dex": null
+        },
+        "damage": {
+          "base": {
+            "number": 0,
+            "denomination": 0,
+            "bonus": "",
+            "types": [],
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            }
+          },
+          "versatile": {
+            "types": [],
+            "custom": {
+              "enabled": false
+            },
+            "scaling": {
+              "number": 1
+            }
+          }
+        }
+      },
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "activity": []
+          }
+        },
+        "ld-crimson-scaler": {
+          "scaling": {
+            "enabled": true,
+            "classSpecific": true,
+            "profile": "default",
+            "tierModel": "rnk-crimson-baseline",
+            "version": 1,
+            "itemRole": "armor",
+            "classKey": "the-temporal-arcanist-yelena",
+            "base": {
+              "armorValue": 11
+            },
+            "className": "Temporal Arcanist (Yelena)"
+          },
+          "linkMode": "actor-level",
+          "managedBy": "ld-crimson-scaler",
+          "linkedClass": {
+            "identifier": "the-temporal-arcanist-yelena",
+            "name": "Temporal Arcanist (Yelena)"
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "veil-3",
+          "uuid": "Item.Mx1zkakgRkBRGWQi",
+          "coreVersion": "13.351",
+          "systemId": "dnd5e",
+          "systemVersion": "5.2.5"
+        },
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "createdTime": 1762958143134,
+        "modifiedTime": 1773332299792,
+        "lastModifiedBy": "qPrQhMZ8YlHSgRVs"
+      }
+    },
+    {
+      "id": "Item.wiQGhLVaedspB3dT",
+      "name": "Covenant Greatsword",
+      "type": "weapon",
+      "system": {
+        "armor": {},
+        "damage": {
+          "base": {
+            "number": 1,
+            "denomination": 10,
+            "bonus": "",
+            "types": [
+              "slashing"
+            ],
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            }
+          },
+          "versatile": {
+            "types": [],
+            "custom": {
+              "enabled": false
+            },
+            "scaling": {
+              "number": 1
+            }
+          }
+        }
+      },
+      "flags": {
+        "autoanimations": {
+          "override": true,
+          "animType": "melee",
+          "animName": "Unarmed",
+          "color": "Red"
+        },
+        "ld-crimson-scaler": {
+          "scaling": {
+            "enabled": true,
+            "classSpecific": true,
+            "profile": "default",
+            "tierModel": "rnk-crimson-baseline",
+            "version": 1,
+            "itemRole": "weapon",
+            "classKey": "the-crimson-covenant",
+            "base": {
+              "denomination": 10,
+              "number": 1
+            },
+            "className": "Crimson Covenant"
+          },
+          "linkMode": "actor-level",
+          "managedBy": "ld-crimson-scaler",
+          "linkedClass": {
+            "identifier": "the-crimson-covenant",
+            "name": "Crimson Covenant"
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "veil-3",
+          "uuid": "Item.wiQGhLVaedspB3dT",
+          "coreVersion": "13.351",
+          "systemId": "dnd5e",
+          "systemVersion": "5.2.5"
+        },
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.1.10",
+        "createdTime": 1763741762266,
+        "modifiedTime": 1763741762266,
+        "lastModifiedBy": "qPrQhMZ8YlHSgRVs"
+      }
+    },
+    {
+      "id": "Item.mqppSXzHCMdUfSCZ",
+      "name": "Covenant Warplate",
+      "type": "equipment",
+      "system": {
+        "armor": {
+          "value": 16,
+          "dex": null
+        },
+        "damage": {
+          "base": {
+            "number": 0,
+            "denomination": 0,
+            "bonus": "",
+            "types": [],
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            }
+          },
+          "versatile": {
+            "types": [],
+            "custom": {
+              "enabled": false
+            },
+            "scaling": {
+              "number": 1
+            }
+          }
+        }
+      },
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "activity": []
+          }
+        },
+        "ld-crimson-scaler": {
+          "scaling": {
+            "enabled": true,
+            "classSpecific": true,
+            "profile": "default",
+            "tierModel": "rnk-crimson-baseline",
+            "version": 1,
+            "itemRole": "armor",
+            "classKey": "the-crimson-covenant",
+            "base": {
+              "armorValue": 16
+            },
+            "className": "Crimson Covenant"
+          },
+          "linkMode": "actor-level",
+          "managedBy": "ld-crimson-scaler",
+          "linkedClass": {
+            "identifier": "the-crimson-covenant",
+            "name": "Crimson Covenant"
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "veil-3",
+          "uuid": "Item.mqppSXzHCMdUfSCZ",
+          "coreVersion": "13.351",
+          "systemId": "dnd5e",
+          "systemVersion": "5.2.5"
+        },
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "createdTime": 1762957299755,
+        "modifiedTime": 1773331818410,
+        "lastModifiedBy": "qPrQhMZ8YlHSgRVs"
+      }
+    },
+    {
+      "id": "Item.idmZw2hIi8pCljo8",
+      "name": "Crimson Mace",
+      "type": "weapon",
+      "system": {
+        "armor": {},
+        "damage": {
+          "base": {
+            "number": 1,
+            "denomination": 6,
+            "bonus": "",
+            "types": [
+              "bludgeoning"
+            ],
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            }
+          },
+          "versatile": {
+            "types": [],
+            "custom": {
+              "enabled": false
+            },
+            "scaling": {
+              "number": 1
+            }
+          }
+        }
+      },
+      "flags": {
+        "autoanimations": {
+          "override": true,
+          "animType": "melee",
+          "animName": "Mace",
+          "color": "Purple"
+        },
+        "dnd5e": {
+          "riders": {
+            "activity": []
+          }
+        },
+        "ld-crimson-scaler": {
+          "scaling": {
+            "enabled": true,
+            "classSpecific": true,
+            "profile": "default",
+            "tierModel": "rnk-crimson-baseline",
+            "version": 1,
+            "itemRole": "weapon",
+            "classKey": "the-crimson-blade",
+            "base": {
+              "denomination": 6,
+              "number": 1
+            },
+            "className": "Crimson Blade"
+          },
+          "linkMode": "actor-level",
+          "managedBy": "ld-crimson-scaler",
+          "linkedClass": {
+            "identifier": "the-crimson-blade",
+            "name": "Crimson Blade"
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "veil-3",
+          "uuid": "Item.idmZw2hIi8pCljo8",
+          "coreVersion": "13.351",
+          "systemId": "dnd5e",
+          "systemVersion": "5.2.5"
+        },
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "createdTime": 1763741781804,
+        "modifiedTime": 1773332143632,
+        "lastModifiedBy": "qPrQhMZ8YlHSgRVs"
+      }
+    },
+    {
+      "id": "Item.idmZw2hIi8pCljo8",
+      "name": "Crimson Plate",
+      "type": "equipment",
+      "system": {
+        "armor": {
+          "value": 16,
+          "dex": null
+        },
+        "damage": {
+          "base": {
+            "number": 1,
+            "denomination": 6,
+            "bonus": "",
+            "types": [
+              "bludgeoning"
+            ],
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            }
+          },
+          "versatile": {
+            "types": [],
+            "custom": {
+              "enabled": false
+            },
+            "scaling": {
+              "number": 1
+            }
+          }
+        }
+      },
+      "flags": {
+        "autoanimations": {
+          "override": true,
+          "animType": "melee",
+          "animName": "Mace",
+          "color": "Purple"
+        },
+        "dnd5e": {
+          "riders": {
+            "activity": []
+          }
+        },
+        "ld-crimson-scaler": {
+          "scaling": {
+            "enabled": true,
+            "classSpecific": true,
+            "profile": "default",
+            "tierModel": "rnk-crimson-baseline",
+            "version": 1,
+            "itemRole": "armor",
+            "classKey": "the-crimson-blade",
+            "base": {
+              "armorValue": 16
+            },
+            "className": "Crimson Blade"
+          },
+          "linkMode": "actor-level",
+          "managedBy": "ld-crimson-scaler",
+          "linkedClass": {
+            "identifier": "the-crimson-blade",
+            "name": "Crimson Blade"
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "veil-3",
+          "uuid": "Item.idmZw2hIi8pCljo8",
+          "coreVersion": "13.351",
+          "systemId": "dnd5e",
+          "systemVersion": "5.2.5"
+        },
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "createdTime": 1763741781804,
+        "modifiedTime": 1773332143632,
+        "lastModifiedBy": "qPrQhMZ8YlHSgRVs"
+      }
+    },
+    {
+      "id": "Item.nNaaXXPjtHSC0szQ",
+      "name": "Disciplinarian's Authority Armor",
+      "type": "equipment",
+      "system": {
+        "armor": {
+          "value": 11,
+          "dex": null
+        },
+        "damage": {
+          "base": {
+            "number": 0,
+            "denomination": 0,
+            "bonus": "",
+            "types": [],
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            }
+          },
+          "versatile": {
+            "types": [],
+            "custom": {
+              "enabled": false
+            },
+            "scaling": {
+              "number": 1
+            }
+          }
+        }
+      },
+      "flags": {
+        "ld-crimson-scaler": {
+          "scaling": {
+            "enabled": true,
+            "classSpecific": true,
+            "profile": "default",
+            "tierModel": "rnk-crimson-baseline",
+            "version": 1,
+            "itemRole": "armor",
+            "classKey": "the-silent-disciplinarian",
+            "base": {
+              "armorValue": 11
+            },
+            "className": "Silent Disciplinarian"
+          },
+          "linkMode": "actor-level",
+          "managedBy": "ld-crimson-scaler",
+          "linkedClass": {
+            "identifier": "the-silent-disciplinarian",
+            "name": "Silent Disciplinarian"
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "veil-3",
+          "uuid": "Item.nNaaXXPjtHSC0szQ",
+          "coreVersion": "13.351",
+          "systemId": "dnd5e",
+          "systemVersion": "5.2.5"
+        },
+        "coreVersion": "13.350",
+        "systemId": "dnd5e",
+        "systemVersion": "5.1.10",
+        "createdTime": 1762957901237,
+        "modifiedTime": 1762957901237,
+        "lastModifiedBy": "qPrQhMZ8YlHSgRVs"
+      }
+    },
+    {
+      "id": "Item.qtaDgqvetNTeYmrb",
+      "name": "Disciplinarian's Rod",
+      "type": "weapon",
+      "system": {
+        "armor": {},
+        "damage": {
+          "base": {
+            "number": 1,
+            "denomination": 6,
+            "bonus": "",
+            "types": [
+              "bludgeoning"
+            ],
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            }
+          },
+          "versatile": {
+            "types": [],
+            "custom": {
+              "enabled": false
+            },
+            "scaling": {
+              "number": 1
+            }
+          }
+        }
+      },
+      "flags": {
+        "autoanimations": {
+          "override": true,
+          "animType": "melee",
+          "animName": "Sword",
+          "color": "Blue"
+        },
+        "dnd5e": {
+          "riders": {
+            "activity": []
+          }
+        },
+        "ld-crimson-scaler": {
+          "scaling": {
+            "enabled": true,
+            "classSpecific": true,
+            "profile": "default",
+            "tierModel": "rnk-crimson-baseline",
+            "version": 1,
+            "itemRole": "weapon",
+            "classKey": "the-silent-disciplinarian",
+            "base": {
+              "denomination": 6,
+              "number": 1
+            },
+            "className": "Silent Disciplinarian"
+          },
+          "linkMode": "actor-level",
+          "managedBy": "ld-crimson-scaler",
+          "linkedClass": {
+            "identifier": "the-silent-disciplinarian",
+            "name": "Silent Disciplinarian"
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "veil-3",
+          "uuid": "Item.qtaDgqvetNTeYmrb",
+          "coreVersion": "13.351",
+          "systemId": "dnd5e",
+          "systemVersion": "5.2.5"
+        },
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "createdTime": 1763741798368,
+        "modifiedTime": 1773332200638,
+        "lastModifiedBy": "qPrQhMZ8YlHSgRVs"
+      }
+    },
+    {
+      "id": "Item.19OMBbNDsUGcD7cv",
+      "name": "Echo Blade",
+      "type": "weapon",
+      "system": {
+        "armor": {},
+        "damage": {
+          "base": {
+            "number": 1,
+            "denomination": 8,
+            "bonus": "",
+            "types": [
+              "slashing"
+            ],
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            }
+          },
+          "versatile": {
+            "types": [],
+            "custom": {
+              "enabled": false
+            },
+            "scaling": {
+              "number": 1
+            }
+          }
+        }
+      },
+      "flags": {
+        "autoanimations": {
+          "override": true,
+          "animType": "melee",
+          "animName": "Sword",
+          "color": "Red"
+        },
+        "dnd5e": {
+          "riders": {
+            "activity": []
+          }
+        },
+        "ld-crimson-scaler": {
+          "scaling": {
+            "enabled": true,
+            "classSpecific": true,
+            "profile": "default",
+            "tierModel": "rnk-crimson-baseline",
+            "version": 1,
+            "itemRole": "weapon",
+            "classKey": "the-echoborn",
+            "base": {
+              "denomination": 8,
+              "number": 1
+            },
+            "className": "Echoborn"
+          },
+          "linkMode": "actor-level",
+          "managedBy": "ld-crimson-scaler",
+          "linkedClass": {
+            "identifier": "the-echoborn",
+            "name": "Echoborn"
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "veil-3",
+          "uuid": "Item.19OMBbNDsUGcD7cv",
+          "coreVersion": "13.351",
+          "systemId": "dnd5e",
+          "systemVersion": "5.2.5"
+        },
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "createdTime": 1763741764920,
+        "modifiedTime": 1773331993224,
+        "lastModifiedBy": "qPrQhMZ8YlHSgRVs"
+      }
+    },
+    {
+      "id": "Item.RTA5Ad2hSIaadjHl",
+      "name": "Echo Plate",
+      "type": "equipment",
+      "system": {
+        "armor": {
+          "value": 16,
+          "dex": null
+        },
+        "damage": {
+          "base": {
+            "number": 0,
+            "denomination": 0,
+            "bonus": "",
+            "types": [],
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            }
+          },
+          "versatile": {
+            "types": [],
+            "custom": {
+              "enabled": false
+            },
+            "scaling": {
+              "number": 1
+            }
+          }
+        }
+      },
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "activity": []
+          }
+        },
+        "ld-crimson-scaler": {
+          "scaling": {
+            "enabled": true,
+            "classSpecific": true,
+            "profile": "default",
+            "tierModel": "rnk-crimson-baseline",
+            "version": 1,
+            "itemRole": "armor",
+            "classKey": "the-echoborn",
+            "base": {
+              "armorValue": 16
+            },
+            "className": "Echoborn"
+          },
+          "linkMode": "actor-level",
+          "managedBy": "ld-crimson-scaler",
+          "linkedClass": {
+            "identifier": "the-echoborn",
+            "name": "Echoborn"
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "veil-3",
+          "uuid": "Item.RTA5Ad2hSIaadjHl",
+          "coreVersion": "13.351",
+          "systemId": "dnd5e",
+          "systemVersion": "5.2.5"
+        },
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "createdTime": 1762957533854,
+        "modifiedTime": 1773332002879,
+        "lastModifiedBy": "qPrQhMZ8YlHSgRVs"
+      }
+    },
+    {
+      "id": "Item.l0QrHhWx6X0uKgnb",
+      "name": "Fleshbound Blade",
+      "type": "weapon",
+      "system": {
+        "armor": {
+          "value": 12,
+          "dex": 2
+        },
+        "damage": {
+          "base": {
+            "number": 1,
+            "denomination": 8,
+            "bonus": "",
+            "types": [
+              "slashing"
+            ],
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            }
+          },
+          "versatile": {
+            "types": [],
+            "custom": {
+              "enabled": false
+            },
+            "scaling": {
+              "number": 1
+            }
+          }
+        }
+      },
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "activity": []
+          }
+        },
+        "ld-crimson-scaler": {
+          "scaling": {
+            "enabled": true,
+            "classSpecific": true,
+            "profile": "default",
+            "tierModel": "rnk-crimson-baseline",
+            "version": 1,
+            "itemRole": "weapon",
+            "classKey": "the-flesh-rager",
+            "base": {
+              "denomination": 8,
+              "number": 1
+            },
+            "className": "Flesh-Rager"
+          },
+          "linkMode": "actor-level",
+          "managedBy": "ld-crimson-scaler",
+          "linkedClass": {
+            "identifier": "the-flesh-rager",
+            "name": "Flesh-Rager"
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "veil-3",
+          "uuid": "Item.l0QrHhWx6X0uKgnb",
+          "coreVersion": "13.351",
+          "systemId": "dnd5e",
+          "systemVersion": "5.2.5"
+        },
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "createdTime": 1762957577215,
+        "modifiedTime": 1773332027481,
+        "lastModifiedBy": "qPrQhMZ8YlHSgRVs"
+      }
+    },
+    {
+      "id": "Item.l0QrHhWx6X0uKgnb",
+      "name": "Fleshbound Hide",
+      "type": "equipment",
+      "system": {
+        "armor": {
+          "value": 14,
+          "dex": null
+        },
+        "damage": {
+          "base": {
+            "number": 0,
+            "denomination": 0,
+            "bonus": "",
+            "types": [],
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            }
+          },
+          "versatile": {
+            "types": [],
+            "custom": {
+              "enabled": false
+            },
+            "scaling": {
+              "number": 1
+            }
+          }
+        }
+      },
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "activity": []
+          }
+        },
+        "ld-crimson-scaler": {
+          "scaling": {
+            "enabled": true,
+            "classSpecific": true,
+            "profile": "default",
+            "tierModel": "rnk-crimson-baseline",
+            "version": 1,
+            "itemRole": "armor",
+            "classKey": "the-flesh-rager",
+            "base": {
+              "armorValue": 14
+            },
+            "className": "Flesh-Rager"
+          },
+          "linkMode": "actor-level",
+          "managedBy": "ld-crimson-scaler",
+          "linkedClass": {
+            "identifier": "the-flesh-rager",
+            "name": "Flesh-Rager"
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "veil-3",
+          "uuid": "Item.l0QrHhWx6X0uKgnb",
+          "coreVersion": "13.351",
+          "systemId": "dnd5e",
+          "systemVersion": "5.2.5"
+        },
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "createdTime": 1762957577215,
+        "modifiedTime": 1773332027481,
+        "lastModifiedBy": "qPrQhMZ8YlHSgRVs"
+      }
+    },
+    {
+      "id": "Item.wXSpdbbUV74PriJ6",
+      "name": "Forgemaster's Apron",
+      "type": "equipment",
+      "system": {
+        "armor": {
+          "value": 11,
+          "dex": null
+        },
+        "damage": {
+          "base": {
+            "number": 0,
+            "denomination": 0,
+            "bonus": "",
+            "types": [],
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            }
+          },
+          "versatile": {
+            "types": [],
+            "custom": {
+              "enabled": false
+            },
+            "scaling": {
+              "number": 1
+            }
+          }
+        }
+      },
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "activity": []
+          }
+        },
+        "ld-crimson-scaler": {
+          "scaling": {
+            "enabled": true,
+            "classSpecific": true,
+            "profile": "default",
+            "tierModel": "rnk-crimson-baseline",
+            "version": 1,
+            "itemRole": "armor",
+            "classKey": "the-bloodsmith",
+            "base": {
+              "armorValue": 11
+            },
+            "className": "Bloodsmith"
+          },
+          "linkMode": "actor-level",
+          "managedBy": "ld-crimson-scaler",
+          "linkedClass": {
+            "identifier": "the-bloodsmith",
+            "name": "Bloodsmith"
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "veil-3",
+          "uuid": "Item.wXSpdbbUV74PriJ6",
+          "coreVersion": "13.351",
+          "systemId": "dnd5e",
+          "systemVersion": "5.2.5"
+        },
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "createdTime": 1763746235112,
+        "modifiedTime": 1773331707597,
+        "lastModifiedBy": "qPrQhMZ8YlHSgRVs"
+      }
+    },
+    {
+      "id": "Item.WRbWCyKkYXuLgO3n",
+      "name": "Forgemaster's Hammer",
+      "type": "weapon",
+      "system": {
+        "armor": {},
+        "damage": {
+          "base": {
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "types": [
+              "bludgeoning"
+            ],
+            "scaling": {
+              "number": 1
+            },
+            "number": 1,
+            "denomination": 6,
+            "bonus": ""
+          },
+          "versatile": {
+            "custom": {
+              "enabled": false
+            },
+            "types": [],
+            "scaling": {
+              "number": 1
+            }
+          }
+        }
+      },
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "activity": []
+          }
+        },
+        "ld-crimson-scaler": {
+          "scaling": {
+            "enabled": true,
+            "classSpecific": true,
+            "profile": "default",
+            "tierModel": "rnk-crimson-baseline",
+            "version": 1,
+            "itemRole": "weapon",
+            "classKey": "the-bloodsmith",
+            "base": {
+              "denomination": 6,
+              "number": 1
+            },
+            "className": "Bloodsmith"
+          },
+          "linkMode": "actor-level",
+          "managedBy": "ld-crimson-scaler",
+          "linkedClass": {
+            "identifier": "the-bloodsmith",
+            "name": "Bloodsmith"
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "veil-3",
+          "uuid": "Item.WRbWCyKkYXuLgO3n",
+          "coreVersion": "13.351",
+          "systemId": "dnd5e",
+          "systemVersion": "5.2.5"
+        },
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "createdTime": 1763746911946,
+        "modifiedTime": 1773331715444,
+        "lastModifiedBy": "qPrQhMZ8YlHSgRVs"
+      }
+    },
+    {
+      "id": "Item.N39IcVPThOb1iHx8",
+      "name": "Guardian's Maul",
+      "type": "weapon",
+      "system": {
+        "armor": {},
+        "damage": {
+          "base": {
+            "number": 1,
+            "denomination": 10,
+            "bonus": "",
+            "types": [
+              "bludgeoning"
+            ],
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            }
+          },
+          "versatile": {
+            "types": [],
+            "custom": {
+              "enabled": false
+            },
+            "scaling": {
+              "number": 1
+            }
+          }
+        }
+      },
+      "flags": {
+        "autoanimations": {
+          "override": true,
+          "animType": "melee",
+          "animName": "Sword",
+          "color": "Blue"
+        },
+        "dnd5e": {
+          "riders": {
+            "activity": []
+          }
+        },
+        "ld-crimson-scaler": {
+          "scaling": {
+            "enabled": true,
+            "classSpecific": true,
+            "profile": "default",
+            "tierModel": "rnk-crimson-baseline",
+            "version": 1,
+            "itemRole": "weapon",
+            "classKey": "the-stone-kissed-guardian-pyne",
+            "base": {
+              "denomination": 10,
+              "number": 1
+            },
+            "className": "Stone-Kissed Guardian (Pyne)"
+          },
+          "linkMode": "actor-level",
+          "managedBy": "ld-crimson-scaler",
+          "linkedClass": {
+            "identifier": "the-stone-kissed-guardian-pyne",
+            "name": "Stone-Kissed Guardian (Pyne)"
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "veil-3",
+          "uuid": "Item.N39IcVPThOb1iHx8",
+          "coreVersion": "13.351",
+          "systemId": "dnd5e",
+          "systemVersion": "5.2.5"
+        },
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "createdTime": 1763741798736,
+        "modifiedTime": 1773332221045,
+        "lastModifiedBy": "qPrQhMZ8YlHSgRVs"
+      }
+    },
+    {
+      "id": "Item.uCE4mSaV9XKXOYOX",
+      "name": "Guardian's Stone Plate",
+      "type": "equipment",
+      "system": {
+        "armor": {
+          "value": 16,
+          "dex": null
+        },
+        "damage": {
+          "base": {
+            "number": 0,
+            "denomination": 0,
+            "bonus": "",
+            "types": [],
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            }
+          },
+          "versatile": {
+            "types": [],
+            "custom": {
+              "enabled": false
+            },
+            "scaling": {
+              "number": 1
+            }
+          }
+        }
+      },
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "activity": []
+          }
+        },
+        "ld-crimson-scaler": {
+          "scaling": {
+            "enabled": true,
+            "classSpecific": true,
+            "profile": "default",
+            "tierModel": "rnk-crimson-baseline",
+            "version": 1,
+            "itemRole": "armor",
+            "classKey": "the-stone-kissed-guardian-pyne",
+            "base": {
+              "armorValue": 16
+            },
+            "className": "Stone-Kissed Guardian (Pyne)"
+          },
+          "linkMode": "actor-level",
+          "managedBy": "ld-crimson-scaler",
+          "linkedClass": {
+            "identifier": "the-stone-kissed-guardian-pyne",
+            "name": "Stone-Kissed Guardian (Pyne)"
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "veil-3",
+          "uuid": "Item.uCE4mSaV9XKXOYOX",
+          "coreVersion": "13.351",
+          "systemId": "dnd5e",
+          "systemVersion": "5.2.5"
+        },
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "createdTime": 1763741799009,
+        "modifiedTime": 1773332227414,
+        "lastModifiedBy": "qPrQhMZ8YlHSgRVs"
+      }
+    },
+    {
+      "id": "Item.7Dkx4WCK8ZnoUucS",
+      "name": "Krusader's Warhammer",
+      "type": "weapon",
+      "system": {
+        "armor": {},
+        "damage": {
+          "base": {
+            "number": 1,
+            "denomination": 8,
+            "bonus": "",
+            "types": [
+              "bludgeoning"
+            ],
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            }
+          },
+          "versatile": {
+            "types": [],
+            "custom": {
+              "enabled": false
+            },
+            "scaling": {
+              "number": 1
+            }
+          }
+        }
+      },
+      "flags": {
+        "autoanimations": {
+          "override": true,
+          "animType": "melee",
+          "animName": "Mace",
+          "color": "Purple"
+        },
+        "dnd5e": {
+          "riders": {
+            "activity": []
+          }
+        },
+        "ld-crimson-scaler": {
+          "scaling": {
+            "enabled": true,
+            "classSpecific": true,
+            "profile": "default",
+            "tierModel": "rnk-crimson-baseline",
+            "version": 1,
+            "itemRole": "weapon",
+            "classKey": "the-kasimir-krusader",
+            "base": {
+              "denomination": 8,
+              "number": 1
+            },
+            "className": "Kasimir Krusader"
+          },
+          "linkMode": "actor-level",
+          "managedBy": "ld-crimson-scaler",
+          "linkedClass": {
+            "identifier": "the-kasimir-krusader",
+            "name": "Kasimir Krusader"
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "veil-3",
+          "uuid": "Item.7Dkx4WCK8ZnoUucS",
+          "coreVersion": "13.351",
+          "systemId": "dnd5e",
+          "systemVersion": "5.2.5"
+        },
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "createdTime": 1763741779664,
+        "modifiedTime": 1773332058462,
+        "lastModifiedBy": "qPrQhMZ8YlHSgRVs"
+      }
+    },
+    {
+      "id": "Item.bF3KJwtWEA7fg0Ax",
+      "name": "Krusader's Warplate",
+      "type": "equipment",
+      "system": {
+        "armor": {
+          "value": 16,
+          "dex": null
+        },
+        "damage": {
+          "base": {
+            "number": 0,
+            "denomination": 0,
+            "bonus": "",
+            "types": [],
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            }
+          },
+          "versatile": {
+            "types": [],
+            "custom": {
+              "enabled": false
+            },
+            "scaling": {
+              "number": 1
+            }
+          }
+        }
+      },
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "activity": []
+          }
+        },
+        "ld-crimson-scaler": {
+          "scaling": {
+            "enabled": true,
+            "classSpecific": true,
+            "profile": "default",
+            "tierModel": "rnk-crimson-baseline",
+            "version": 1,
+            "itemRole": "armor",
+            "classKey": "the-kasimir-krusader",
+            "base": {
+              "armorValue": 16
+            },
+            "className": "Kasimir Krusader"
+          },
+          "linkMode": "actor-level",
+          "managedBy": "ld-crimson-scaler",
+          "linkedClass": {
+            "identifier": "the-kasimir-krusader",
+            "name": "Kasimir Krusader"
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "veil-3",
+          "uuid": "Item.bF3KJwtWEA7fg0Ax",
+          "coreVersion": "13.351",
+          "systemId": "dnd5e",
+          "systemVersion": "5.2.5"
+        },
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "createdTime": 1763741779919,
+        "modifiedTime": 1773332065352,
+        "lastModifiedBy": "qPrQhMZ8YlHSgRVs"
+      }
+    },
+    {
+      "id": "Item.zvIgItFOcV9Jkjza",
+      "name": "Liberator's Blade",
+      "type": "weapon",
+      "system": {
+        "armor": {},
+        "damage": {
+          "base": {
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "types": [
+              "slashing"
+            ],
+            "scaling": {
+              "number": 1
+            },
+            "number": 1,
+            "denomination": 8,
+            "bonus": ""
+          },
+          "versatile": {
+            "custom": {
+              "enabled": false
+            },
+            "types": [],
+            "scaling": {
+              "number": 1
+            }
+          }
+        }
+      },
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "activity": []
+          }
+        },
+        "ld-crimson-scaler": {
+          "scaling": {
+            "enabled": true,
+            "classSpecific": true,
+            "profile": "default",
+            "tierModel": "rnk-crimson-baseline",
+            "version": 1,
+            "itemRole": "weapon",
+            "classKey": "the-chainbreaker-infiltrator-daria",
+            "base": {
+              "denomination": 8,
+              "number": 1
+            },
+            "className": "Chainbreaker Infiltrator (Daria)"
+          },
+          "linkMode": "actor-level",
+          "managedBy": "ld-crimson-scaler",
+          "linkedClass": {
+            "identifier": "the-chainbreaker-infiltrator-daria",
+            "name": "Chainbreaker Infiltrator (Daria)"
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "veil-3",
+          "uuid": "Item.zvIgItFOcV9Jkjza",
+          "coreVersion": "13.351",
+          "systemId": "dnd5e",
+          "systemVersion": "5.2.5"
+        },
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "createdTime": 1763746911946,
+        "modifiedTime": 1773331750348,
+        "lastModifiedBy": "qPrQhMZ8YlHSgRVs"
+      }
+    },
+    {
+      "id": "Item.TLFHh5usy9rKoF2N",
+      "name": "Liberator's Leathers",
+      "type": "equipment",
+      "system": {
+        "armor": {
+          "value": 11,
+          "dex": null
+        },
+        "damage": {
+          "base": {
+            "number": 0,
+            "denomination": 0,
+            "bonus": "",
+            "types": [],
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            }
+          },
+          "versatile": {
+            "types": [],
+            "custom": {
+              "enabled": false
+            },
+            "scaling": {
+              "number": 1
+            }
+          }
+        }
+      },
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "activity": []
+          }
+        },
+        "ld-crimson-scaler": {
+          "scaling": {
+            "enabled": true,
+            "classSpecific": true,
+            "profile": "default",
+            "tierModel": "rnk-crimson-baseline",
+            "version": 1,
+            "itemRole": "armor",
+            "classKey": "the-chainbreaker-infiltrator-daria",
+            "base": {
+              "armorValue": 11
+            },
+            "className": "Chainbreaker Infiltrator (Daria)"
+          },
+          "linkMode": "actor-level",
+          "managedBy": "ld-crimson-scaler",
+          "linkedClass": {
+            "identifier": "the-chainbreaker-infiltrator-daria",
+            "name": "Chainbreaker Infiltrator (Daria)"
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "veil-3",
+          "uuid": "Item.TLFHh5usy9rKoF2N",
+          "coreVersion": "13.351",
+          "systemId": "dnd5e",
+          "systemVersion": "5.2.5"
+        },
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "createdTime": 1763746911946,
+        "modifiedTime": 1773331758216,
+        "lastModifiedBy": "qPrQhMZ8YlHSgRVs"
+      }
+    },
+    {
+      "id": "Item.vtWIOocQUHtPi6dQ",
+      "name": "Living Bark Armor",
+      "type": "equipment",
+      "system": {
+        "armor": {
+          "value": 11,
+          "dex": null
+        },
+        "damage": {
+          "base": {
+            "number": 0,
+            "denomination": 0,
+            "bonus": "",
+            "types": [],
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            }
+          },
+          "versatile": {
+            "types": [],
+            "custom": {
+              "enabled": false
+            },
+            "scaling": {
+              "number": 1
+            }
+          }
+        }
+      },
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "activity": []
+          }
+        },
+        "ld-crimson-scaler": {
+          "scaling": {
+            "enabled": true,
+            "classSpecific": true,
+            "profile": "default",
+            "tierModel": "rnk-crimson-baseline",
+            "version": 1,
+            "itemRole": "armor",
+            "classKey": "the-veridian-warden-daria",
+            "base": {
+              "armorValue": 11
+            },
+            "className": "Veridian Warden (Daria)"
+          },
+          "linkMode": "actor-level",
+          "managedBy": "ld-crimson-scaler",
+          "linkedClass": {
+            "identifier": "the-veridian-warden-daria",
+            "name": "Veridian Warden (Daria)"
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "veil-3",
+          "uuid": "Item.vtWIOocQUHtPi6dQ",
+          "coreVersion": "13.351",
+          "systemId": "dnd5e",
+          "systemVersion": "5.2.5"
+        },
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "createdTime": 1762958317954,
+        "modifiedTime": 1773332395479,
+        "lastModifiedBy": "qPrQhMZ8YlHSgRVs"
+      }
+    },
+    {
+      "id": "Item.vtWIOocQUHtPi6dQ",
+      "name": "Living Blade",
+      "type": "weapon",
+      "system": {
+        "armor": {
+          "value": 14,
+          "dex": 2
+        },
+        "damage": {
+          "base": {
+            "number": 1,
+            "denomination": 8,
+            "bonus": "",
+            "types": [
+              "slashing"
+            ],
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            }
+          },
+          "versatile": {
+            "types": [],
+            "custom": {
+              "enabled": false
+            },
+            "scaling": {
+              "number": 1
+            }
+          }
+        }
+      },
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "activity": []
+          }
+        },
+        "ld-crimson-scaler": {
+          "scaling": {
+            "enabled": true,
+            "classSpecific": true,
+            "profile": "default",
+            "tierModel": "rnk-crimson-baseline",
+            "version": 1,
+            "itemRole": "weapon",
+            "classKey": "the-crimson-blade",
+            "base": {
+              "denomination": 8,
+              "number": 1
+            },
+            "className": "Crimson Blade"
+          },
+          "linkMode": "actor-level",
+          "managedBy": "ld-crimson-scaler",
+          "linkedClass": {
+            "identifier": "the-crimson-blade",
+            "name": "Crimson Blade"
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "veil-3",
+          "uuid": "Item.vtWIOocQUHtPi6dQ",
+          "coreVersion": "13.351",
+          "systemId": "dnd5e",
+          "systemVersion": "5.2.5"
+        },
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "createdTime": 1762958317954,
+        "modifiedTime": 1773332395479,
+        "lastModifiedBy": "qPrQhMZ8YlHSgRVs"
+      }
+    },
+    {
+      "id": null,
+      "name": "Memory Weaver's Blade",
+      "type": "weapon",
+      "system": {
+        "armor": {},
+        "damage": {
+          "base": {
+            "number": 1,
+            "denomination": 8,
+            "bonus": "",
+            "types": [
+              "slashing"
+            ],
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            }
+          },
+          "versatile": {
+            "types": [],
+            "custom": {
+              "enabled": false
+            },
+            "scaling": {
+              "number": 1
+            }
+          }
+        }
+      },
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "activity": []
+          }
+        },
+        "ld-crimson-scaler": {
+          "scaling": {
+            "enabled": true,
+            "classSpecific": true,
+            "profile": "default",
+            "tierModel": "rnk-crimson-baseline",
+            "version": 1,
+            "itemRole": "weapon",
+            "classKey": "the-crimson-weaver-lyssa",
+            "base": {
+              "denomination": 8,
+              "number": 1
+            },
+            "className": "Crimson Weaver (Lyssa)"
+          },
+          "linkMode": "actor-level",
+          "managedBy": "ld-crimson-scaler",
+          "linkedClass": {
+            "identifier": "the-crimson-weaver-lyssa",
+            "name": "Crimson Weaver (Lyssa)"
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "id": null,
+      "name": "Memory Weaver's Mindweave Armor",
+      "type": "equipment",
+      "system": {
+        "armor": {
+          "value": 14,
+          "dex": 2
+        },
+        "damage": {
+          "base": {
+            "number": 0,
+            "denomination": 0,
+            "bonus": "",
+            "types": [],
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            }
+          },
+          "versatile": {
+            "types": [],
+            "custom": {
+              "enabled": false
+            },
+            "scaling": {
+              "number": 1
+            }
+          }
+        }
+      },
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "activity": []
+          }
+        },
+        "ld-crimson-scaler": {
+          "scaling": {
+            "enabled": true,
+            "classSpecific": true,
+            "profile": "default",
+            "tierModel": "rnk-crimson-baseline",
+            "version": 1,
+            "itemRole": "armor",
+            "classKey": "memory-weaver",
+            "base": {
+              "armorValue": 14
+            },
+            "className": "Memory Weaver"
+          },
+          "linkMode": "actor-level",
+          "managedBy": "ld-crimson-scaler",
+          "linkedClass": {
+            "identifier": "memory-weaver",
+            "name": "Memory Weaver"
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "id": "Item.ztdWlaPZHLhhQvxJ",
+      "name": "Mindblade",
+      "type": "weapon",
+      "system": {
+        "armor": {},
+        "damage": {
+          "base": {
+            "number": 1,
+            "denomination": 8,
+            "bonus": "",
+            "types": [
+              "slashing"
+            ],
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            }
+          },
+          "versatile": {
+            "types": [],
+            "custom": {
+              "enabled": false
+            },
+            "scaling": {
+              "number": 1
+            }
+          }
+        }
+      },
+      "flags": {
+        "autoanimations": {
+          "override": true,
+          "animType": "melee",
+          "animName": "Sword",
+          "color": "Blue"
+        },
+        "dnd5e": {
+          "riders": {
+            "activity": []
+          }
+        },
+        "ld-crimson-scaler": {
+          "scaling": {
+            "enabled": true,
+            "classSpecific": true,
+            "profile": "default",
+            "tierModel": "rnk-crimson-baseline",
+            "version": 1,
+            "itemRole": "weapon",
+            "classKey": "memory-weaver",
+            "base": {
+              "denomination": 8,
+              "number": 1
+            },
+            "className": "Memory Weaver"
+          },
+          "linkMode": "actor-level",
+          "managedBy": "ld-crimson-scaler",
+          "linkedClass": {
+            "identifier": "memory-weaver",
+            "name": "Memory Weaver"
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "veil-3",
+          "uuid": "Item.ztdWlaPZHLhhQvxJ",
+          "coreVersion": "13.351",
+          "systemId": "dnd5e",
+          "systemVersion": "5.2.5"
+        },
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "createdTime": 1763741801135,
+        "modifiedTime": 1773332414798,
+        "lastModifiedBy": "qPrQhMZ8YlHSgRVs"
+      }
+    },
+    {
+      "id": "Item.D5gnZnPHpNNDFW1h",
+      "name": "Mindweave Armor",
+      "type": "equipment",
+      "system": {
+        "armor": {
+          "value": 11,
+          "dex": null
+        },
+        "damage": {
+          "base": {
+            "number": 0,
+            "denomination": 0,
+            "bonus": "",
+            "types": [],
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            }
+          },
+          "versatile": {
+            "types": [],
+            "custom": {
+              "enabled": false
+            },
+            "scaling": {
+              "number": 1
+            }
+          }
+        }
+      },
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "activity": []
+          }
+        },
+        "ld-crimson-scaler": {
+          "scaling": {
+            "enabled": true,
+            "classSpecific": true,
+            "profile": "default",
+            "tierModel": "rnk-crimson-baseline",
+            "version": 1,
+            "itemRole": "armor",
+            "classKey": "memory-weaver",
+            "base": {
+              "armorValue": 11
+            },
+            "className": "Memory Weaver"
+          },
+          "linkMode": "actor-level",
+          "managedBy": "ld-crimson-scaler",
+          "linkedClass": {
+            "identifier": "memory-weaver",
+            "name": "Memory Weaver"
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "veil-3",
+          "uuid": "Item.D5gnZnPHpNNDFW1h",
+          "coreVersion": "13.351",
+          "systemId": "dnd5e",
+          "systemVersion": "5.2.5"
+        },
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "createdTime": 1762958364403,
+        "modifiedTime": 1773332422308,
+        "lastModifiedBy": "qPrQhMZ8YlHSgRVs"
+      }
+    },
+    {
+      "id": "Item.yaPIF51zEaluHhyj",
+      "name": "Nightstalker Blade",
+      "type": "weapon",
+      "system": {
+        "armor": {
+          "value": 11,
+          "dex": null
+        },
+        "damage": {
+          "base": {
+            "number": 1,
+            "denomination": 8,
+            "bonus": "",
+            "types": [
+              "slashing"
+            ],
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            }
+          },
+          "versatile": {
+            "types": [],
+            "custom": {
+              "enabled": false
+            },
+            "scaling": {
+              "number": 1
+            }
+          }
+        }
+      },
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "activity": []
+          }
+        },
+        "ld-crimson-scaler": {
+          "scaling": {
+            "enabled": true,
+            "classSpecific": true,
+            "profile": "default",
+            "tierModel": "rnk-crimson-baseline",
+            "version": 1,
+            "itemRole": "weapon",
+            "classKey": "the-shadow-stalker",
+            "base": {
+              "denomination": 8,
+              "number": 1
+            },
+            "className": "Shadow Stalker"
+          },
+          "linkMode": "actor-level",
+          "managedBy": "ld-crimson-scaler",
+          "linkedClass": {
+            "identifier": "the-shadow-stalker",
+            "name": "Shadow Stalker"
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "veil-3",
+          "uuid": "Item.yaPIF51zEaluHhyj",
+          "coreVersion": "13.351",
+          "systemId": "dnd5e",
+          "systemVersion": "5.2.5"
+        },
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "createdTime": 1762957851454,
+        "modifiedTime": 1773332174542,
+        "lastModifiedBy": "qPrQhMZ8YlHSgRVs"
+      }
+    },
+    {
+      "id": "Item.yaPIF51zEaluHhyj",
+      "name": "Nightstalker Leathers",
+      "type": "equipment",
+      "system": {
+        "armor": {
+          "value": 11,
+          "dex": null
+        },
+        "damage": {
+          "base": {
+            "number": 0,
+            "denomination": 0,
+            "bonus": "",
+            "types": [],
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            }
+          },
+          "versatile": {
+            "types": [],
+            "custom": {
+              "enabled": false
+            },
+            "scaling": {
+              "number": 1
+            }
+          }
+        }
+      },
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "activity": []
+          }
+        },
+        "ld-crimson-scaler": {
+          "scaling": {
+            "enabled": true,
+            "classSpecific": true,
+            "profile": "default",
+            "tierModel": "rnk-crimson-baseline",
+            "version": 1,
+            "itemRole": "armor",
+            "classKey": "the-shadow-stalker",
+            "base": {
+              "armorValue": 11
+            },
+            "className": "Shadow Stalker"
+          },
+          "linkMode": "actor-level",
+          "managedBy": "ld-crimson-scaler",
+          "linkedClass": {
+            "identifier": "the-shadow-stalker",
+            "name": "Shadow Stalker"
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "veil-3",
+          "uuid": "Item.yaPIF51zEaluHhyj",
+          "coreVersion": "13.351",
+          "systemId": "dnd5e",
+          "systemVersion": "5.2.5"
+        },
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "createdTime": 1762957851454,
+        "modifiedTime": 1773332174542,
+        "lastModifiedBy": "qPrQhMZ8YlHSgRVs"
+      }
+    },
+    {
+      "id": "Item.Vv0JTpaGly7h8H6y",
+      "name": "Plague Blade",
+      "type": "weapon",
+      "system": {
+        "armor": {
+          "value": 18,
+          "dex": 0
+        },
+        "damage": {
+          "base": {
+            "number": 1,
+            "denomination": 8,
+            "bonus": "",
+            "types": [
+              "slashing"
+            ],
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            }
+          },
+          "versatile": {
+            "types": [],
+            "custom": {
+              "enabled": false
+            },
+            "scaling": {
+              "number": 1
+            }
+          }
+        }
+      },
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "activity": []
+          }
+        },
+        "ld-crimson-scaler": {
+          "scaling": {
+            "enabled": true,
+            "classSpecific": true,
+            "profile": "default",
+            "tierModel": "rnk-crimson-baseline",
+            "version": 1,
+            "itemRole": "weapon",
+            "classKey": "the-plague-harbinger-yelena",
+            "base": {
+              "denomination": 8,
+              "number": 1
+            },
+            "className": "Plague Harbinger (Yelena)"
+          },
+          "linkMode": "actor-level",
+          "managedBy": "ld-crimson-scaler",
+          "linkedClass": {
+            "identifier": "the-plague-harbinger-yelena",
+            "name": "Plague Harbinger (Yelena)"
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "veil-3",
+          "uuid": "Item.Vv0JTpaGly7h8H6y",
+          "coreVersion": "13.351",
+          "systemId": "dnd5e",
+          "systemVersion": "5.2.5"
+        },
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "createdTime": 1763745840934,
+        "modifiedTime": 1773331672741,
+        "lastModifiedBy": "qPrQhMZ8YlHSgRVs"
+      }
+    },
+    {
+      "id": "Item.Vv0JTpaGly7h8H6y",
+      "name": "Plague Plate",
+      "type": "equipment",
+      "system": {
+        "armor": {
+          "value": 16,
+          "dex": null
+        },
+        "damage": {
+          "base": {
+            "number": 1,
+            "denomination": 8,
+            "bonus": "",
+            "types": [
+              "slashing"
+            ],
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            }
+          },
+          "versatile": {
+            "types": [],
+            "custom": {
+              "enabled": false
+            },
+            "scaling": {
+              "number": 1
+            }
+          }
+        }
+      },
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "activity": []
+          }
+        },
+        "ld-crimson-scaler": {
+          "scaling": {
+            "enabled": true,
+            "classSpecific": true,
+            "profile": "default",
+            "tierModel": "rnk-crimson-baseline",
+            "version": 1,
+            "itemRole": "armor",
+            "classKey": "the-plague-harbinger-yelena",
+            "base": {
+              "armorValue": 16
+            },
+            "className": "Plague Harbinger (Yelena)"
+          },
+          "linkMode": "actor-level",
+          "managedBy": "ld-crimson-scaler",
+          "linkedClass": {
+            "identifier": "the-plague-harbinger-yelena",
+            "name": "Plague Harbinger (Yelena)"
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "veil-3",
+          "uuid": "Item.Vv0JTpaGly7h8H6y",
+          "coreVersion": "13.351",
+          "systemId": "dnd5e",
+          "systemVersion": "5.2.5"
+        },
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "createdTime": 1763745840934,
+        "modifiedTime": 1773331672741,
+        "lastModifiedBy": "qPrQhMZ8YlHSgRVs"
+      }
+    },
+    {
+      "id": "Item.U9ElNnqHQCnodseC",
+      "name": "Planeswalker's Longbow",
+      "type": "weapon",
+      "system": {
+        "armor": {},
+        "damage": {
+          "base": {
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "types": [
+              "piercing"
+            ],
+            "scaling": {
+              "number": 1
+            },
+            "number": 1,
+            "denomination": 8,
+            "bonus": ""
+          },
+          "versatile": {
+            "custom": {
+              "enabled": false
+            },
+            "types": [],
+            "scaling": {
+              "number": 1
+            }
+          }
+        }
+      },
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "activity": []
+          }
+        },
+        "ld-crimson-scaler": {
+          "scaling": {
+            "enabled": true,
+            "classSpecific": true,
+            "profile": "default",
+            "tierModel": "rnk-crimson-baseline",
+            "version": 1,
+            "itemRole": "weapon",
+            "classKey": "the-astral-warden-sofiya",
+            "base": {
+              "denomination": 8,
+              "number": 1
+            },
+            "className": "Astral Warden (Sofiya)"
+          },
+          "linkMode": "actor-level",
+          "managedBy": "ld-crimson-scaler",
+          "linkedClass": {
+            "identifier": "the-astral-warden-sofiya",
+            "name": "Astral Warden (Sofiya)"
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "veil-3",
+          "uuid": "Item.U9ElNnqHQCnodseC",
+          "coreVersion": "13.351",
+          "systemId": "dnd5e",
+          "systemVersion": "5.2.5"
+        },
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "createdTime": 1763746235112,
+        "modifiedTime": 1773331605970,
+        "lastModifiedBy": "qPrQhMZ8YlHSgRVs"
+      }
+    },
+    {
+      "id": "Item.gn3esEDVXB5JgnNR",
+      "name": "Planeswalker's Mail",
+      "type": "equipment",
+      "system": {
+        "armor": {
+          "value": 14,
+          "dex": null
+        },
+        "damage": {
+          "base": {
+            "number": 0,
+            "denomination": 0,
+            "bonus": "",
+            "types": [],
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            }
+          },
+          "versatile": {
+            "types": [],
+            "custom": {
+              "enabled": false
+            },
+            "scaling": {
+              "number": 1
+            }
+          }
+        }
+      },
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "activity": []
+          }
+        },
+        "ld-crimson-scaler": {
+          "scaling": {
+            "enabled": true,
+            "classSpecific": true,
+            "profile": "default",
+            "tierModel": "rnk-crimson-baseline",
+            "version": 1,
+            "itemRole": "armor",
+            "classKey": "the-astral-warden-sofiya",
+            "base": {
+              "armorValue": 14
+            },
+            "className": "Astral Warden (Sofiya)"
+          },
+          "linkMode": "actor-level",
+          "managedBy": "ld-crimson-scaler",
+          "linkedClass": {
+            "identifier": "the-astral-warden-sofiya",
+            "name": "Astral Warden (Sofiya)"
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "veil-3",
+          "uuid": "Item.gn3esEDVXB5JgnNR",
+          "coreVersion": "13.351",
+          "systemId": "dnd5e",
+          "systemVersion": "5.2.5"
+        },
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "createdTime": 1763746235112,
+        "modifiedTime": 1773331614628,
+        "lastModifiedBy": "qPrQhMZ8YlHSgRVs"
+      }
+    },
+    {
+      "id": "Item.sN0PpLghVVSc8lZN",
+      "name": "Scholar's Inscribed Robes",
+      "type": "equipment",
+      "system": {
+        "armor": {
+          "value": 11,
+          "dex": null
+        },
+        "damage": {
+          "base": {
+            "number": 0,
+            "denomination": 0,
+            "bonus": "",
+            "types": [],
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            }
+          },
+          "versatile": {
+            "types": [],
+            "custom": {
+              "enabled": false
+            },
+            "scaling": {
+              "number": 1
+            }
+          }
+        }
+      },
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "activity": []
+          }
+        },
+        "ld-crimson-scaler": {
+          "scaling": {
+            "enabled": true,
+            "classSpecific": true,
+            "profile": "default",
+            "tierModel": "rnk-crimson-baseline",
+            "version": 1,
+            "itemRole": "armor",
+            "classKey": "the-lorebinder",
+            "base": {
+              "armorValue": 11
+            },
+            "className": "Lorebinder"
+          },
+          "linkMode": "actor-level",
+          "managedBy": "ld-crimson-scaler",
+          "linkedClass": {
+            "identifier": "the-lorebinder",
+            "name": "Lorebinder"
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "veil-3",
+          "uuid": "Item.sN0PpLghVVSc8lZN",
+          "coreVersion": "13.351",
+          "systemId": "dnd5e",
+          "systemVersion": "5.2.5"
+        },
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "createdTime": 1762957689694,
+        "modifiedTime": 1773332087171,
+        "lastModifiedBy": "qPrQhMZ8YlHSgRVs"
+      }
+    },
+    {
+      "id": "Item.Ndx6TBhktt0gWZEg",
+      "name": "Scribe's Ritual Robes",
+      "type": "equipment",
+      "system": {
+        "armor": {
+          "value": 11,
+          "dex": null
+        },
+        "damage": null
+      },
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "activity": []
+          }
+        },
+        "ld-crimson-scaler": {
+          "scaling": {
+            "enabled": true,
+            "classSpecific": true,
+            "profile": "default",
+            "tierModel": "rnk-crimson-baseline",
+            "version": 1,
+            "itemRole": "armor",
+            "classKey": "the-flesh-scribe-yelena",
+            "base": {
+              "armorValue": 11
+            },
+            "className": "Flesh-Scribe (Yelena)"
+          },
+          "linkMode": "actor-level",
+          "managedBy": "ld-crimson-scaler",
+          "linkedClass": {
+            "identifier": "the-flesh-scribe-yelena",
+            "name": "Flesh-Scribe (Yelena)"
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "veil-3",
+          "uuid": "Item.Ndx6TBhktt0gWZEg",
+          "coreVersion": "13.351",
+          "systemId": "dnd5e",
+          "systemVersion": "5.2.5"
+        },
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "createdTime": 1762957612054,
+        "modifiedTime": 1773332043322,
+        "lastModifiedBy": "qPrQhMZ8YlHSgRVs"
+      }
+    },
+    {
+      "id": null,
+      "name": "Scribe's Ritual Blade",
+      "type": "weapon",
+      "system": {
+        "armor": {},
+        "damage": {
+          "base": {
+            "number": 1,
+            "denomination": 8,
+            "bonus": "",
+            "types": [
+              "slashing"
+            ],
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            }
+          },
+          "versatile": {
+            "types": [],
+            "custom": {
+              "enabled": false
+            },
+            "scaling": {
+              "number": 1
+            }
+          }
+        }
+      },
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "activity": []
+          }
+        },
+        "ld-crimson-scaler": {
+          "scaling": {
+            "enabled": true,
+            "classSpecific": true,
+            "profile": "default",
+            "tierModel": "rnk-crimson-baseline",
+            "version": 1,
+            "itemRole": "weapon",
+            "classKey": "the-flesh-scribe-yelena",
+            "base": {
+              "denomination": 8,
+              "number": 1
+            },
+            "className": "Flesh-Scribe (Yelena)"
+          },
+          "linkMode": "actor-level",
+          "managedBy": "ld-crimson-scaler",
+          "linkedClass": {
+            "identifier": "the-flesh-scribe-yelena",
+            "name": "Flesh-Scribe (Yelena)"
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "id": "Item.MP9QgMDs3eAc7K61",
+      "name": "Seeker's Stone-Blessed Robes",
+      "type": "equipment",
+      "system": {
+        "armor": {
+          "value": 11,
+          "dex": null
+        },
+        "damage": {
+          "base": {
+            "number": 0,
+            "denomination": 0,
+            "bonus": "",
+            "types": [],
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            }
+          },
+          "versatile": {
+            "types": [],
+            "custom": {
+              "enabled": false
+            },
+            "scaling": {
+              "number": 1
+            }
+          }
+        }
+      },
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "activity": []
+          }
+        },
+        "ld-crimson-scaler": {
+          "scaling": {
+            "enabled": true,
+            "classSpecific": true,
+            "profile": "default",
+            "tierModel": "rnk-crimson-baseline",
+            "version": 1,
+            "itemRole": "armor",
+            "classKey": "the-stone-kissed-seeker-pyne",
+            "base": {
+              "armorValue": 11
+            },
+            "className": "Stone-Kissed Seeker (Pyne)"
+          },
+          "linkMode": "actor-level",
+          "managedBy": "ld-crimson-scaler",
+          "linkedClass": {
+            "identifier": "the-stone-kissed-seeker-pyne",
+            "name": "Stone-Kissed Seeker (Pyne)"
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "veil-3",
+          "uuid": "Item.MP9QgMDs3eAc7K61",
+          "coreVersion": "13.351",
+          "systemId": "dnd5e",
+          "systemVersion": "5.2.5"
+        },
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "createdTime": 1762958016794,
+        "modifiedTime": 1773332242551,
+        "lastModifiedBy": "qPrQhMZ8YlHSgRVs"
+      }
+    },
+    {
+      "id": "Item.MP9QgMDs3eAc7K61",
+      "name": "Seeker's Blade",
+      "type": "weapon",
+      "system": {
+        "armor": {
+          "value": 11,
+          "dex": null
+        },
+        "damage": {
+          "base": {
+            "number": 1,
+            "denomination": 8,
+            "bonus": "",
+            "types": [
+              "slashing"
+            ],
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            }
+          },
+          "versatile": {
+            "types": [],
+            "custom": {
+              "enabled": false
+            },
+            "scaling": {
+              "number": 1
+            }
+          }
+        }
+      },
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "activity": []
+          }
+        },
+        "ld-crimson-scaler": {
+          "scaling": {
+            "enabled": true,
+            "classSpecific": true,
+            "profile": "default",
+            "tierModel": "rnk-crimson-baseline",
+            "version": 1,
+            "itemRole": "weapon",
+            "classKey": "the-stone-kissed-seeker-pyne",
+            "base": {
+              "denomination": 8,
+              "number": 1
+            },
+            "className": "Stone-Kissed Seeker (Pyne)"
+          },
+          "linkMode": "actor-level",
+          "managedBy": "ld-crimson-scaler",
+          "linkedClass": {
+            "identifier": "the-stone-kissed-seeker-pyne",
+            "name": "Stone-Kissed Seeker (Pyne)"
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "veil-3",
+          "uuid": "Item.MP9QgMDs3eAc7K61",
+          "coreVersion": "13.351",
+          "systemId": "dnd5e",
+          "systemVersion": "5.2.5"
+        },
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "createdTime": 1762958016794,
+        "modifiedTime": 1773332242551,
+        "lastModifiedBy": "qPrQhMZ8YlHSgRVs"
+      }
+    },
+    {
+      "id": "Item.W6S7YiCfX1CkRJei",
+      "name": "Shadowstone Armor",
+      "type": "equipment",
+      "system": {
+        "armor": {
+          "value": 11,
+          "dex": null
+        },
+        "damage": {
+          "base": {
+            "number": 0,
+            "denomination": 0,
+            "bonus": "",
+            "types": [],
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            }
+          },
+          "versatile": {
+            "types": [],
+            "custom": {
+              "enabled": false
+            },
+            "scaling": {
+              "number": 1
+            }
+          }
+        }
+      },
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "activity": []
+          }
+        },
+        "ld-crimson-scaler": {
+          "scaling": {
+            "enabled": true,
+            "classSpecific": true,
+            "profile": "default",
+            "tierModel": "rnk-crimson-baseline",
+            "version": 1,
+            "itemRole": "armor",
+            "classKey": "the-stone-kissed-shadow-pyne",
+            "base": {
+              "armorValue": 11
+            },
+            "className": "Stone-Kissed Shadow (Pyne)"
+          },
+          "linkMode": "actor-level",
+          "managedBy": "ld-crimson-scaler",
+          "linkedClass": {
+            "identifier": "the-stone-kissed-shadow-pyne",
+            "name": "Stone-Kissed Shadow (Pyne)"
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "veil-3",
+          "uuid": "Item.W6S7YiCfX1CkRJei",
+          "coreVersion": "13.351",
+          "systemId": "dnd5e",
+          "systemVersion": "5.2.5"
+        },
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "createdTime": 1762958058072,
+        "modifiedTime": 1773332256585,
+        "lastModifiedBy": "qPrQhMZ8YlHSgRVs"
+      }
+    },
+    {
+      "id": "Item.W6S7YiCfX1CkRJei",
+      "name": "Shadowstone Blade",
+      "type": "weapon",
+      "system": {
+        "armor": {
+          "value": 13,
+          "dex": 2
+        },
+        "damage": {
+          "base": {
+            "number": 1,
+            "denomination": 8,
+            "bonus": "",
+            "types": [
+              "slashing"
+            ],
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            }
+          },
+          "versatile": {
+            "types": [],
+            "custom": {
+              "enabled": false
+            },
+            "scaling": {
+              "number": 1
+            }
+          }
+        }
+      },
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "activity": []
+          }
+        },
+        "ld-crimson-scaler": {
+          "scaling": {
+            "enabled": true,
+            "classSpecific": true,
+            "profile": "default",
+            "tierModel": "rnk-crimson-baseline",
+            "version": 1,
+            "itemRole": "weapon",
+            "classKey": "the-stone-kissed-shadow-pyne",
+            "base": {
+              "denomination": 8,
+              "number": 1
+            },
+            "className": "Stone-Kissed Shadow (Pyne)"
+          },
+          "linkMode": "actor-level",
+          "managedBy": "ld-crimson-scaler",
+          "linkedClass": {
+            "identifier": "the-stone-kissed-shadow-pyne",
+            "name": "Stone-Kissed Shadow (Pyne)"
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "veil-3",
+          "uuid": "Item.W6S7YiCfX1CkRJei",
+          "coreVersion": "13.351",
+          "systemId": "dnd5e",
+          "systemVersion": "5.2.5"
+        },
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "createdTime": 1762958058072,
+        "modifiedTime": 1773332256585,
+        "lastModifiedBy": "qPrQhMZ8YlHSgRVs"
+      }
+    },
+    {
+      "id": "Item.6n63RyCoa8aEADw1",
+      "name": "Thunderchord Axe",
+      "type": "weapon",
+      "system": {
+        "armor": {},
+        "damage": {
+          "base": {
+            "number": 1,
+            "denomination": 8,
+            "bonus": "",
+            "types": [
+              "slashing"
+            ],
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            }
+          },
+          "versatile": {
+            "types": [],
+            "custom": {
+              "enabled": false
+            },
+            "scaling": {
+              "number": 1
+            }
+          }
+        }
+      },
+      "flags": {
+        "autoanimations": {
+          "override": true,
+          "animType": "melee",
+          "animName": "Battleaxe",
+          "color": "Blue"
+        },
+        "dnd5e": {
+          "riders": {
+            "activity": []
+          }
+        },
+        "ld-crimson-scaler": {
+          "scaling": {
+            "enabled": true,
+            "classSpecific": true,
+            "profile": "default",
+            "tierModel": "rnk-crimson-baseline",
+            "version": 1,
+            "itemRole": "weapon",
+            "classKey": "the-stormforged-skald-sofiya",
+            "base": {
+              "denomination": 8,
+              "number": 1
+            },
+            "className": "Stormforged Skald (Sofiya)"
+          },
+          "linkMode": "actor-level",
+          "managedBy": "ld-crimson-scaler",
+          "linkedClass": {
+            "identifier": "the-stormforged-skald-sofiya",
+            "name": "Stormforged Skald (Sofiya)"
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "veil-3",
+          "uuid": "Item.6n63RyCoa8aEADw1",
+          "coreVersion": "13.351",
+          "systemId": "dnd5e",
+          "systemVersion": "5.2.5"
+        },
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "createdTime": 1763741799277,
+        "modifiedTime": 1773332270465,
+        "lastModifiedBy": "qPrQhMZ8YlHSgRVs"
+      }
+    },
+    {
+      "id": "Item.6n63RyCoa8aEADw1",
+      "name": "Thunderchord Plate",
+      "type": "equipment",
+      "system": {
+        "armor": {
+          "value": 16,
+          "dex": null
+        },
+        "damage": {
+          "base": {
+            "number": 1,
+            "denomination": 8,
+            "bonus": "",
+            "types": [
+              "slashing"
+            ],
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            }
+          },
+          "versatile": {
+            "types": [],
+            "custom": {
+              "enabled": false
+            },
+            "scaling": {
+              "number": 1
+            }
+          }
+        }
+      },
+      "flags": {
+        "autoanimations": {
+          "override": true,
+          "animType": "melee",
+          "animName": "Battleaxe",
+          "color": "Blue"
+        },
+        "dnd5e": {
+          "riders": {
+            "activity": []
+          }
+        },
+        "ld-crimson-scaler": {
+          "scaling": {
+            "enabled": true,
+            "classSpecific": true,
+            "profile": "default",
+            "tierModel": "rnk-crimson-baseline",
+            "version": 1,
+            "itemRole": "armor",
+            "classKey": "the-stormforged-skald-sofiya",
+            "base": {
+              "armorValue": 16
+            },
+            "className": "Stormforged Skald (Sofiya)"
+          },
+          "linkMode": "actor-level",
+          "managedBy": "ld-crimson-scaler",
+          "linkedClass": {
+            "identifier": "the-stormforged-skald-sofiya",
+            "name": "Stormforged Skald (Sofiya)"
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "veil-3",
+          "uuid": "Item.6n63RyCoa8aEADw1",
+          "coreVersion": "13.351",
+          "systemId": "dnd5e",
+          "systemVersion": "5.2.5"
+        },
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "createdTime": 1763741799277,
+        "modifiedTime": 1773332270465,
+        "lastModifiedBy": "qPrQhMZ8YlHSgRVs"
+      }
+    },
+    {
+      "id": "Item.88kFRRKFoWx0qS1H",
+      "name": "Titan's Blood Plate",
+      "type": "equipment",
+      "system": {
+        "armor": {
+          "value": 16,
+          "dex": null
+        },
+        "damage": {
+          "base": {
+            "number": 0,
+            "denomination": 0,
+            "bonus": "",
+            "types": [],
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            }
+          },
+          "versatile": {
+            "types": [],
+            "custom": {
+              "enabled": false
+            },
+            "scaling": {
+              "number": 1
+            }
+          }
+        }
+      },
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "activity": []
+          }
+        },
+        "ld-crimson-scaler": {
+          "scaling": {
+            "enabled": true,
+            "classSpecific": true,
+            "profile": "default",
+            "tierModel": "rnk-crimson-baseline",
+            "version": 1,
+            "itemRole": "armor",
+            "classKey": "the-blood-forged-titan-daria",
+            "base": {
+              "armorValue": 16
+            },
+            "className": "Blood-Forged Titan (Daria)"
+          },
+          "linkMode": "actor-level",
+          "managedBy": "ld-crimson-scaler",
+          "linkedClass": {
+            "identifier": "the-blood-forged-titan-daria",
+            "name": "Blood-Forged Titan (Daria)"
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "veil-3",
+          "uuid": "Item.88kFRRKFoWx0qS1H",
+          "coreVersion": "13.351",
+          "systemId": "dnd5e",
+          "systemVersion": "5.2.5"
+        },
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "createdTime": 1763745840934,
+        "modifiedTime": 1773071687826,
+        "lastModifiedBy": "qPrQhMZ8YlHSgRVs"
+      }
+    },
+    {
+      "id": "Item.hYVbQY8oD1xXHLJU",
+      "name": "Titan's Maul",
+      "type": "weapon",
+      "system": {
+        "armor": {},
+        "damage": {
+          "base": {
+            "number": 1,
+            "denomination": 10,
+            "bonus": "",
+            "types": [
+              "bludgeoning"
+            ],
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            }
+          },
+          "versatile": {
+            "types": [],
+            "custom": {
+              "enabled": false
+            },
+            "scaling": {
+              "number": 1
+            }
+          }
+        }
+      },
+      "flags": {
+        "autoanimations": {
+          "killAnim": false,
+          "override": true,
+          "animType": "melee",
+          "animName": "Maul",
+          "color": "Red",
+          "dtvar": "damage"
+        },
+        "dnd5e": {
+          "riders": {
+            "activity": []
+          }
+        },
+        "ld-crimson-scaler": {
+          "scaling": {
+            "enabled": true,
+            "classSpecific": true,
+            "profile": "default",
+            "tierModel": "rnk-crimson-baseline",
+            "version": 1,
+            "itemRole": "weapon",
+            "classKey": "the-blood-forged-titan-daria",
+            "base": {
+              "denomination": 10,
+              "number": 1
+            },
+            "className": "Blood-Forged Titan (Daria)"
+          },
+          "linkMode": "actor-level",
+          "managedBy": "ld-crimson-scaler",
+          "linkedClass": {
+            "identifier": "the-blood-forged-titan-daria",
+            "name": "Blood-Forged Titan (Daria)"
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "veil-3",
+          "uuid": "Item.hYVbQY8oD1xXHLJU",
+          "coreVersion": "13.351",
+          "systemId": "dnd5e",
+          "systemVersion": "5.2.5"
+        },
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "createdTime": 1763741578900,
+        "modifiedTime": 1773071719060,
+        "lastModifiedBy": "qPrQhMZ8YlHSgRVs"
+      }
+    },
+    {
+      "id": "Item.4P1Yk949trYILQcD",
+      "name": "Tome-bound Staff",
+      "type": "weapon",
+      "system": {
+        "armor": {},
+        "damage": {
+          "base": {
+            "number": 1,
+            "denomination": 6,
+            "bonus": "",
+            "types": [
+              "bludgeoning"
+            ],
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            }
+          },
+          "versatile": {
+            "types": [],
+            "custom": {
+              "enabled": false
+            },
+            "scaling": {
+              "number": 1
+            }
+          }
+        }
+      },
+      "flags": {
+        "autoanimations": {
+          "override": true,
+          "animType": "melee",
+          "animName": "Mace",
+          "color": "Purple"
+        },
+        "ld-crimson-scaler": {
+          "scaling": {
+            "enabled": true,
+            "classSpecific": true,
+            "profile": "default",
+            "tierModel": "rnk-crimson-baseline",
+            "version": 1,
+            "itemRole": "weapon",
+            "classKey": "the-lorebinder",
+            "base": {
+              "denomination": 6,
+              "number": 1
+            },
+            "className": "Lorebinder"
+          },
+          "linkMode": "actor-level",
+          "managedBy": "ld-crimson-scaler",
+          "linkedClass": {
+            "identifier": "the-lorebinder",
+            "name": "Lorebinder"
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "veil-3",
+          "uuid": "Item.4P1Yk949trYILQcD",
+          "coreVersion": "13.351",
+          "systemId": "dnd5e",
+          "systemVersion": "5.2.5"
+        },
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.1.10",
+        "createdTime": 1763741780451,
+        "modifiedTime": 1763741780451,
+        "lastModifiedBy": "qPrQhMZ8YlHSgRVs"
+      }
+    },
+    {
+      "id": "Item.zMXOK5lExCObRkEC",
+      "name": "Veil Daggers",
+      "type": "weapon",
+      "system": {
+        "armor": {},
+        "damage": {
+          "base": {
+            "number": 1,
+            "denomination": 4,
+            "bonus": "",
+            "types": [
+              "piercing"
+            ],
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            }
+          },
+          "versatile": {
+            "types": [],
+            "custom": {
+              "enabled": false
+            },
+            "scaling": {
+              "number": 1
+            }
+          }
+        }
+      },
+      "flags": {
+        "autoanimations": {
+          "override": true,
+          "animType": "melee",
+          "animName": "Sword",
+          "color": "Blue"
+        },
+        "dnd5e": {
+          "riders": {
+            "activity": []
+          }
+        },
+        "ld-crimson-scaler": {
+          "scaling": {
+            "enabled": true,
+            "classSpecific": true,
+            "profile": "default",
+            "tierModel": "rnk-crimson-baseline",
+            "version": 1,
+            "itemRole": "weapon",
+            "classKey": "the-veil-cutthroat",
+            "base": {
+              "denomination": 4,
+              "number": 1
+            },
+            "className": "Veil Cutthroat"
+          },
+          "linkMode": "actor-level",
+          "managedBy": "ld-crimson-scaler",
+          "linkedClass": {
+            "identifier": "the-veil-cutthroat",
+            "name": "Veil Cutthroat"
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "veil-3",
+          "uuid": "Item.zMXOK5lExCObRkEC",
+          "coreVersion": "13.351",
+          "systemId": "dnd5e",
+          "systemVersion": "5.2.5"
+        },
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "createdTime": 1763741800378,
+        "modifiedTime": 1773332342914,
+        "lastModifiedBy": "qPrQhMZ8YlHSgRVs"
+      }
+    },
+    {
+      "id": "Item.kmXTgd8QBwGKmwiy",
+      "name": "Veil Fist Wraps",
+      "type": "weapon",
+      "system": {
+        "armor": {},
+        "damage": {
+          "base": {
+            "number": 1,
+            "denomination": 6,
+            "bonus": "",
+            "types": [
+              "bludgeoning"
+            ],
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            }
+          },
+          "versatile": {
+            "types": [],
+            "custom": {
+              "enabled": false
+            },
+            "scaling": {
+              "number": 1
+            }
+          }
+        }
+      },
+      "flags": {
+        "autoanimations": {
+          "override": true,
+          "animType": "melee",
+          "animName": "Unarmed",
+          "color": "Red"
+        },
+        "dnd5e": {
+          "riders": {
+            "activity": []
+          }
+        },
+        "ld-crimson-scaler": {
+          "scaling": {
+            "enabled": true,
+            "classSpecific": true,
+            "profile": "default",
+            "tierModel": "rnk-crimson-baseline",
+            "version": 1,
+            "itemRole": "weapon",
+            "classKey": "the-veil-cutthroat",
+            "base": {
+              "denomination": 6,
+              "number": 1
+            },
+            "className": "Veil Cutthroat"
+          },
+          "linkMode": "actor-level",
+          "managedBy": "ld-crimson-scaler",
+          "linkedClass": {
+            "identifier": "the-veil-cutthroat",
+            "name": "Veil Cutthroat"
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "veil-3",
+          "uuid": "Item.kmXTgd8QBwGKmwiy",
+          "coreVersion": "13.351",
+          "systemId": "dnd5e",
+          "systemVersion": "5.2.5"
+        },
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "createdTime": 1763741762776,
+        "modifiedTime": 1773331900272,
+        "lastModifiedBy": "qPrQhMZ8YlHSgRVs"
+      }
+    },
+    {
+      "id": "Item.j66fiLa13j9OrHG1",
+      "name": "Veil Knight's Longsword",
+      "type": "weapon",
+      "system": {
+        "armor": {},
+        "damage": {
+          "base": {
+            "number": 1,
+            "denomination": 8,
+            "bonus": "",
+            "types": [
+              "slashing"
+            ],
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            }
+          },
+          "versatile": {
+            "types": [],
+            "custom": {
+              "enabled": false
+            },
+            "scaling": {
+              "number": 1
+            }
+          }
+        }
+      },
+      "flags": {
+        "autoanimations": {
+          "override": true,
+          "animType": "melee",
+          "animName": "Sword",
+          "color": "Blue"
+        },
+        "dnd5e": {
+          "riders": {
+            "activity": []
+          }
+        },
+        "ld-crimson-scaler": {
+          "scaling": {
+            "enabled": true,
+            "classSpecific": true,
+            "profile": "default",
+            "tierModel": "rnk-crimson-baseline",
+            "version": 1,
+            "itemRole": "weapon",
+            "classKey": "the-veil-knight",
+            "base": {
+              "denomination": 8,
+              "number": 1
+            },
+            "className": "Veil Knight"
+          },
+          "linkMode": "actor-level",
+          "managedBy": "ld-crimson-scaler",
+          "linkedClass": {
+            "identifier": "the-veil-knight",
+            "name": "Veil Knight"
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "veil-3",
+          "uuid": "Item.j66fiLa13j9OrHG1",
+          "coreVersion": "13.351",
+          "systemId": "dnd5e",
+          "systemVersion": "5.2.5"
+        },
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "createdTime": 1763741800634,
+        "modifiedTime": 1773332366020,
+        "lastModifiedBy": "qPrQhMZ8YlHSgRVs"
+      }
+    },
+    {
+      "id": "Item.yeuytzYbghABxohI",
+      "name": "Veil Knight's Plate",
+      "type": "equipment",
+      "system": {
+        "armor": {
+          "value": 16,
+          "dex": null
+        },
+        "damage": {
+          "base": {
+            "number": 0,
+            "denomination": 0,
+            "bonus": "",
+            "types": [],
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            }
+          },
+          "versatile": {
+            "types": [],
+            "custom": {
+              "enabled": false
+            },
+            "scaling": {
+              "number": 1
+            }
+          }
+        }
+      },
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "activity": []
+          }
+        },
+        "ld-crimson-scaler": {
+          "scaling": {
+            "enabled": true,
+            "classSpecific": true,
+            "profile": "default",
+            "tierModel": "rnk-crimson-baseline",
+            "version": 1,
+            "itemRole": "armor",
+            "classKey": "the-veil-knight",
+            "base": {
+              "armorValue": 16
+            },
+            "className": "Veil Knight"
+          },
+          "linkMode": "actor-level",
+          "managedBy": "ld-crimson-scaler",
+          "linkedClass": {
+            "identifier": "the-veil-knight",
+            "name": "Veil Knight"
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "veil-3",
+          "uuid": "Item.yeuytzYbghABxohI",
+          "coreVersion": "13.351",
+          "systemId": "dnd5e",
+          "systemVersion": "5.2.5"
+        },
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "createdTime": 1762958275854,
+        "modifiedTime": 1773332373084,
+        "lastModifiedBy": "qPrQhMZ8YlHSgRVs"
+      }
+    },
+    {
+      "id": "Item.oQ8ITa1LGbTbrBKr",
+      "name": "Veil Shadow Wraps",
+      "type": "equipment",
+      "system": {
+        "armor": {
+          "value": 11,
+          "dex": null
+        },
+        "damage": {
+          "base": {
+            "number": 0,
+            "denomination": 0,
+            "bonus": "",
+            "types": [],
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            }
+          },
+          "versatile": {
+            "types": [],
+            "custom": {
+              "enabled": false
+            },
+            "scaling": {
+              "number": 1
+            }
+          }
+        }
+      },
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "activity": []
+          }
+        },
+        "ld-crimson-scaler": {
+          "scaling": {
+            "enabled": true,
+            "classSpecific": true,
+            "profile": "default",
+            "tierModel": "rnk-crimson-baseline",
+            "version": 1,
+            "itemRole": "armor",
+            "classKey": "the-veil-cutthroat",
+            "base": {
+              "armorValue": 11
+            },
+            "className": "Veil Cutthroat"
+          },
+          "linkMode": "actor-level",
+          "managedBy": "ld-crimson-scaler",
+          "linkedClass": {
+            "identifier": "the-veil-cutthroat",
+            "name": "Veil Cutthroat"
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "veil-3",
+          "uuid": "Item.oQ8ITa1LGbTbrBKr",
+          "coreVersion": "13.351",
+          "systemId": "dnd5e",
+          "systemVersion": "5.2.5"
+        },
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "createdTime": 1763746911946,
+        "modifiedTime": 1773331910047,
+        "lastModifiedBy": "qPrQhMZ8YlHSgRVs"
+      }
+    },
+    {
+      "id": "Item.E6AZGJtIU6OLSqEK",
+      "name": "Veil Shadowleathers",
+      "type": "equipment",
+      "system": {
+        "armor": {
+          "value": 11,
+          "dex": null
+        },
+        "damage": {
+          "base": {
+            "number": 0,
+            "denomination": 0,
+            "bonus": "",
+            "types": [],
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            }
+          },
+          "versatile": {
+            "types": [],
+            "custom": {
+              "enabled": false
+            },
+            "scaling": {
+              "number": 1
+            }
+          }
+        }
+      },
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "activity": []
+          }
+        },
+        "ld-crimson-scaler": {
+          "scaling": {
+            "enabled": true,
+            "classSpecific": true,
+            "profile": "default",
+            "tierModel": "rnk-crimson-baseline",
+            "version": 1,
+            "itemRole": "armor",
+            "classKey": "the-veil-cutthroat",
+            "base": {
+              "armorValue": 11
+            },
+            "className": "Veil Cutthroat"
+          },
+          "linkMode": "actor-level",
+          "managedBy": "ld-crimson-scaler",
+          "linkedClass": {
+            "identifier": "the-veil-cutthroat",
+            "name": "Veil Cutthroat"
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "veil-3",
+          "uuid": "Item.E6AZGJtIU6OLSqEK",
+          "coreVersion": "13.351",
+          "systemId": "dnd5e",
+          "systemVersion": "5.2.5"
+        },
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "createdTime": 1762958226394,
+        "modifiedTime": 1773332350196,
+        "lastModifiedBy": "qPrQhMZ8YlHSgRVs"
+      }
+    },
+    {
+      "id": "Item.xZ35D8G4Ec6Fgp84",
+      "name": "Veritas Plate",
+      "type": "equipment",
+      "system": {
+        "armor": {
+          "value": 16,
+          "dex": null
+        },
+        "damage": {
+          "base": {
+            "number": 0,
+            "denomination": 0,
+            "bonus": "",
+            "types": [],
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            }
+          },
+          "versatile": {
+            "types": [],
+            "custom": {
+              "enabled": false
+            },
+            "scaling": {
+              "number": 1
+            }
+          }
+        }
+      },
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "activity": []
+          }
+        },
+        "ld-crimson-scaler": {
+          "scaling": {
+            "enabled": true,
+            "classSpecific": true,
+            "profile": "default",
+            "tierModel": "rnk-crimson-baseline",
+            "version": 1,
+            "itemRole": "armor",
+            "classKey": "the-truthbringer",
+            "base": {
+              "armorValue": 16
+            },
+            "className": "Truthbringer"
+          },
+          "linkMode": "actor-level",
+          "managedBy": "ld-crimson-scaler",
+          "linkedClass": {
+            "identifier": "the-truthbringer",
+            "name": "Truthbringer"
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "veil-3",
+          "uuid": "Item.xZ35D8G4Ec6Fgp84",
+          "coreVersion": "13.351",
+          "systemId": "dnd5e",
+          "systemVersion": "5.2.5"
+        },
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "createdTime": 1762958186114,
+        "modifiedTime": 1773332320350,
+        "lastModifiedBy": "qPrQhMZ8YlHSgRVs"
+      }
+    },
+    {
+      "id": "Item.LfXZwxmOeLX1DrFo",
+      "name": "Veritasblade",
+      "type": "weapon",
+      "system": {
+        "armor": {},
+        "damage": {
+          "base": {
+            "number": 1,
+            "denomination": 8,
+            "bonus": "",
+            "types": [
+              "slashing"
+            ],
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            }
+          },
+          "versatile": {
+            "types": [],
+            "custom": {
+              "enabled": false
+            },
+            "scaling": {
+              "number": 1
+            }
+          }
+        }
+      },
+      "flags": {
+        "autoanimations": {
+          "override": true,
+          "animType": "melee",
+          "animName": "Sword",
+          "color": "Blue"
+        },
+        "dnd5e": {
+          "riders": {
+            "activity": []
+          }
+        },
+        "ld-crimson-scaler": {
+          "scaling": {
+            "enabled": true,
+            "classSpecific": true,
+            "profile": "default",
+            "tierModel": "rnk-crimson-baseline",
+            "version": 1,
+            "itemRole": "weapon",
+            "classKey": "the-truthbringer",
+            "base": {
+              "denomination": 8,
+              "number": 1
+            },
+            "className": "Truthbringer"
+          },
+          "linkMode": "actor-level",
+          "managedBy": "ld-crimson-scaler",
+          "linkedClass": {
+            "identifier": "the-truthbringer",
+            "name": "Truthbringer"
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "veil-3",
+          "uuid": "Item.LfXZwxmOeLX1DrFo",
+          "coreVersion": "13.351",
+          "systemId": "dnd5e",
+          "systemVersion": "5.2.5"
+        },
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "createdTime": 1763741800102,
+        "modifiedTime": 1773332328243,
+        "lastModifiedBy": "qPrQhMZ8YlHSgRVs"
+      }
+    },
+    {
+      "id": "Item.vujufL0osx0X0Mrc",
+      "name": "Warden's Blade",
+      "type": "weapon",
+      "system": {
+        "armor": {},
+        "damage": {
+          "versatile": {
+            "custom": {
+              "enabled": true,
+              "formula": "1d10"
+            },
+            "types": [],
+            "scaling": {
+              "number": 1
+            }
+          },
+          "base": {
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "types": [
+              "slashing"
+            ],
+            "scaling": {
+              "number": 1
+            },
+            "number": 1,
+            "denomination": 8,
+            "bonus": ""
+          }
+        }
+      },
+      "flags": {
+        "ld-crimson-scaler": {
+          "scaling": {
+            "enabled": true,
+            "classSpecific": true,
+            "profile": "default",
+            "tierModel": "rnk-crimson-baseline",
+            "version": 1,
+            "itemRole": "weapon",
+            "classKey": "the-veridian-warden-daria",
+            "base": {
+              "denomination": 8,
+              "number": 1
+            },
+            "className": "Veridian Warden (Daria)"
+          },
+          "linkMode": "actor-level",
+          "managedBy": "ld-crimson-scaler",
+          "linkedClass": {
+            "identifier": "the-veridian-warden-daria",
+            "name": "Veridian Warden (Daria)"
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "veil-3",
+          "uuid": "Item.vujufL0osx0X0Mrc",
+          "coreVersion": "13.351",
+          "systemId": "dnd5e",
+          "systemVersion": "5.2.5"
+        },
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.1.10",
+        "createdTime": 1763746235112,
+        "modifiedTime": 1763746235112,
+        "lastModifiedBy": "qPrQhMZ8YlHSgRVs"
+      }
+    },
+    {
+      "id": "Item.XakyASBzJCRWyUTg",
+      "name": "Warder's Half-Plate",
+      "type": "equipment",
+      "system": {
+        "armor": {
+          "value": 16,
+          "dex": null
+        },
+        "damage": {
+          "base": {
+            "number": 0,
+            "denomination": 0,
+            "bonus": "",
+            "types": [],
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            }
+          },
+          "versatile": {
+            "types": [],
+            "custom": {
+              "enabled": false
+            },
+            "scaling": {
+              "number": 1
+            }
+          }
+        }
+      },
+      "flags": {
+        "ld-crimson-scaler": {
+          "scaling": {
+            "enabled": true,
+            "classSpecific": true,
+            "profile": "default",
+            "tierModel": "rnk-crimson-baseline",
+            "version": 1,
+            "itemRole": "armor",
+            "classKey": "the-crimson-warder",
+            "base": {
+              "armorValue": 16
+            },
+            "className": "Crimson Warder"
+          },
+          "linkMode": "actor-level",
+          "managedBy": "ld-crimson-scaler",
+          "linkedClass": {
+            "identifier": "the-crimson-warder",
+            "name": "Crimson Warder"
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "veil-3",
+          "uuid": "Item.XakyASBzJCRWyUTg",
+          "coreVersion": "13.351",
+          "systemId": "dnd5e",
+          "systemVersion": "5.2.5"
+        },
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.1.10",
+        "createdTime": 1763741763347,
+        "modifiedTime": 1763741763347,
+        "lastModifiedBy": "qPrQhMZ8YlHSgRVs"
+      }
+    },
+    {
+      "id": "Item.LvgpHfbs8MB9UCl0",
+      "name": "Warder's Longsword",
+      "type": "weapon",
+      "system": {
+        "armor": {},
+        "damage": {
+          "versatile": {
+            "custom": {
+              "enabled": true,
+              "formula": "1d10"
+            },
+            "types": [],
+            "scaling": {
+              "number": 1
+            }
+          },
+          "base": {
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "types": [
+              "slashing"
+            ],
+            "scaling": {
+              "number": 1
+            },
+            "number": 1,
+            "denomination": 8,
+            "bonus": ""
+          }
+        }
+      },
+      "flags": {
+        "ld-crimson-scaler": {
+          "scaling": {
+            "enabled": true,
+            "classSpecific": true,
+            "profile": "default",
+            "tierModel": "rnk-crimson-baseline",
+            "version": 1,
+            "itemRole": "weapon",
+            "classKey": "the-crimson-warder",
+            "base": {
+              "denomination": 8,
+              "number": 1
+            },
+            "className": "Crimson Warder"
+          },
+          "linkMode": "actor-level",
+          "managedBy": "ld-crimson-scaler",
+          "linkedClass": {
+            "identifier": "the-crimson-warder",
+            "name": "Crimson Warder"
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "veil-3",
+          "uuid": "Item.LvgpHfbs8MB9UCl0",
+          "coreVersion": "13.351",
+          "systemId": "dnd5e",
+          "systemVersion": "5.2.5"
+        },
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.1.10",
+        "createdTime": 1763746911946,
+        "modifiedTime": 1763746911946,
+        "lastModifiedBy": "qPrQhMZ8YlHSgRVs"
+      }
+    },
+    {
+      "id": "Item.mdy427HASrWHztx3",
+      "name": "Watcher's Halberd",
+      "type": "weapon",
+      "system": {
+        "armor": {},
+        "damage": {
+          "base": {
+            "number": 1,
+            "denomination": 10,
+            "bonus": "",
+            "types": [
+              "slashing"
+            ],
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            }
+          },
+          "versatile": {
+            "types": [],
+            "custom": {
+              "enabled": false
+            },
+            "scaling": {
+              "number": 1
+            }
+          }
+        }
+      },
+      "flags": {
+        "autoanimations": {
+          "killAnim": false,
+          "override": true,
+          "animType": "melee",
+          "animName": "Halberd",
+          "color": "Red",
+          "dtvar": "damage"
+        },
+        "dnd5e": {
+          "riders": {
+            "activity": []
+          }
+        },
+        "ld-crimson-scaler": {
+          "scaling": {
+            "enabled": true,
+            "classSpecific": true,
+            "profile": "default",
+            "tierModel": "rnk-crimson-baseline",
+            "version": 1,
+            "itemRole": "weapon",
+            "classKey": "aethelburg-watch",
+            "base": {
+              "denomination": 10,
+              "number": 1
+            },
+            "className": "Aethelburg Watch"
+          },
+          "linkMode": "actor-level",
+          "managedBy": "ld-crimson-scaler",
+          "linkedClass": {
+            "identifier": "aethelburg-watch",
+            "name": "Aethelburg Watch"
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "veil-3",
+          "uuid": "Item.mdy427HASrWHztx3",
+          "coreVersion": "13.351",
+          "systemId": "dnd5e",
+          "systemVersion": "5.2.5"
+        },
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "createdTime": 1763741714282,
+        "modifiedTime": 1773331539619,
+        "lastModifiedBy": "qPrQhMZ8YlHSgRVs"
+      }
+    },
+    {
+      "id": "Item.IARdnnZavVL7zBwn",
+      "name": "Watcher's Plate",
+      "type": "equipment",
+      "system": {
+        "armor": {
+          "value": 16,
+          "dex": null
+        },
+        "damage": {
+          "base": {
+            "number": 0,
+            "denomination": 0,
+            "bonus": "",
+            "types": [],
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            }
+          },
+          "versatile": {
+            "types": [],
+            "custom": {
+              "enabled": false
+            },
+            "scaling": {
+              "number": 1
+            }
+          }
+        }
+      },
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "activity": []
+          }
+        },
+        "ld-crimson-scaler": {
+          "scaling": {
+            "enabled": true,
+            "classSpecific": true,
+            "profile": "default",
+            "tierModel": "rnk-crimson-baseline",
+            "version": 1,
+            "itemRole": "armor",
+            "classKey": "aethelburg-watch",
+            "base": {
+              "armorValue": 16
+            },
+            "className": "Aethelburg Watch"
+          },
+          "linkMode": "actor-level",
+          "managedBy": "ld-crimson-scaler",
+          "linkedClass": {
+            "identifier": "aethelburg-watch",
+            "name": "Aethelburg Watch"
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "veil-3",
+          "uuid": "Item.IARdnnZavVL7zBwn",
+          "coreVersion": "13.351",
+          "systemId": "dnd5e",
+          "systemVersion": "5.2.5"
+        },
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "createdTime": 1763746235112,
+        "modifiedTime": 1773331548646,
+        "lastModifiedBy": "qPrQhMZ8YlHSgRVs"
+      }
+    },
+    {
+      "id": "Item.jeBLwLC0cpOyH3ew",
+      "name": "Weaver's Robes",
+      "type": "equipment",
+      "system": {
+        "armor": {
+          "value": 11,
+          "dex": null
+        },
+        "damage": {
+          "base": {
+            "number": 0,
+            "denomination": 0,
+            "bonus": "",
+            "types": [],
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            }
+          },
+          "versatile": {
+            "types": [],
+            "custom": {
+              "enabled": false
+            },
+            "scaling": {
+              "number": 1
+            }
+          }
+        }
+      },
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "activity": []
+          }
+        },
+        "ld-crimson-scaler": {
+          "scaling": {
+            "enabled": true,
+            "classSpecific": true,
+            "profile": "default",
+            "tierModel": "rnk-crimson-baseline",
+            "version": 1,
+            "itemRole": "armor",
+            "classKey": "the-crimson-weaver-lyssa",
+            "base": {
+              "armorValue": 11
+            },
+            "className": "Crimson Weaver (Lyssa)"
+          },
+          "linkMode": "actor-level",
+          "managedBy": "ld-crimson-scaler",
+          "linkedClass": {
+            "identifier": "the-crimson-weaver-lyssa",
+            "name": "Crimson Weaver (Lyssa)"
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "veil-3",
+          "uuid": "Item.jeBLwLC0cpOyH3ew",
+          "coreVersion": "13.351",
+          "systemId": "dnd5e",
+          "systemVersion": "5.2.5"
+        },
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "createdTime": 1762957430795,
+        "modifiedTime": 1773331946720,
+        "lastModifiedBy": "qPrQhMZ8YlHSgRVs"
+      }
+    },
+    {
+      "id": "Item.nDLVeI63z7omGLWz",
+      "name": "Weaver's Staff",
+      "type": "weapon",
+      "system": {
+        "armor": {},
+        "damage": {
+          "base": {
+            "number": 1,
+            "denomination": 6,
+            "bonus": "",
+            "types": [
+              "bludgeoning"
+            ],
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            }
+          },
+          "versatile": {
+            "types": [],
+            "custom": {
+              "enabled": false
+            },
+            "scaling": {
+              "number": 1
+            }
+          }
+        }
+      },
+      "flags": {
+        "autoanimations": {
+          "override": true,
+          "animType": "melee",
+          "animName": "Staff",
+          "color": "Red"
+        },
+        "ld-crimson-scaler": {
+          "scaling": {
+            "enabled": true,
+            "classSpecific": true,
+            "profile": "default",
+            "tierModel": "rnk-crimson-baseline",
+            "version": 1,
+            "itemRole": "weapon",
+            "classKey": "the-crimson-weaver-lyssa",
+            "base": {
+              "denomination": 6,
+              "number": 1
+            },
+            "className": "Crimson Weaver (Lyssa)"
+          },
+          "linkMode": "actor-level",
+          "managedBy": "ld-crimson-scaler",
+          "linkedClass": {
+            "identifier": "the-crimson-weaver-lyssa",
+            "name": "Crimson Weaver (Lyssa)"
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "veil-3",
+          "uuid": "Item.nDLVeI63z7omGLWz",
+          "coreVersion": "13.351",
+          "systemId": "dnd5e",
+          "systemVersion": "5.2.5"
+        },
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.1.10",
+        "createdTime": 1763741764177,
+        "modifiedTime": 1763741764177,
+        "lastModifiedBy": "qPrQhMZ8YlHSgRVs"
+      }
+    },
+    {
+      "id": "Item.DjID09s4qt1qbbkX",
+      "name": "Whisper's Shadowsilk",
+      "type": "equipment",
+      "system": {
+        "armor": {
+          "value": 11,
+          "dex": null
+        },
+        "damage": {
+          "base": {
+            "number": 0,
+            "denomination": 0,
+            "bonus": "",
+            "types": [],
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            }
+          },
+          "versatile": {
+            "types": [],
+            "custom": {
+              "enabled": false
+            },
+            "scaling": {
+              "number": 1
+            }
+          }
+        }
+      },
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "activity": []
+          }
+        },
+        "ld-crimson-scaler": {
+          "scaling": {
+            "enabled": true,
+            "classSpecific": true,
+            "profile": "default",
+            "tierModel": "rnk-crimson-baseline",
+            "version": 1,
+            "itemRole": "armor",
+            "classKey": "the-whisperer",
+            "base": {
+              "armorValue": 11
+            },
+            "className": "Whisperer"
+          },
+          "linkMode": "actor-level",
+          "managedBy": "ld-crimson-scaler",
+          "linkedClass": {
+            "identifier": "the-whisperer",
+            "name": "Whisperer"
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "veil-3",
+          "uuid": "Item.DjID09s4qt1qbbkX",
+          "coreVersion": "13.351",
+          "systemId": "dnd5e",
+          "systemVersion": "5.2.5"
+        },
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "createdTime": 1762957486996,
+        "modifiedTime": 1773331975764,
+        "lastModifiedBy": "qPrQhMZ8YlHSgRVs"
+      }
+    },
+    {
+      "id": "Item.jK36Fz3bJVtaXoFV",
+      "name": "Whisper Blade",
+      "type": "weapon",
+      "system": {
+        "armor": {},
+        "damage": {
+          "base": {
+            "number": 1,
+            "denomination": 8,
+            "bonus": "",
+            "types": [
+              "slashing"
+            ],
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            }
+          },
+          "versatile": {
+            "types": [],
+            "custom": {
+              "enabled": false
+            },
+            "scaling": {
+              "number": 1
+            }
+          }
+        }
+      },
+      "flags": {
+        "autoanimations": {
+          "override": true,
+          "animType": "melee",
+          "animName": "Sword",
+          "color": "Red"
+        },
+        "dnd5e": {
+          "riders": {
+            "activity": []
+          }
+        },
+        "ld-crimson-scaler": {
+          "scaling": {
+            "enabled": true,
+            "classSpecific": true,
+            "profile": "default",
+            "tierModel": "rnk-crimson-baseline",
+            "version": 1,
+            "itemRole": "weapon",
+            "classKey": "the-whisperer",
+            "base": {
+              "denomination": 8,
+              "number": 1
+            },
+            "className": "Whisperer"
+          },
+          "linkMode": "actor-level",
+          "managedBy": "ld-crimson-scaler",
+          "linkedClass": {
+            "identifier": "the-whisperer",
+            "name": "Whisperer"
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": {
+          "worldId": "veil-3",
+          "uuid": "Item.jK36Fz3bJVtaXoFV",
+          "coreVersion": "13.351",
+          "systemId": "dnd5e",
+          "systemVersion": "5.2.5"
+        },
+        "coreVersion": "13.351",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.5",
+        "createdTime": 1763741764429,
+        "modifiedTime": 1773331968176,
+        "lastModifiedBy": "qPrQhMZ8YlHSgRVs"
+      }
+    }
+  ]
+}

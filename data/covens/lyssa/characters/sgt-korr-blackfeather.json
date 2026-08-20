@@ -1,0 +1,97 @@
+{
+  "id": "sgt-korr-blackfeather",
+  "name": "Sgt. Korr Blackfeather",
+  "img": "modules/ld-crimson-scaler/assets/portraits/noble_human_man_02.png",
+  "rank": "Sergeant",
+  "level": 18,
+  "role": "Thief Sergeant",
+  "build": {
+    "primaryClass": "Rogue",
+    "subclass": "Thief",
+    "secondaryClass": "Artificer",
+    "casterType": "hybrid"
+  },
+  "abilities": {
+    "str": 12,
+    "dex": 22,
+    "con": 15,
+    "int": 18,
+    "wis": 13,
+    "cha": 12
+  },
+  "combat": {
+    "ac": 20,
+    "hp": 206,
+    "speed": 40,
+    "initiative": 11
+  },
+  "skills": [
+    "sleight-of-hand",
+    "stealth",
+    "investigation",
+    "acrobatics",
+    "perception"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Vault-Crawler Leathers",
+        "img": "icons/equipment/chest/leather-chest-dark.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Lockbite Dirk",
+        "img": "icons/weapons/daggers/dagger-straight-grey.webp"
+      },
+      {
+        "name": "Shockwire Grapnel",
+        "img": "icons/weapons/sickles/hook-steel-grey.webp"
+      }
+    ],
+    "focus": [
+      {
+        "name": "Bloodbound Lockpick Fingers",
+        "img": "icons/svg/damage/necrotic.svg"
+      }
+    ]
+  },
+  "features": [
+    "Vaultsense",
+    "Silent Breach",
+    "Rapid Hands",
+    "Escape Circuit"
+  ],
+  "spells": {
+    "level1": [
+      "expeditious retreat",
+      "alarm"
+    ],
+    "level2": [
+      "knock",
+      "invisibility"
+    ]
+  },
+  "integration": {
+    "faction": "lyssa-veil-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "objective-heister"
+  },
+  "prototypeToken": {
+    "name": "Sgt. Korr Blackfeather",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/noble_human_man_02.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}

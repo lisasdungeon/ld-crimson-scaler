@@ -1,0 +1,100 @@
+{
+  "id": "sgt-grimalkin",
+  "name": "Sgt. Grimalkin",
+  "img": "modules/ld-crimson-scaler/assets/portraits/unknow_darkelve_boy_01.png",
+  "rank": "Sergeant",
+  "level": 14,
+  "role": "Trapmaster Sergeant",
+  "build": {
+    "primaryClass": "Artificer",
+    "subclass": "Artillerist",
+    "secondaryClass": "Rogue",
+    "casterType": "hybrid"
+  },
+  "abilities": {
+    "str": 11,
+    "dex": 19,
+    "con": 16,
+    "int": 20,
+    "wis": 15,
+    "cha": 10
+  },
+  "combat": {
+    "ac": 19,
+    "hp": 172,
+    "speed": 35,
+    "initiative": 8
+  },
+  "skills": [
+    "investigation",
+    "sleight-of-hand",
+    "stealth",
+    "perception"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Sewerline Harness",
+        "img": "icons/equipment/chest/leather-vest-brown.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Bloodwire Snare Kit",
+        "img": "icons/weapons/sickles/hook-steel-grey.webp"
+      },
+      {
+        "name": "Springbolt Repeater",
+        "img": "icons/weapons/swords/sword-guard-steel-green.webp"
+      }
+    ],
+    "focus": [
+      {
+        "name": "Path-Prediction Mark Compass",
+        "img": "icons/tools/navigation/compass-brass.webp"
+      }
+    ]
+  },
+  "features": [
+    "Hex Trap Grid",
+    "Patrol Forecast",
+    "Ambush Trigger",
+    "Chokepoint Lock"
+  ],
+  "spells": {
+    "level1": [
+      "alarm",
+      "grease"
+    ],
+    "level2": [
+      "web",
+      "arcane lock"
+    ],
+    "level3": [
+      "glyph of warding",
+      "stinking cloud"
+    ]
+  },
+  "integration": {
+    "faction": "lyssa-veil-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "terrain-controller"
+  },
+  "prototypeToken": {
+    "name": "Sgt. Grimalkin",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/unknow_darkelve_boy_01.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}

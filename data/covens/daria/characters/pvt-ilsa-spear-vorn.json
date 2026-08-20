@@ -1,0 +1,88 @@
+{
+  "id": "pvt-ilsa-spear-vorn",
+  "name": "Ilsa \"Spear\" Vorn",
+  "img": "modules/ld-crimson-scaler/assets/portraits/warrior_elve_woman_02.png",
+  "rank": "Private",
+  "level": 7,
+  "role": "Thrust Lead",
+  "build": {
+    "primaryClass": "Fighter",
+    "subclass": "Battle Master",
+    "secondaryClass": "Rogue",
+    "casterType": "martial"
+  },
+  "abilities": {
+    "str": 16,
+    "dex": 17,
+    "con": 14,
+    "int": 11,
+    "wis": 13,
+    "cha": 11
+  },
+  "combat": {
+    "ac": 17,
+    "hp": 118,
+    "speed": 35,
+    "initiative": 7
+  },
+  "skills": [
+    "athletics",
+    "acrobatics",
+    "perception",
+    "stealth"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Lockstep Brigandine",
+        "img": "icons/equipment/chest/breastplate-steel-grey.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Gapfinder Spear",
+        "img": "icons/weapons/polearms/spear-hooked.webp"
+      },
+      {
+        "name": "Formation Buckler",
+        "img": "icons/equipment/shield/buckler-wooden-round-black.webp"
+      }
+    ],
+    "focus": [
+      {
+        "name": "Unerring Thrust Mark",
+        "img": "icons/equipment/finger/ring-cabochon-gold-red.webp"
+      }
+    ]
+  },
+  "features": [
+    "Visor Threading",
+    "Kill-Yell Surge",
+    "Line Gap Exploit"
+  ],
+  "spells": {
+    "level1": []
+  },
+  "integration": {
+    "faction": "daria-iron-ring-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "precision-phalanx-striker"
+  },
+  "prototypeToken": {
+    "name": "Ilsa \"Spear\" Vorn",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/warrior_elve_woman_02.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}

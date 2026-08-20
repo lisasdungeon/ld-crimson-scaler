@@ -1,0 +1,97 @@
+{
+  "id": "lyssa-generic-fighter-03",
+  "name": "Lyssa Generic Fighter III",
+  "img": "modules/ld-crimson-scaler/assets/portraits/outdated_11.png",
+  "rank": "Corporal",
+  "level": 8,
+  "role": "Generic Distraction Agent",
+  "build": {
+    "primaryClass": "Bard",
+    "subclass": "Glamour",
+    "secondaryClass": "Rogue",
+    "casterType": "full-caster"
+  },
+  "abilities": {
+    "str": 9,
+    "dex": 17,
+    "con": 13,
+    "int": 13,
+    "wis": 12,
+    "cha": 18
+  },
+  "combat": {
+    "ac": 16,
+    "hp": 92,
+    "speed": 35,
+    "initiative": 6
+  },
+  "skills": [
+    "performance",
+    "deception",
+    "acrobatics",
+    "stealth"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Rune Streetcoat",
+        "img": "icons/equipment/chest/coat-leather-brown.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Shatter Sling",
+        "img": "icons/weapons/slings/sling-leather-brown.webp"
+      },
+      {
+        "name": "Backup Knife",
+        "img": "icons/weapons/daggers/dagger-serrated.webp"
+      }
+    ],
+    "focus": [
+      {
+        "name": "Echo Charm",
+        "img": "icons/svg/damage/psychic.svg"
+      }
+    ]
+  },
+  "features": [
+    "Sonic Diversion",
+    "Voice Scatter",
+    "Crowd Panic Spark"
+  ],
+  "spells": {
+    "cantrips": [
+      "minor illusion"
+    ],
+    "level1": [
+      "dissonant whispers",
+      "thunderwave"
+    ],
+    "level2": [
+      "shatter"
+    ]
+  },
+  "integration": {
+    "faction": "lyssa-veil-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "disruption-controller"
+  },
+  "prototypeToken": {
+    "name": "Lyssa Generic Fighter III",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/outdated_11.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}

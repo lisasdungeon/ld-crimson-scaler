@@ -1,0 +1,126 @@
+{
+  "id": "captain-elara-voss",
+  "name": "Captain Elara Voss",
+  "img": "modules/ld-crimson-scaler/assets/portraits/noble_human_woman_02.png",
+  "rank": "Captain",
+  "level": 24,
+  "role": "Intel Captain",
+  "build": {
+    "primaryClass": "Bard",
+    "subclass": "Whispers",
+    "secondaryClass": "Rogue",
+    "casterType": "full-caster"
+  },
+  "abilities": {
+    "str": 9,
+    "dex": 22,
+    "con": 16,
+    "int": 20,
+    "wis": 16,
+    "cha": 22
+  },
+  "combat": {
+    "ac": 21,
+    "hp": 286,
+    "speed": 35,
+    "initiative": 12
+  },
+  "skills": [
+    "deception",
+    "persuasion",
+    "insight",
+    "investigation",
+    "stealth",
+    "performance"
+  ],
+  "equipment": {
+    "armor": [
+      {
+        "name": "Runeskin Coat (rare studded leather)",
+        "img": "icons/equipment/chest/leather-chest-dark.webp"
+      },
+      {
+        "name": "Ravenfeather Hood",
+        "img": "icons/equipment/back/cloak-collared-grey.webp"
+      }
+    ],
+    "weapons": [
+      {
+        "name": "Silverline Stiletto",
+        "img": "icons/weapons/daggers/dagger-curved-gold.webp"
+      },
+      {
+        "name": "Signal Dart Pistol",
+        "img": "icons/weapons/crossbows/crossbow-simple-brown.webp"
+      }
+    ],
+    "focus": [
+      {
+        "name": "Raven-Bond Cipher Orb",
+        "img": "icons/magic/light/orb-shadow-blue.webp"
+      }
+    ]
+  },
+  "features": [
+    "Raven Relay Network",
+    "Perfect Recall Ledger",
+    "Disinformation Lattice",
+    "Coven Priority Cipher"
+  ],
+  "spells": {
+    "atWill": [
+      "message",
+      "friends",
+      "minor illusion"
+    ],
+    "level1": [
+      "charm person",
+      "comprehend languages",
+      "dissonant whispers"
+    ],
+    "level2": [
+      "detect thoughts",
+      "suggestion",
+      "invisibility"
+    ],
+    "level3": [
+      "hypnotic pattern",
+      "sending",
+      "major image"
+    ],
+    "level4": [
+      "greater invisibility",
+      "dimension door"
+    ],
+    "level5": [
+      "modify memory",
+      "dream"
+    ],
+    "level6": [
+      "mass suggestion",
+      "true seeing"
+    ]
+  },
+  "integration": {
+    "faction": "lyssa-veil-coven",
+    "tokenDisposition": "hostile",
+    "aiStyle": "intel-controller"
+  },
+  "prototypeToken": {
+    "name": "Captain Elara Voss",
+    "displayName": 20,
+    "actorLink": false,
+    "disposition": -1,
+    "texture": {
+      "src": "modules/ld-crimson-scaler/assets/portraits/noble_human_woman_02.png",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "sight": {
+      "enabled": false
+    },
+    "bar1": {
+      "attribute": "attributes.hp"
+    }
+  }
+}
